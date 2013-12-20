@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [com.qait.launchpad.automation.tests.LoginTest]">
+  <test name="Command line test 7b28a941-1601-4e40-9a82-796974d9f765(failed)">
+    <classes>
+      <class name="com.qait.launchpad.automation.tests.LoginTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="loginToTheSSOFrontDoor"/>
+        </methods>
+      </class> <!-- com.qait.launchpad.automation.tests.LoginTest -->
+    </classes>
+  </test> <!-- Command line test 7b28a941-1601-4e40-9a82-796974d9f765(failed) -->
+</suite> <!-- Failed suite [com.qait.launchpad.automation.tests.LoginTest] -->

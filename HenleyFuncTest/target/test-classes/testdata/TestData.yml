@@ -1,0 +1,28 @@
+selenium:
+    server: local
+    remote:
+        host: path
+        port: 8080
+    browser: firefox
+    chromedriverpath: "./src/test/resources/seleniumdriver/chromedriver.exe"
+    IEdriverpath: "./src/test/resources/seleniumdriver/IEDriverServer.exe"
+    timeout: 30
+    
+    
+baseurl: https://s-login.cengage.com/cb/
+
+users:  
+  instructor:
+    username: nj_instructor@henley.com
+    password: A111111
+  student:
+    username: qai_student36@henley.com
+    password: A111111
+    
+  bookname: General_Chemistry
+  weekNumber: week 6
+  
+  
+submittest:
+  testweek: week 4
+  testName: "2.1c Isotopes and Atomic Weight"

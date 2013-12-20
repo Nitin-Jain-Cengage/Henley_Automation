@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.qait.launchpad.automation.tests.LoginTest">
+        <methods>
+          <include name="verifyStudentBoardDisplay"/>
+          <include name="verifyLandingPage"/>
+          <include name="setUpClass"/>
+          <include name="loginToTheSSOFrontDoor"/>
+          <include name="clickOnOpenBookButtonAsBookName"/>
+          <include name="tearDownClass"/>
+          <include name="navigateToWeek"/>
+        </methods>
+      </class> <!-- com.qait.launchpad.automation.tests.LoginTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
