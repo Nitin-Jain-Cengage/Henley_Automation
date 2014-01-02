@@ -33,11 +33,11 @@ public class WebDriverFactory {
 			if (browser.equalsIgnoreCase("firefox")) {
 				return createFirefoxDriver(getFirefoxProfile());
 			} else if (browser.equalsIgnoreCase("chrome")) {
-				return setChromeDriver(seleniumconfig.get("chromedriverpath").toString());
+				return setChromeDriver(seleniumconfig.get("driverpath").toString());
 			} else if (browser.equalsIgnoreCase("Safari")) {
 				return setSafariDriver();
 			} else if ((browser.equalsIgnoreCase("ie")) || (browser.equalsIgnoreCase("internetexplorer")) || (browser.equalsIgnoreCase("internet explorer"))) {
-				return setInternetExplorerDriver(seleniumconfig.get("IEdriverpath").toString());
+				return setInternetExplorerDriver(seleniumconfig.get("driverpath").toString());
 			}
 		}
 		if (seleniumconfig.get("server").toString().equalsIgnoreCase("remote")) {
@@ -63,7 +63,6 @@ public class WebDriverFactory {
 		try {
 			selserverhost = new URL(seleniumserveraddress);
 		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		cap.setJavascriptEnabled(true);

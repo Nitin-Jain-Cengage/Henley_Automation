@@ -4,20 +4,21 @@
  */
 package com.qait.launchpad.automation.keywords;
 
-import com.qait.automation.utils.SeleniumWait;
 import com.qait.launchpad.automation.pageuiobjects.LoginPageUi;
 import org.openqa.selenium.WebDriver;
 
 /**
  *
- * @author prashantshukla
+ * @author QAIT
  */
 public class LoginPageActions {
 
-    LoginPageUi loginpage;    
+    LoginPageUi loginpage;
+   
 
     public LoginPageActions(WebDriver driver) {
         loginpage = new LoginPageUi(driver);
+        
     }
 
     public void typeUserName(String username){
@@ -29,7 +30,6 @@ public class LoginPageActions {
         loginpage.getPasswordField().clear();
         loginpage.inp_username.sendKeys("");
         loginpage.getPasswordField().sendKeys(password);
-        
     }
     
     public void typeUsernameAndPassword(String username, String password){
@@ -45,4 +45,5 @@ public class LoginPageActions {
     public String getPageTitle(){
         return loginpage.getPageTitle();
     }
+    
 }

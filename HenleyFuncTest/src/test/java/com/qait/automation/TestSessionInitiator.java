@@ -18,17 +18,22 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import com.qait.automation.utils.YamlReader;
-import com.qait.launchpad.automation.keywords.LoginPageActions;
-import com.qait.launchpad.automation.keywords.StudentDashboardAction;
+import com.qait.launchpad.automation.keywords.*;
 
 /**
  *
- * @author prashantshukla
+ * @author QAIT
  */
 public class TestSessionInitiator {
 
     WebDriver driver;
-    public StudentDashboardAction pageAction;
+    public LoginPageActions loginActionsPg;
+    public StudentHomePageActions studHomePageActionsPg;
+    public WeekWidgetActions weekWidgetActionsPg;
+    public DifferentActivitiesActions diffActivitiesActionsPg;
+    public StartSubmitLogOutActions startSubmitLogOutActionsPg;
+   
+    
     String browser;
     String seleniumserver;
     String seleniumserverhost;
@@ -71,11 +76,15 @@ public class TestSessionInitiator {
     }
 
     private void _initPage() {
-        pageAction = new StudentDashboardAction(driver);
+    	loginActionsPg = new LoginPageActions(driver);
+    	studHomePageActionsPg = new StudentHomePageActions(driver);
+    	weekWidgetActionsPg= new WeekWidgetActions(driver);
+        diffActivitiesActionsPg = new DifferentActivitiesActions(driver);
+        startSubmitLogOutActionsPg = new StartSubmitLogOutActions(driver);
     }
 
     public void launchApplication() {
-        System.out.println("the aplication url is :- " + applicationpath);
+        System.out.println("The application url is :- " + applicationpath);
         driver.get(applicationpath);
     }
 

@@ -11,7 +11,7 @@ import org.openqa.selenium.support.FindBy;
 
 /**
  *
- * @author prashantshukla
+ * @author QAIT
  */
 public class LoginPageUi extends BasePage {
 

@@ -12,7 +12,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<testxml>testng.xml</testxml>
-		<seleniumver>2.37.0</seleniumver>
+		<seleniumver>2.36.0</seleniumver>
 	</properties>
 
 	<build>

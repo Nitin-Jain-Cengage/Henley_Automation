@@ -1,6 +1,0 @@
-#surefire_0
-#Tue Dec 17 17:17:43 IST 2013
-user.dir=C\:\\Automation\\henleyMindtap\\JBehave.Selenium
-localRepository=C\:\\Users\\shwetabansal\\.m2\\repository
-basedir=C\:\\Automation\\henleyMindtap\\JBehave.Selenium
-test=com.qait.launchpad.automation.tests.LoginTest
