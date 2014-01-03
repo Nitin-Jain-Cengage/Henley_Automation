@@ -2,6 +2,7 @@ package com.qait.launchpad.automation.pageuiobjects;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -33,4 +34,61 @@ public class WeekWidgetUi extends BasePage{
 	
 	@FindBy(id="conceptMapBtn")
 	public WebElement btn_conceptMap;
+	
+	public WebElement ConceptMap_Clickable() {
+		return getWhenVisible(By.id("conceptMapBtn"), 90);
+		
+	}
+	
+	public void waitForSync() {
+		expWait.waitForDomToLoad();
+	}
+	
+	@FindBy(xpath=".//*[@class[contains(.,'nb_actTitle')]]")
+	public WebElement titleOfActivity;
+	
+	public WebElement titleOfActivity_Clickable() {
+		return getWhenVisible(By.xpath(".//*[@class[contains(.,'nb_actTitle')]]"), 90);
+		
+	}
+	
+	public WebElement getPreocessingIndicator(String activityName ) {
+		return expWait.getWhenVisible(
+				By.xpath("//div[contains(@class,'dash-middle')]//ul[contains(@class,'assignments ')]//label[contains(text(),'"+ activityName
+						+"')]/parent::div/parent::li/i[@class='statusIcon completed']"), 80);
+	}
+	
+	@FindBy(xpath="//a[@id='app_toggle']")
+	public WebElement btn_allApps;
+	
+	@FindBy(xpath="//div[@class='dockGroup']/li/a/img")
+	public List<WebElement> lbl_appName;
+	
+	public WebElement get_appName() {
+		return expWait.getWhenVisible(By.xpath("//div[@class='dockGroup']/li/a/img"), 80);
+	}
+	
+	@FindBy(xpath="//div[@class='dockGroup']/li/a")
+	public List<WebElement> appNameLink;
+	
+	public WebElement get_appNameLink() {
+		return expWait.getWhenVisible(By.xpath("//div[@class='dockGroup']/li/a"), 80);
+	}
+	
+	public WebElement getHeadingNameOfTheApp(String appName ) {
+		return expWait.getWhenVisible(By.xpath("//h2[text()='"+appName+"']"), 80);
+	}
+	
+	public WebElement getCollapse(String appName ) {
+		return expWait.getWhenVisible(By.xpath("//h2[text()='"+appName+"']/parent::div/div/a"), 80);
+	}
+	
+	public WebElement getHeadingNameOfMerriamWebsterApp() {
+		return expWait.getWhenVisible(By.xpath("//h2[contains(text(),'Merriam-Webster')]"), 80);
+	}
+	
+	public WebElement getCollapseForMerriamWebsterApp() {
+		return expWait.getWhenVisible(By.xpath("//h2[contains(text(),'Merriam-Webster')]/parent::div/div/a"), 80);
+	}
+	 
 }

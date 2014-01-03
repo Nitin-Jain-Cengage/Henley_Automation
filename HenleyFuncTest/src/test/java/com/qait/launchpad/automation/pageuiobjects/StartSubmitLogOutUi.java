@@ -37,6 +37,9 @@ public class StartSubmitLogOutUi extends BasePage{
 	@FindBy(id="submit")
 	public WebElement link_submit;
 	
+	@FindBy(id="nav-group-submit")
+	public WebElement link_submitForTutored;
+	
 	@FindBy(xpath = "//div[text()='Submit Activity for Grading']")
 	public WebElement btn_SubmitActivity;
 	
@@ -51,4 +54,7 @@ public class StartSubmitLogOutUi extends BasePage{
 	@FindBy(className="closeActivity")
 	public WebElement close;
 
+	public WebElement getOverviewGradedOut() {
+		return expWait.getWhenVisible(By.xpath("//ul[@id='nav-grouped-items']/li[@class='group' and text()='Overview']"), 80);
+	}
 }

@@ -14,9 +14,11 @@ import com.qait.launchpad.automation.pageuiobjects.StudentHomePageUI;
  */
 public class StudentHomePageActions extends LoginPageActions{
 	StudentHomePageUI stdPage;
-	
+	WebDriver driver;
     public StudentHomePageActions(WebDriver driver) {
 		super(driver);
+		this.driver=driver;
+
 		stdPage= new StudentHomePageUI(driver);
 	}
 	  

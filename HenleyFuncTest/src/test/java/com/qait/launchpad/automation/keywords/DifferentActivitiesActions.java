@@ -3,17 +3,16 @@ package com.qait.launchpad.automation.keywords;
 import static com.qait.automation.utils.YamlReader.getYamlValue;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
-
 import com.qait.launchpad.automation.pageuiobjects.DifferentActivitiesUi;
 
 public class DifferentActivitiesActions extends WeekWidgetActions{
 	
 	DifferentActivitiesUi diffActivitiesPg;
-	static String activity_heading;
-
+	WebDriver driver;
 	public DifferentActivitiesActions(WebDriver driver) {
 		super(driver);
+		this.driver=driver;
+
 		diffActivitiesPg = new DifferentActivitiesUi(driver);
 	}
 
@@ -37,16 +36,5 @@ public class DifferentActivitiesActions extends WeekWidgetActions{
 	public void clickOnTutoredActivity(){
 		diffActivitiesPg.getlbl_TutoredActivity_Clickable().click();
 	}
-	
-	public void verifyActivityStatusDisplayAsCompleted(String activityName) {
-		Assert.assertTrue(diffActivitiesPg.getPreocessingIndicator(activityName).isDisplayed());
-		diffActivitiesPg.waitForSync();
-		
-	}
-	
-	public void ToGetActivityHeadingandverifyActivityStatusDisplay()
-	{
-		activity_heading= diffActivitiesPg.getActivityHeading().getText();
-	}
-		
+			
 }

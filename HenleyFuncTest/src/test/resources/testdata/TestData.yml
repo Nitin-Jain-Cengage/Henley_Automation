@@ -15,11 +15,10 @@ users:
     username: nj_instructor@henley.com
     password: A111111
   student:
-    username: qai_student44@henley.com
+    username: qai_student40@henley.com
     password: A111111
     
 week:
-    weeknumber: 12
-    
+    weeknumber: 20
 activity:
-    tutored: 10.1b Pressure   
+    tutored: 18.1a Solubility Units 

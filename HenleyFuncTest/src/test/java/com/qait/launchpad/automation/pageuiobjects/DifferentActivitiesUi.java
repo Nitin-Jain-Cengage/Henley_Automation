@@ -66,20 +66,5 @@ public class DifferentActivitiesUi extends BasePage{
 	public WebElement getlbl_TutoredActivity_Clickable() {
 			return getWhenClickable(By.xpath(path), 90);
 	}
-	
-	public WebElement getActivityHeading() {
-		return expWait.getWhenVisible(By.xpath("//div[@class='nb_titles']"), 80);
-	}
-	
-	public WebElement getPreocessingIndicator(String activityName ) {
-		return expWait.getWhenVisible(
-				By.xpath("//div[contains(@class,'dash-middle')]//ul[contains(@class,'assignments ')]//label[contains(text(),'" + activityName
-						+ "')]/parent::div/parent::li/i[@class='statusIcon completed']"), 80);
-	}
-	
-	public void waitForSync() {
-		expWait.waitForDomToLoad();
-	}
-
-	
+							
 }

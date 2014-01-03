@@ -7,9 +7,12 @@ import com.qait.launchpad.automation.pageuiobjects.StartSubmitLogOutUi;
 public class StartSubmitLogOutActions {
 	
 	StartSubmitLogOutUi startSubmitLogOutPg;
+	WebDriver driver;
 
 	public StartSubmitLogOutActions(WebDriver driver) {
 		super();
+		this.driver=driver;
+
 		startSubmitLogOutPg = new StartSubmitLogOutUi(driver);
 	
 	}
@@ -35,6 +38,12 @@ public class StartSubmitLogOutActions {
 	public void clickOnSubmitLink()
 	{
 		startSubmitLogOutPg.link_submit.click();
+	}
+	
+	public void clickOnSubmitLinkForTutored()
+	{
+		startSubmitLogOutPg.getOverviewGradedOut().isDisplayed();
+		startSubmitLogOutPg.link_submitForTutored.click();
 	}
 	
 	public void clickOnSubmitButton()
