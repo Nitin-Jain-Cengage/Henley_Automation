@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.qait.launchpad.automation.tests;
+package com.qait.automation.tests;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;

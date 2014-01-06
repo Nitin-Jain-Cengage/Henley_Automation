@@ -2,11 +2,11 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.qait.launchpad.automation.keywords;
+package com.qait.automation.keywords;
 
 import org.openqa.selenium.WebDriver;
 
-import com.qait.launchpad.automation.pageuiobjects.StudentHomePageUI;
+import com.qait.automation.pageuiobjects.StudentHomePageUI;
 
 /**
  *

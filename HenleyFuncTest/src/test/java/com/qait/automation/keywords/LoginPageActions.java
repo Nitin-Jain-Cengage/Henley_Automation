@@ -2,9 +2,10 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.qait.launchpad.automation.keywords;
+package com.qait.automation.keywords;
 
-import com.qait.launchpad.automation.pageuiobjects.LoginPageUi;
+import com.qait.automation.pageuiobjects.LoginPageUi;
+
 import org.openqa.selenium.WebDriver;
 
 /**

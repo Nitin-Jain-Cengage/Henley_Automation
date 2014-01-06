@@ -1,4 +1,4 @@
-package com.qait.launchpad.automation.pageuiobjects;
+package com.qait.automation.pageuiobjects;
 
 import static com.qait.automation.utils.YamlReader.getYamlValue;
 

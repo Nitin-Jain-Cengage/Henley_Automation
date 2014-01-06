@@ -1,8 +1,8 @@
-package com.qait.launchpad.automation.keywords;
+package com.qait.automation.keywords;
 
 import org.openqa.selenium.WebDriver;
 
-import com.qait.launchpad.automation.pageuiobjects.StartSubmitLogOutUi;
+import com.qait.automation.pageuiobjects.StartSubmitLogOutUi;
 
 public class StartSubmitLogOutActions {
 	

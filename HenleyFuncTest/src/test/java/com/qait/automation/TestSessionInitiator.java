@@ -17,8 +17,8 @@ import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import com.qait.automation.keywords.*;
 import com.qait.automation.utils.YamlReader;
-import com.qait.launchpad.automation.keywords.*;
 
 /**
  *

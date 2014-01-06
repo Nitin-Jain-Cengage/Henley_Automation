@@ -1,4 +1,4 @@
-package com.qait.launchpad.automation.pageuiobjects;
+package com.qait.automation.pageuiobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

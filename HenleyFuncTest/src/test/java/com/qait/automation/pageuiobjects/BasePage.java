@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.qait.launchpad.automation.pageuiobjects;
+package com.qait.automation.pageuiobjects;
 
 import com.qait.automation.utils.SeleniumWait;
 

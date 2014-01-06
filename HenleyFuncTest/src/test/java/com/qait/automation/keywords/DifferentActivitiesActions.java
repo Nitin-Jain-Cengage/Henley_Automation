@@ -1,9 +1,10 @@
-package com.qait.launchpad.automation.keywords;
+package com.qait.automation.keywords;
 
 import static com.qait.automation.utils.YamlReader.getYamlValue;
 
 import org.openqa.selenium.WebDriver;
-import com.qait.launchpad.automation.pageuiobjects.DifferentActivitiesUi;
+
+import com.qait.automation.pageuiobjects.DifferentActivitiesUi;
 
 public class DifferentActivitiesActions extends WeekWidgetActions{
 	

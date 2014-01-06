@@ -1,11 +1,11 @@
-package com.qait.launchpad.automation.keywords;
+package com.qait.automation.keywords;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import static com.qait.automation.utils.YamlReader.getYamlValue;
 
-import com.qait.launchpad.automation.pageuiobjects.WeekWidgetUi;
+import com.qait.automation.pageuiobjects.WeekWidgetUi;
 
 public class WeekWidgetActions extends StudentHomePageActions{
 
