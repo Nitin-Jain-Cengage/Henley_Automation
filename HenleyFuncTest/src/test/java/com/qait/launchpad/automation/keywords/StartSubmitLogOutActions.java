@@ -31,8 +31,8 @@ public class StartSubmitLogOutActions {
 		startSubmitLogOutPg.switchToDefaultContent();
 		startSubmitLogOutPg.switchToFrame("54_NB_Main_IFrame");
 		startSubmitLogOutPg.switchToFrame("easyXDM_activityService_cxp_Target_provider");
-		startSubmitLogOutPg.btn_startActivityForTutored.isDisplayed();
-		startSubmitLogOutPg.btn_startActivityForTutored.click();
+		startSubmitLogOutPg.getbtn_startActivityForTutored().isDisplayed();
+		startSubmitLogOutPg.getbtn_startActivityForTutored().click();
 	}
 	
 	public void clickOnSubmitLink()

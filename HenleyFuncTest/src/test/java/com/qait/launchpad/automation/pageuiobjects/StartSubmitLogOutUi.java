@@ -24,11 +24,10 @@ public class StartSubmitLogOutUi extends BasePage{
 	}
 	
 	
-	@FindBy(id="rhs-start")
-	public WebElement btn_startActivityForTutored;
+
 	
 	public WebElement getbtn_startActivityForTutored(){
-		return btn_startActivityForTutored;
+		return expWait.getWhenVisible(By.id("rhs-start"), 80);
 	}
 	
 	public WebElement startActivityForTutored_Clickable(){
