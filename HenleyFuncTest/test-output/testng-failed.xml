@@ -3,33 +3,33 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qait.launchpad.automation.tests.SmokeTest">
+      <class name="com.qait.automation.tests.SmokeTest">
         <methods>
-          <include name="startAndSubmitTutoredActivity"/>
-          <include name="verifyNumberOfWeekEqualswithWeekavailableinWeekSlider"/>
           <include name="OpenIntroductionandQuickPrepActivity"/>
           <include name="setUpClass"/>
-          <include name="verifyStatusdisplayAsCompletedForTutoredActivity"/>
-          <include name="loginToTheSSOFrontDoor"/>
           <include name="performOperationsOnHomePage"/>
-          <include name="startAndSubmitMasteryActivity"/>
-          <include name="verifyStartActiviyandSubmit"/>
-          <include name="AttemptingMasteryActivity"/>
-          <include name="ActionsOnWeekWidgetView"/>
+          <include name="verifyStatusdisplayAsCompletedForTutoredActivity"/>
+          <include name="verifyNumberOfWeekEqualswithWeekavailableinWeekSlider"/>
+          <include name="startAndSubmitTutoredActivity"/>
+          <include name="verifyIntroductionandQuickPrepActivityStatusAsCompleted"/>
+          <include name="logOutFromApplication"/>
+          <include name="AttemptingStudyGuide"/>
+          <include name="startAndSubmitStudyGuide"/>
+          <include name="AttemptingTutoredActivity"/>
+          <include name="AttemptingReviewandChallengeActivity"/>
+          <include name="verifyStatusdisplayAsCompletedForMasteryActivity"/>
+          <include name="loginToTheSSOFrontDoor"/>
           <include name="verifyStatusdisplayAsCompletedForReviewandChallengeActivity"/>
           <include name="startAndSubmitReviewandChallengeActivity"/>
           <include name="verifyAllAppsButtonDisplays"/>
-          <include name="AttemptingTutoredActivity"/>
-          <include name="verifyIntroductionandQuickPrepActivityStatusAsCompleted"/>
-          <include name="verifyStatusdisplayAsCompletedForMasteryActivity"/>
-          <include name="logOutFromApplication"/>
-          <include name="tearDownClass"/>
-          <include name="startAndSubmitStudyGuide"/>
-          <include name="AttemptingReviewandChallengeActivity"/>
+          <include name="AttemptingMasteryActivity"/>
+          <include name="ActionsOnWeekWidgetView"/>
           <include name="clickOnAppsAndVerifyAllOpen"/>
-          <include name="AttemptingStudyGuide"/>
+          <include name="verifyStartActiviyandSubmit"/>
+          <include name="tearDownClass"/>
+          <include name="startAndSubmitMasteryActivity"/>
         </methods>
-      </class> <!-- com.qait.launchpad.automation.tests.SmokeTest -->
+      </class> <!-- com.qait.automation.tests.SmokeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

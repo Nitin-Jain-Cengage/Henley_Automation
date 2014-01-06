@@ -2,104 +2,104 @@
 <testng-results skipped="0" failed="0" total="21" passed="21">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="220923" started-at="2014-01-03T13:04:07Z" finished-at="2014-01-03T13:07:48Z">
+  <suite name="Default suite" duration-ms="298852" started-at="2014-01-06T13:19:21Z" finished-at="2014-01-06T13:24:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="220923" started-at="2014-01-03T13:04:07Z" finished-at="2014-01-03T13:07:48Z">
-      <class name="com.qait.launchpad.automation.tests.SmokeTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="setUpClass" is-config="true" duration-ms="12377" started-at="2014-01-03T18:34:07Z" finished-at="2014-01-03T18:34:19Z">
+    <test name="Default test" duration-ms="298852" started-at="2014-01-06T13:19:21Z" finished-at="2014-01-06T13:24:20Z">
+      <class name="com.qait.automation.tests.SmokeTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="setUpClass" is-config="true" duration-ms="12085" started-at="2014-01-06T18:49:21Z" finished-at="2014-01-06T18:49:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="loginToTheSSOFrontDoor()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="loginToTheSSOFrontDoor" duration-ms="10969" started-at="2014-01-03T18:34:19Z" finished-at="2014-01-03T18:34:30Z">
+        <test-method status="PASS" signature="loginToTheSSOFrontDoor()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="loginToTheSSOFrontDoor" duration-ms="11359" started-at="2014-01-06T18:49:33Z" finished-at="2014-01-06T18:49:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToTheSSOFrontDoor -->
-        <test-method status="PASS" signature="performOperationsOnHomePage()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="performOperationsOnHomePage" duration-ms="3336" started-at="2014-01-03T18:34:30Z" depends-on-methods="com.qait.launchpad.automation.tests.SmokeTest.loginToTheSSOFrontDoor" finished-at="2014-01-03T18:34:34Z">
+        <test-method status="PASS" signature="performOperationsOnHomePage()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="performOperationsOnHomePage" duration-ms="4835" started-at="2014-01-06T18:49:45Z" depends-on-methods="com.qait.automation.tests.SmokeTest.loginToTheSSOFrontDoor" finished-at="2014-01-06T18:49:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- performOperationsOnHomePage -->
-        <test-method status="PASS" signature="ActionsOnWeekWidgetView()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="ActionsOnWeekWidgetView" duration-ms="74414" started-at="2014-01-03T18:34:34Z" depends-on-methods="com.qait.launchpad.automation.tests.SmokeTest.performOperationsOnHomePage" finished-at="2014-01-03T18:35:48Z">
+        <test-method status="PASS" signature="ActionsOnWeekWidgetView()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="ActionsOnWeekWidgetView" duration-ms="32564" started-at="2014-01-06T18:49:50Z" depends-on-methods="com.qait.automation.tests.SmokeTest.performOperationsOnHomePage" finished-at="2014-01-06T18:50:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ActionsOnWeekWidgetView -->
-        <test-method status="PASS" signature="verifyAllAppsButtonDisplays()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="verifyAllAppsButtonDisplays" duration-ms="7500" started-at="2014-01-03T18:35:48Z" depends-on-methods="com.qait.launchpad.automation.tests.SmokeTest.ActionsOnWeekWidgetView" finished-at="2014-01-03T18:35:56Z">
+        <test-method status="PASS" signature="verifyAllAppsButtonDisplays()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="verifyAllAppsButtonDisplays" duration-ms="3837" started-at="2014-01-06T18:50:22Z" depends-on-methods="com.qait.automation.tests.SmokeTest.ActionsOnWeekWidgetView" finished-at="2014-01-06T18:50:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllAppsButtonDisplays -->
-        <test-method status="PASS" signature="clickOnAppsAndVerifyAllOpen()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="clickOnAppsAndVerifyAllOpen" duration-ms="26111" started-at="2014-01-03T18:35:56Z" depends-on-methods="com.qait.launchpad.automation.tests.SmokeTest.verifyAllAppsButtonDisplays" finished-at="2014-01-03T18:36:22Z">
+        <test-method status="PASS" signature="clickOnAppsAndVerifyAllOpen()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="clickOnAppsAndVerifyAllOpen" duration-ms="29659" started-at="2014-01-06T18:50:26Z" depends-on-methods="com.qait.automation.tests.SmokeTest.verifyAllAppsButtonDisplays" finished-at="2014-01-06T18:50:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnAppsAndVerifyAllOpen -->
-        <test-method status="PASS" signature="verifyNumberOfWeekEqualswithWeekavailableinWeekSlider()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="verifyNumberOfWeekEqualswithWeekavailableinWeekSlider" duration-ms="16762" started-at="2014-01-03T18:36:22Z" depends-on-methods="com.qait.launchpad.automation.tests.SmokeTest.clickOnAppsAndVerifyAllOpen" finished-at="2014-01-03T18:36:38Z">
+        <test-method status="PASS" signature="verifyNumberOfWeekEqualswithWeekavailableinWeekSlider()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="verifyNumberOfWeekEqualswithWeekavailableinWeekSlider" duration-ms="941" started-at="2014-01-06T18:50:56Z" depends-on-methods="com.qait.automation.tests.SmokeTest.clickOnAppsAndVerifyAllOpen" finished-at="2014-01-06T18:50:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNumberOfWeekEqualswithWeekavailableinWeekSlider -->
-        <test-method status="PASS" signature="OpenIntroductionandQuickPrepActivity()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="OpenIntroductionandQuickPrepActivity" duration-ms="1807" started-at="2014-01-03T18:36:38Z" depends-on-methods="com.qait.launchpad.automation.tests.SmokeTest.verifyNumberOfWeekEqualswithWeekavailableinWeekSlider" finished-at="2014-01-03T18:36:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenIntroductionandQuickPrepActivity -->
-        <test-method status="PASS" signature="verifyStartActiviyandSubmit()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="verifyStartActiviyandSubmit" duration-ms="8223" started-at="2014-01-03T18:36:40Z" depends-on-methods="com.qait.launchpad.automation.tests.SmokeTest.OpenIntroductionandQuickPrepActivity" finished-at="2014-01-03T18:36:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyStartActiviyandSubmit -->
-        <test-method status="PASS" signature="verifyIntroductionandQuickPrepActivityStatusAsCompleted()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="verifyIntroductionandQuickPrepActivityStatusAsCompleted" duration-ms="12249" started-at="2014-01-03T18:36:49Z" depends-on-methods="com.qait.launchpad.automation.tests.SmokeTest.verifyStartActiviyandSubmit" finished-at="2014-01-03T18:37:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyIntroductionandQuickPrepActivityStatusAsCompleted -->
-        <test-method status="PASS" signature="AttemptingMasteryActivity()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="AttemptingMasteryActivity" duration-ms="910" started-at="2014-01-03T18:37:01Z" depends-on-methods="com.qait.launchpad.automation.tests.SmokeTest.verifyIntroductionandQuickPrepActivityStatusAsCompleted" finished-at="2014-01-03T18:37:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AttemptingMasteryActivity -->
-        <test-method status="PASS" signature="startAndSubmitMasteryActivity()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="startAndSubmitMasteryActivity" duration-ms="4176" started-at="2014-01-03T18:37:02Z" depends-on-methods="com.qait.launchpad.automation.tests.SmokeTest.AttemptingMasteryActivity" finished-at="2014-01-03T18:37:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startAndSubmitMasteryActivity -->
-        <test-method status="PASS" signature="verifyStatusdisplayAsCompletedForMasteryActivity()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="verifyStatusdisplayAsCompletedForMasteryActivity" duration-ms="7843" started-at="2014-01-03T18:37:06Z" depends-on-methods="com.qait.launchpad.automation.tests.SmokeTest.startAndSubmitMasteryActivity" finished-at="2014-01-03T18:37:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyStatusdisplayAsCompletedForMasteryActivity -->
-        <test-method status="PASS" signature="AttemptingReviewandChallengeActivity()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="AttemptingReviewandChallengeActivity" duration-ms="1073" started-at="2014-01-03T18:37:14Z" depends-on-methods="com.qait.launchpad.automation.tests.SmokeTest.verifyStatusdisplayAsCompletedForMasteryActivity" finished-at="2014-01-03T18:37:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AttemptingReviewandChallengeActivity -->
-        <test-method status="PASS" signature="startAndSubmitReviewandChallengeActivity()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="startAndSubmitReviewandChallengeActivity" duration-ms="3005" started-at="2014-01-03T18:37:15Z" depends-on-methods="com.qait.launchpad.automation.tests.SmokeTest.AttemptingReviewandChallengeActivity" finished-at="2014-01-03T18:37:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startAndSubmitReviewandChallengeActivity -->
-        <test-method status="PASS" signature="verifyStatusdisplayAsCompletedForReviewandChallengeActivity()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="verifyStatusdisplayAsCompletedForReviewandChallengeActivity" duration-ms="8039" started-at="2014-01-03T18:37:18Z" depends-on-methods="com.qait.launchpad.automation.tests.SmokeTest.startAndSubmitReviewandChallengeActivity" finished-at="2014-01-03T18:37:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyStatusdisplayAsCompletedForReviewandChallengeActivity -->
-        <test-method status="PASS" signature="AttemptingStudyGuide()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="AttemptingStudyGuide" duration-ms="951" started-at="2014-01-03T18:37:26Z" depends-on-methods="com.qait.launchpad.automation.tests.SmokeTest.verifyStatusdisplayAsCompletedForReviewandChallengeActivity" finished-at="2014-01-03T18:37:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AttemptingStudyGuide -->
-        <test-method status="PASS" signature="startAndSubmitStudyGuide()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="startAndSubmitStudyGuide" duration-ms="444" started-at="2014-01-03T18:37:27Z" depends-on-methods="com.qait.launchpad.automation.tests.SmokeTest.AttemptingStudyGuide" finished-at="2014-01-03T18:37:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startAndSubmitStudyGuide -->
-        <test-method status="PASS" signature="AttemptingTutoredActivity()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="AttemptingTutoredActivity" duration-ms="3336" started-at="2014-01-03T18:37:27Z" depends-on-methods="com.qait.launchpad.automation.tests.SmokeTest.startAndSubmitStudyGuide" finished-at="2014-01-03T18:37:31Z">
+        <test-method status="PASS" signature="AttemptingTutoredActivity()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="AttemptingTutoredActivity" duration-ms="2447" started-at="2014-01-06T18:50:57Z" depends-on-methods="com.qait.automation.tests.SmokeTest.verifyNumberOfWeekEqualswithWeekavailableinWeekSlider" finished-at="2014-01-06T18:50:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AttemptingTutoredActivity -->
-        <test-method status="PASS" signature="startAndSubmitTutoredActivity()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="startAndSubmitTutoredActivity" duration-ms="6442" started-at="2014-01-03T18:37:31Z" depends-on-methods="com.qait.launchpad.automation.tests.SmokeTest.AttemptingTutoredActivity" finished-at="2014-01-03T18:37:37Z">
+        <test-method status="PASS" signature="startAndSubmitTutoredActivity()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="startAndSubmitTutoredActivity" duration-ms="28882" started-at="2014-01-06T18:50:59Z" depends-on-methods="com.qait.automation.tests.SmokeTest.AttemptingTutoredActivity" finished-at="2014-01-06T18:51:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startAndSubmitTutoredActivity -->
-        <test-method status="PASS" signature="verifyStatusdisplayAsCompletedForTutoredActivity()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="verifyStatusdisplayAsCompletedForTutoredActivity" duration-ms="7001" started-at="2014-01-03T18:37:37Z" depends-on-methods="com.qait.launchpad.automation.tests.SmokeTest.startAndSubmitTutoredActivity" finished-at="2014-01-03T18:37:44Z">
+        <test-method status="PASS" signature="verifyStatusdisplayAsCompletedForTutoredActivity()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="verifyStatusdisplayAsCompletedForTutoredActivity" duration-ms="92" started-at="2014-01-06T18:51:28Z" depends-on-methods="com.qait.automation.tests.SmokeTest.startAndSubmitTutoredActivity" finished-at="2014-01-06T18:51:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyStatusdisplayAsCompletedForTutoredActivity -->
-        <test-method status="PASS" signature="logOutFromApplication()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="logOutFromApplication" duration-ms="3924" started-at="2014-01-03T18:37:44Z" depends-on-methods="com.qait.launchpad.automation.tests.SmokeTest.verifyStatusdisplayAsCompletedForTutoredActivity" finished-at="2014-01-03T18:37:48Z">
+        <test-method status="PASS" signature="OpenIntroductionandQuickPrepActivity()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="OpenIntroductionandQuickPrepActivity" duration-ms="1380" started-at="2014-01-06T18:51:28Z" depends-on-methods="com.qait.automation.tests.SmokeTest.verifyStatusdisplayAsCompletedForTutoredActivity" finished-at="2014-01-06T18:51:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenIntroductionandQuickPrepActivity -->
+        <test-method status="PASS" signature="verifyStartActiviyandSubmit()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="verifyStartActiviyandSubmit" duration-ms="7128" started-at="2014-01-06T18:51:29Z" depends-on-methods="com.qait.automation.tests.SmokeTest.OpenIntroductionandQuickPrepActivity" finished-at="2014-01-06T18:51:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStartActiviyandSubmit -->
+        <test-method status="PASS" signature="verifyIntroductionandQuickPrepActivityStatusAsCompleted()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="verifyIntroductionandQuickPrepActivityStatusAsCompleted" duration-ms="7683" started-at="2014-01-06T18:51:36Z" depends-on-methods="com.qait.automation.tests.SmokeTest.verifyStartActiviyandSubmit" finished-at="2014-01-06T18:51:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIntroductionandQuickPrepActivityStatusAsCompleted -->
+        <test-method status="PASS" signature="AttemptingMasteryActivity()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="AttemptingMasteryActivity" duration-ms="1996" started-at="2014-01-06T18:51:44Z" depends-on-methods="com.qait.automation.tests.SmokeTest.verifyIntroductionandQuickPrepActivityStatusAsCompleted" finished-at="2014-01-06T18:51:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AttemptingMasteryActivity -->
+        <test-method status="PASS" signature="startAndSubmitMasteryActivity()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="startAndSubmitMasteryActivity" duration-ms="126334" started-at="2014-01-06T18:51:46Z" depends-on-methods="com.qait.automation.tests.SmokeTest.AttemptingMasteryActivity" finished-at="2014-01-06T18:53:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAndSubmitMasteryActivity -->
+        <test-method status="PASS" signature="verifyStatusdisplayAsCompletedForMasteryActivity()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="verifyStatusdisplayAsCompletedForMasteryActivity" duration-ms="7227" started-at="2014-01-06T18:53:52Z" depends-on-methods="com.qait.automation.tests.SmokeTest.startAndSubmitMasteryActivity" finished-at="2014-01-06T18:54:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStatusdisplayAsCompletedForMasteryActivity -->
+        <test-method status="PASS" signature="AttemptingReviewandChallengeActivity()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="AttemptingReviewandChallengeActivity" duration-ms="1429" started-at="2014-01-06T18:54:00Z" depends-on-methods="com.qait.automation.tests.SmokeTest.verifyStatusdisplayAsCompletedForMasteryActivity" finished-at="2014-01-06T18:54:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AttemptingReviewandChallengeActivity -->
+        <test-method status="PASS" signature="startAndSubmitReviewandChallengeActivity()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="startAndSubmitReviewandChallengeActivity" duration-ms="7167" started-at="2014-01-06T18:54:01Z" depends-on-methods="com.qait.automation.tests.SmokeTest.AttemptingReviewandChallengeActivity" finished-at="2014-01-06T18:54:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAndSubmitReviewandChallengeActivity -->
+        <test-method status="PASS" signature="verifyStatusdisplayAsCompletedForReviewandChallengeActivity()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="verifyStatusdisplayAsCompletedForReviewandChallengeActivity" duration-ms="7581" started-at="2014-01-06T18:54:08Z" depends-on-methods="com.qait.automation.tests.SmokeTest.startAndSubmitReviewandChallengeActivity" finished-at="2014-01-06T18:54:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStatusdisplayAsCompletedForReviewandChallengeActivity -->
+        <test-method status="PASS" signature="AttemptingStudyGuide()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="AttemptingStudyGuide" duration-ms="1306" started-at="2014-01-06T18:54:16Z" depends-on-methods="com.qait.automation.tests.SmokeTest.verifyStatusdisplayAsCompletedForReviewandChallengeActivity" finished-at="2014-01-06T18:54:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AttemptingStudyGuide -->
+        <test-method status="PASS" signature="startAndSubmitStudyGuide()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="startAndSubmitStudyGuide" duration-ms="524" started-at="2014-01-06T18:54:17Z" depends-on-methods="com.qait.automation.tests.SmokeTest.AttemptingStudyGuide" finished-at="2014-01-06T18:54:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAndSubmitStudyGuide -->
+        <test-method status="PASS" signature="logOutFromApplication()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="logOutFromApplication" duration-ms="2362" started-at="2014-01-06T18:54:18Z" depends-on-methods="com.qait.automation.tests.SmokeTest.startAndSubmitStudyGuide" finished-at="2014-01-06T18:54:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromApplication -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.qait.launchpad.automation.tests.SmokeTest@1a0ae6]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2014-01-03T18:37:48Z" finished-at="2014-01-03T18:37:48Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.qait.automation.tests.SmokeTest@3a9d95]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2014-01-06T18:54:20Z" finished-at="2014-01-06T18:54:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.qait.launchpad.automation.tests.SmokeTest -->
+      </class> <!-- com.qait.automation.tests.SmokeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

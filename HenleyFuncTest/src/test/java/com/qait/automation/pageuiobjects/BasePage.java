@@ -73,4 +73,8 @@ public class BasePage extends SeleniumWait{
        	driver.findElement(By.id("logout_link")).click();
       	
     }
+    
+    public void waitForSyncPage(){
+    	expWait.waitForDomToLoad();
+    }
 }

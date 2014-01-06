@@ -15,10 +15,10 @@ users:
     username: nj_instructor@henley.com
     password: A111111
   student:
-    username: qai_student40@henley.com
+    username: qai_stud26@henley.com
     password: A111111
     
 week:
-    weeknumber: 20
+    weeknumber: 7
 activity:
-    tutored: 18.1a Solubility Units 
+    tutored: "5.1c Principles of Thermodynamics"

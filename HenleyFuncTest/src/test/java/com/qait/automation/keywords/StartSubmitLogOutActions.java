@@ -37,19 +37,35 @@ public class StartSubmitLogOutActions {
 	
 	public void clickOnSubmitLink()
 	{
-		startSubmitLogOutPg.link_submit.click();
+		startSubmitLogOutPg.checkOverviewStatus();
+		startSubmitLogOutPg.waitForSyncPage();
+		startSubmitLogOutPg.getlink_submit().isDisplayed();
+		startSubmitLogOutPg.getlink_submit().click();
+		startSubmitLogOutPg.waitForSyncPage();
+		startSubmitLogOutPg.getlink_submit().click();
+		startSubmitLogOutPg.waitForSyncPage();
+
 	}
 	
 	public void clickOnSubmitLinkForTutored()
 	{
+		startSubmitLogOutPg.getOverviewGradedOut();
+		startSubmitLogOutPg.waitForSyncPage();
 		startSubmitLogOutPg.getOverviewGradedOut().isDisplayed();
+		startSubmitLogOutPg.link_submitForTutored.isDisplayed();
 		startSubmitLogOutPg.link_submitForTutored.click();
+		startSubmitLogOutPg.waitForSyncPage();
+		
 	}
 	
 	public void clickOnSubmitButton()
 	{
-		startSubmitLogOutPg.btn_SubmitActivity.click();
+		startSubmitLogOutPg.waitForSyncPage();
+		startSubmitLogOutPg.getBtn_SubmitActivity().isDisplayed();
+		startSubmitLogOutPg.getBtn_SubmitActivity().click();
 		startSubmitLogOutPg.switchToDefaultContent();
+		startSubmitLogOutPg.waitForSyncPage();
+		startSubmitLogOutPg.getBtn_ConceptMap().isDisplayed();
 	}
 		
 	public void clickOnClose()

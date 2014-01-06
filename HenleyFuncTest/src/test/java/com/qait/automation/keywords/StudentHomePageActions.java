@@ -33,6 +33,7 @@ public class StudentHomePageActions extends LoginPageActions{
     
 	public void clickOnOpenButton()
     {
+		stdPage.waitForSyncPage();
     	stdPage.getBtn_Open().isDisplayed();
     	stdPage.getBtn_Open().click();
     }

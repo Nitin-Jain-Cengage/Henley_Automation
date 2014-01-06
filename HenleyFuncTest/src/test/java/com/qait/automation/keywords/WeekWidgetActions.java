@@ -77,6 +77,7 @@ public class WeekWidgetActions extends StudentHomePageActions{
 	
 	public void clickOnAllApps()
 	{
+		weekWidgetPge.waitForSyncPage();
 		weekWidgetPge.btn_allApps.isDisplayed();
 		weekWidgetPge.btn_allApps.click();
 	}

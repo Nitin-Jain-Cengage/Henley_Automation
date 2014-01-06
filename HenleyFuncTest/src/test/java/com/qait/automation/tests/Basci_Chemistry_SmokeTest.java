@@ -15,12 +15,12 @@ import com.qait.automation.TestSessionInitiator;
  * 
  * @author shwetabansal
  */
-public class SmokeTest {
+public class Basci_Chemistry_SmokeTest {
 	TestSessionInitiator test;
 	String username = getYamlValue("users.student.username");
 	String password = getYamlValue("users.student.password");
 
-	public SmokeTest() {
+	public Basci_Chemistry_SmokeTest() {
 		test = new TestSessionInitiator();
 	}
 
@@ -63,6 +63,25 @@ public class SmokeTest {
 	}
 
 	@Test(dependsOnMethods = "verifyNumberOfWeekEqualswithWeekavailableinWeekSlider")
+	public void AttemptingTutoredActivity() {
+		// Tutored Activity
+		test.diffActivitiesActionsPg.clickOnTutoredActivity();
+		test.diffActivitiesActionsPg.getTitleOfActivity();
+	}
+
+	@Test(dependsOnMethods = "AttemptingTutoredActivity")
+	public void startAndSubmitTutoredActivity() {
+		test.startSubmitLogOutActionsPg.clickOnStartActivityForTutored();
+		test.startSubmitLogOutActionsPg.clickOnSubmitLinkForTutored();
+		test.startSubmitLogOutActionsPg.clickOnSubmitButton();
+	}
+
+	@Test(dependsOnMethods = "startAndSubmitTutoredActivity")
+	public void verifyStatusdisplayAsCompletedForTutoredActivity() {
+		test.weekWidgetActionsPg.verifyActivityStatusDisplayAsCompleted();
+	}
+
+	@Test(dependsOnMethods = "verifyStatusdisplayAsCompletedForTutoredActivity")
 	public void OpenIntroductionandQuickPrepActivity() {
 		// Introduction and Quick Prep Activity
 		test.diffActivitiesActionsPg.clickOnIntroQuickPrep();
@@ -126,31 +145,12 @@ public class SmokeTest {
 	}
 
 	@Test(dependsOnMethods = "startAndSubmitStudyGuide")
-	public void AttemptingTutoredActivity() {
-		// Tutored Activity
-		test.diffActivitiesActionsPg.clickOnTutoredActivity();
-		test.diffActivitiesActionsPg.getTitleOfActivity();
-	}
-
-	@Test(dependsOnMethods = "AttemptingTutoredActivity")
-	public void startAndSubmitTutoredActivity() {
-		test.startSubmitLogOutActionsPg.clickOnStartActivityForTutored();
-		test.startSubmitLogOutActionsPg.clickOnSubmitLinkForTutored();
-		test.startSubmitLogOutActionsPg.clickOnSubmitButton();
-	}
-
-	@Test(dependsOnMethods = "startAndSubmitTutoredActivity")
-	public void verifyStatusdisplayAsCompletedForTutoredActivity() {
-		test.weekWidgetActionsPg.verifyActivityStatusDisplayAsCompleted();
-	}
-
-	@Test(dependsOnMethods = "verifyStatusdisplayAsCompletedForTutoredActivity")
 	public void logOutFromApplication() {
 		test.startSubmitLogOutActionsPg.logOutFromApp();
 	}
 
 	@AfterClass
 	public void tearDownClass() throws Exception {
-		 test.closeBrowserSession();
+		// test.closeBrowserSession();
 	}
 }
