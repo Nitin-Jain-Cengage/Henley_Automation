@@ -1,10 +1,10 @@
-package com.qait.automation.keywords;
+package com.qait.automation.chemistry.keywords;
 
 import static com.qait.automation.utils.YamlReader.getYamlValue;
 
 import org.openqa.selenium.WebDriver;
 
-import com.qait.automation.pageuiobjects.DifferentActivitiesUi;
+import com.qait.automation.chemistry.pageuiobjects.DifferentActivitiesUi;
 
 public class DifferentActivitiesActions extends WeekWidgetActions{
 	

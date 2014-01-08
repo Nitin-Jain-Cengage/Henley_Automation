@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.qait.automation.pageuiobjects;
+package com.qait.automation.chemistry.pageuiobjects;
 
 import com.qait.automation.utils.SeleniumWait;
 
@@ -21,8 +21,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  */
 public class BasePage extends SeleniumWait{
 
-    WebDriver driver;
-    SeleniumWait expWait;
+    protected WebDriver driver;
+    protected SeleniumWait expWait;
 
     public BasePage(WebDriver driver) {
     	super(driver);

@@ -3,33 +3,33 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qait.automation.tests.SmokeTest">
+      <class name="com.qait.automation.tests.Basic_Chemistry_SmokeTest">
         <methods>
-          <include name="OpenIntroductionandQuickPrepActivity"/>
+          <include name="AttemptingReviewandChallengeActivity"/>
+          <include name="verifyNumberOfWeekEqualswithWeekavailableinWeekSlider"/>
+          <include name="verifyStatusdisplayAsCompletedForReviewandChallengeActivity"/>
+          <include name="startAndSubmitTutoredActivity"/>
+          <include name="verifyStatusdisplayAsCompletedForMasteryActivity"/>
+          <include name="AttemptingMasteryActivity"/>
+          <include name="verifyStartActiviyandSubmit"/>
           <include name="setUpClass"/>
+          <include name="AttemptingTutoredActivity"/>
           <include name="performOperationsOnHomePage"/>
           <include name="verifyStatusdisplayAsCompletedForTutoredActivity"/>
-          <include name="verifyNumberOfWeekEqualswithWeekavailableinWeekSlider"/>
-          <include name="startAndSubmitTutoredActivity"/>
-          <include name="verifyIntroductionandQuickPrepActivityStatusAsCompleted"/>
+          <include name="tearDownClass"/>
           <include name="logOutFromApplication"/>
           <include name="AttemptingStudyGuide"/>
-          <include name="startAndSubmitStudyGuide"/>
-          <include name="AttemptingTutoredActivity"/>
-          <include name="AttemptingReviewandChallengeActivity"/>
-          <include name="verifyStatusdisplayAsCompletedForMasteryActivity"/>
-          <include name="loginToTheSSOFrontDoor"/>
-          <include name="verifyStatusdisplayAsCompletedForReviewandChallengeActivity"/>
           <include name="startAndSubmitReviewandChallengeActivity"/>
-          <include name="verifyAllAppsButtonDisplays"/>
-          <include name="AttemptingMasteryActivity"/>
           <include name="ActionsOnWeekWidgetView"/>
-          <include name="clickOnAppsAndVerifyAllOpen"/>
-          <include name="verifyStartActiviyandSubmit"/>
-          <include name="tearDownClass"/>
           <include name="startAndSubmitMasteryActivity"/>
+          <include name="loginToTheSSOFrontDoor"/>
+          <include name="verifyAllAppsButtonDisplays"/>
+          <include name="clickOnAppsAndVerifyAllOpen"/>
+          <include name="startAndSubmitStudyGuide"/>
+          <include name="OpenIntroductionandQuickPrepActivity"/>
+          <include name="verifyIntroductionandQuickPrepActivityStatusAsCompleted"/>
         </methods>
-      </class> <!-- com.qait.automation.tests.SmokeTest -->
+      </class> <!-- com.qait.automation.tests.Basic_Chemistry_SmokeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

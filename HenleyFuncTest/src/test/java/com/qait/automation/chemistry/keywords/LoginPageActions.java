@@ -2,14 +2,11 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.qait.automation.keywords;
+package com.qait.automation.chemistry.keywords;
 
-import com.qait.automation.pageuiobjects.LoginPageUi;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.qait.automation.chemistry.pageuiobjects.LoginPageUi;
 
 /**
  *

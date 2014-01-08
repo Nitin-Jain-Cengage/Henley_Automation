@@ -1,4 +1,4 @@
-package com.qait.automation.pageuiobjects;
+package com.qait.automation.chemistry.pageuiobjects;
 
 import static com.qait.automation.utils.YamlReader.getYamlValue;
 

@@ -17,7 +17,8 @@ import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import com.qait.automation.keywords.*;
+import com.qait.automation.chemistry.keywords.*;
+import com.qait.automation.history.keywords.History_CourseContent_Action;
 import com.qait.automation.utils.YamlReader;
 
 /**
@@ -32,6 +33,7 @@ public class TestSessionInitiator {
     public WeekWidgetActions weekWidgetActionsPg;
     public DifferentActivitiesActions diffActivitiesActionsPg;
     public StartSubmitLogOutActions startSubmitLogOutActionsPg;
+    public History_CourseContent_Action historyCourseContent;
    
     
     String browser;
@@ -81,6 +83,7 @@ public class TestSessionInitiator {
     	weekWidgetActionsPg= new WeekWidgetActions(driver);
         diffActivitiesActionsPg = new DifferentActivitiesActions(driver);
         startSubmitLogOutActionsPg = new StartSubmitLogOutActions(driver);
+        historyCourseContent = new History_CourseContent_Action(driver);
     }
 
     public void launchApplication() {

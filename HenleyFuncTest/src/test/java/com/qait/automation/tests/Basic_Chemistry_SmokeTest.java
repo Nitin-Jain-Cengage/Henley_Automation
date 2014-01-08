@@ -1,4 +1,5 @@
 /*
+
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
@@ -13,14 +14,14 @@ import com.qait.automation.TestSessionInitiator;
 
 /**
  * 
- * @author shwetabansal
+ * @author QAIT
  */
-public class Basci_Chemistry_SmokeTest {
+public class Basic_Chemistry_SmokeTest {
 	TestSessionInitiator test;
 	String username = getYamlValue("users.student.username");
 	String password = getYamlValue("users.student.password");
 
-	public Basci_Chemistry_SmokeTest() {
+	public Basic_Chemistry_SmokeTest() {
 		test = new TestSessionInitiator();
 	}
 
@@ -37,12 +38,12 @@ public class Basci_Chemistry_SmokeTest {
 	@Test(dependsOnMethods = "loginToTheSSOFrontDoor")
 	public void performOperationsOnHomePage() {
 		test.studHomePageActionsPg.verifyStudentHomePageContent();
-		test.studHomePageActionsPg.clickOnOpenButton();
+		test.studHomePageActionsPg.clickOnOpenButton(getYamlValue("Chemistry.BookName"));
 	}
 
 	@Test(dependsOnMethods = "performOperationsOnHomePage")
 	public void ActionsOnWeekWidgetView() {
-		test.weekWidgetActionsPg.switchToNewWindow();
+//		test.weekWidgetActionsPg.switchToNewWindow();
 		test.weekWidgetActionsPg.verifyConceptMapButton();
 	}
 
@@ -59,7 +60,7 @@ public class Basci_Chemistry_SmokeTest {
 	@Test(dependsOnMethods = "clickOnAppsAndVerifyAllOpen")
 	public void verifyNumberOfWeekEqualswithWeekavailableinWeekSlider() {
 		test.weekWidgetActionsPg.verifyTotalNoOfWeeks();
-		test.weekWidgetActionsPg.getCurrentDispWeek();
+		test.weekWidgetActionsPg.getCurrentDispWeek(getYamlValue("week.weeknumber"));
 	}
 
 	@Test(dependsOnMethods = "verifyNumberOfWeekEqualswithWeekavailableinWeekSlider")
@@ -107,7 +108,7 @@ public class Basci_Chemistry_SmokeTest {
 
 	@Test(dependsOnMethods = "AttemptingMasteryActivity")
 	public void startAndSubmitMasteryActivity() {
-		test.startSubmitLogOutActionsPg.startSubmitActions();
+		test.startSubmitLogOutActionsPg.startSubmitMasterActions();
 	}
 
 	@Test(dependsOnMethods = "startAndSubmitMasteryActivity")
@@ -151,6 +152,6 @@ public class Basci_Chemistry_SmokeTest {
 
 	@AfterClass
 	public void tearDownClass() throws Exception {
-		// test.closeBrowserSession();
+		 test.closeBrowserSession();
 	}
 }

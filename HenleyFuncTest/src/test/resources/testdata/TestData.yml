@@ -15,10 +15,26 @@ users:
     username: nj_instructor@henley.com
     password: A111111
   student:
-    username: qai_stud26@henley.com
+    username: qai_student70@henley.com
     password: A111111
     
+    chemistryusername: qai_student70@henley.com
+    chemistrypassword: A111111
+    
+
+Chemistry:
+  BookName: General_Chemistry
 week:
-    weeknumber: 7
+    weeknumber: 9
 activity:
-    tutored: "5.1c Principles of Thermodynamics"
+    tutored: "7.1b Types of Magnetic Materials"
+    
+    
+History:
+  BookName: "US History_Social"
+  
+historyweek:
+    weeknumber: 5
+    
+historyactivity:
+    InfographicActivity: "5.6 Challenges of Confederation"

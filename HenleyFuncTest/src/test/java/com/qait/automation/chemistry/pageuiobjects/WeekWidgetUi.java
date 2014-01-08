@@ -1,4 +1,4 @@
-package com.qait.automation.pageuiobjects;
+package com.qait.automation.chemistry.pageuiobjects;
 
 import java.util.List;
 
@@ -26,12 +26,8 @@ public class WeekWidgetUi extends BasePage {
 	public List<WebElement> totalNoOfWeeks;
 	@FindBy(className = "sliderDivider")
 	public List<WebElement> NoOfWeeksOnSlider;
-	@FindBy(id = "conceptMapBtn")
-	public WebElement btn_conceptMap;
 	@FindBy(xpath = ".//*[@class[contains(.,'nb_actTitle')]]")
 	public WebElement titleOfActivity;
-	@FindBy(xpath = "//a[@id='app_toggle']")
-	public WebElement btn_allApps;
 	@FindBy(xpath = "//div[@class='dockGroup']/li/a/img")
 	public List<WebElement> lbl_appName;
 
@@ -43,14 +39,28 @@ public class WeekWidgetUi extends BasePage {
 		expWait.waitForDomToLoad();
 	}
 
+	public WebElement btn_allApps() {
+		return driver.findElement(By.xpath("//a[@id='app_toggle']"));
+	}
+
+	public WebElement acceptButtonOnStudentContent() {
+		return expWait.getWhenVisible(By.xpath("//a[contains(text(),'Accept')]"), 30);
+	}
+
+	public WebElement btn_EnterOnCourseContent() {
+		return expWait.getWhenVisible(By.xpath("//input[@value='Enter']"), 20);
+	}
+
+	public WebElement btn_conceptMap() {
+		return expWait.getWhenVisible(By.id("conceptMapBtn"), 80);
+	}
+
 	public WebElement titleOfActivity_Clickable() {
 		return getWhenVisible(By.xpath(".//*[@class[contains(.,'nb_actTitle')]]"), 90);
 	}
 
 	public WebElement getPreocessingIndicator(String activityName) {
-		return expWait.getWhenVisible(
-				By.xpath("//div[contains(@class,'dash-middle')]//ul[contains(@class,'assignments ')]//label[contains(text(),'" + activityName
-						+ "')]/parent::div/parent::li/i[@class='statusIcon completed']"), 80);
+		return expWait.getWhenVisible(By.xpath("//div[contains(@class,'dash-middle')]//ul[contains(@class,'assignments ')]//label[contains(text(),'"+ activityName +"')]/parent::div/parent::li/i[@class='statusIcon completed']"), 80);
 	}
 
 	public WebElement get_appName() {
