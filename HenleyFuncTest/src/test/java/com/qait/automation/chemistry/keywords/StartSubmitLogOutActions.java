@@ -1,6 +1,7 @@
 package com.qait.automation.chemistry.keywords;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import com.qait.automation.chemistry.pageuiobjects.StartSubmitLogOutUi;
 
@@ -93,5 +94,15 @@ public class StartSubmitLogOutActions extends DifferentActivitiesActions {
 	public void logOutFromApp() {
 		startSubmitLogOutPg.switchToDefaultContent();
 		startSubmitLogOutPg.clickOnLogOut();
+		startSubmitLogOutPg.waitForSyncPage();
+	}
+	
+	public void verifyLogOutMessage(){
+		System.out.println(startSubmitLogOutPg.getTxt_LogoutMessage().getText());
+		Assert.assertTrue(startSubmitLogOutPg.getTxt_LogoutMessage().getText().contains("You have logged out or timed out of your course.") &&
+				startSubmitLogOutPg.getTxt_LogoutMessage().getText().contains("Restart your session to continue your work."));
+		
+//		Assert.assertTrue(startSubmitLogOutPg.getTxt_LogoutMessage().getText().equalsIgnoreCase("You have logged out or timed out of your course.") &&
+//				startSubmitLogOutPg.getTxt_LogoutMessage().getText().equalsIgnoreCase("Restart your session to continue your work."));
 	}
 }

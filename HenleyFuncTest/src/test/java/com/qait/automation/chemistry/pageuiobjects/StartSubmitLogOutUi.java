@@ -20,6 +20,8 @@ public class StartSubmitLogOutUi extends BasePage {
 	public WebElement link_submitForTutored;
 	@FindBy(xpath = "//div[text()='Submit Activity for Grading']")
 	public WebElement btn_SubmitActivity;
+	@FindBy(id = "logout")
+	public WebElement txt_LogoutMessage;
 
 	public WebElement getbtn_startActivity() {
 		// return btn_startActivity;
@@ -30,6 +32,12 @@ public class StartSubmitLogOutUi extends BasePage {
 	public WebElement getbtn_startActivity_Clickable() {
 	
 		return getWhenClickable(By.id("rhs-actuallystart"), 180);
+	}
+	
+
+
+	public WebElement getTxt_LogoutMessage() {
+		return txt_LogoutMessage;
 	}
 
 	public WebElement getbtn_startActivityForTutored() {

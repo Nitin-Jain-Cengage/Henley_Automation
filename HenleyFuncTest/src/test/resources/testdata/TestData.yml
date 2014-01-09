@@ -21,20 +21,34 @@ users:
     chemistryusername: qai_student70@henley.com
     chemistrypassword: A111111
     
+##########################################################################################
+#
+#******* Testdata for Chemistry *******
+#
+##########################################################################################
 
 Chemistry:
   BookName: General_Chemistry
 week:
-    weeknumber: 9
+    weeknumber: 5
 activity:
-    tutored: "7.1b Types of Magnetic Materials"
-    
-    
+    tutored: "3.2b Percent Composition"
+
+##########################################################################################
+#
+#******* Testdata for History *******
+#
+##########################################################################################
+ 
 History:
   BookName: "US History_Social"
   
 historyweek:
-    weeknumber: 5
+    weeknumber: 9
     
 historyactivity:
-    InfographicActivity: "5.6 Challenges of Confederation"
+    InfographicActivity: "9.1 Infographic"
+    SourceActivity: "9.4 Social Primary Source Activity"
+    EssayActivity: "9.6 Social Primary Source Essay Activity"
+    SingleAndMultipleSourceActivity: "9.3 Parties and Philosophies"
+    StudyActivity: "9.7 Study Guide"

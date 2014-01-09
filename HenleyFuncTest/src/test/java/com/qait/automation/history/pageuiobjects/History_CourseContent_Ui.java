@@ -35,6 +35,16 @@ public class History_CourseContent_Ui extends BasePage {
 		return expWait.getWhenVisible(By.xpath("//div[@class='nb_titles']/div"), 80);
 	}
 	
+	public WebElement getbtn_PrintStudy() {
+		return expWait.getWhenVisible(By.id("print-button"), 80);
+	}
+	
+	public WebElement getbtn_closeActivity() {
+		return expWait.getWhenVisible(By.className("closeActivity"), 80);
+	}
+	
+	
+	
 	public WebElement getbtn_showSubmitActivityButtonState() {
 		return driver.findElement(By.xpath("//button[@data-ng-show='showSubmitActivityButton']/parent::div"));
 	}

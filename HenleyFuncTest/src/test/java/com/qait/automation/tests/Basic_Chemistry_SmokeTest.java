@@ -43,7 +43,6 @@ public class Basic_Chemistry_SmokeTest {
 
 	@Test(dependsOnMethods = "performOperationsOnHomePage")
 	public void ActionsOnWeekWidgetView() {
-//		test.weekWidgetActionsPg.switchToNewWindow();
 		test.weekWidgetActionsPg.verifyConceptMapButton();
 	}
 

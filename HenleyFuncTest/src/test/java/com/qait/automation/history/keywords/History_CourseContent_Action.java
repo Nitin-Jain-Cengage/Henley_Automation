@@ -12,7 +12,7 @@ import com.qait.automation.history.pageuiobjects.History_CourseContent_Ui;
 public class History_CourseContent_Action extends StartSubmitLogOutActions {
 	WebDriver driver;
 	History_CourseContent_Ui historyCourseContent;
-	String HeadingName;
+	static String HeadingName;
 
 	public History_CourseContent_Action(WebDriver driver) {
 		super(driver);
@@ -49,14 +49,13 @@ public class History_CourseContent_Action extends StartSubmitLogOutActions {
 
 	public void verifyNextButtonDisplays() {
 		historyCourseContent.getbtn_NextButton().isDisplayed();
-		System.out.println(historyCourseContent.getbtn_showSubmitActivityButtonState().getAttribute("style"));
 
 	}
 	
 	public void clickOnNextButtonAndSubmitActivity(){
 		for (int i = 0; i < 80; i++) {
-			System.out.println(historyCourseContent.getbtn_showSubmitActivityButtonState().getAttribute("style"));
 			if (historyCourseContent.getbtn_showSubmitActivityButtonState().getAttribute("style").contains("display: none;")) {
+				historyCourseContent.waitForSyncPage();
 				System.out.println(historyCourseContent.getbtn_showSubmitActivityButtonState().getAttribute("style"));
 				historyCourseContent.getbtn_NextButton().click();
 				historyCourseContent.waitForSyncPage();
@@ -122,5 +121,17 @@ public class History_CourseContent_Action extends StartSubmitLogOutActions {
 		historyCourseContent.getBtn_SubmitActivity().click();
 		historyCourseContent.btn_conceptMap().isDisplayed();
 		verifyStausDisplayAsCompleted(HeadingName);
+	}
+
+	public void verifyPrintButtonDisplayInStudy(){
+		historyCourseContent.getbtn_PrintStudy().isDisplayed();
+	}
+	
+	public void closeStudyActivity(){
+		historyCourseContent.switchToDefaultContent();
+		historyCourseContent.getbtn_closeActivity().isDisplayed();
+		historyCourseContent.getbtn_closeActivity().click();
+		verifyUserNavigateToWeekWidget();
+		
 	}
 }
