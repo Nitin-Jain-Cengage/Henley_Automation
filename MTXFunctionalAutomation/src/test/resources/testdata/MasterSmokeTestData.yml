@@ -1,0 +1,19 @@
+selenium:
+    server: local
+    remote:
+        host: path
+        port: 8080
+    browser: firefox
+    driverpath: "./src/test/resources/seleniumdriver/"
+    timeout: 120
+    
+    
+baseurl: http://qaf.ng.cengage.com/static/nb/ui/admin/masters/masters.html
+
+users:  
+  Admin:
+    masterusername: superadmin
+    masterpassword: "neXtBook$2011"    
+    ISBN: "9781285846415"
+  
+    
