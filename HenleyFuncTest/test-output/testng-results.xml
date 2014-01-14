@@ -1,105 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="21" passed="21">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="313752" started-at="2014-01-09T12:42:42Z" finished-at="2014-01-09T12:47:55Z">
+  <suite name="Default suite" duration-ms="4659" started-at="2014-01-14T13:30:21Z" finished-at="2014-01-14T13:30:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="313752" started-at="2014-01-09T12:42:42Z" finished-at="2014-01-09T12:47:55Z">
-      <class name="com.qait.automation.tests.Basic_Chemistry_SmokeTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="setUpClass" is-config="true" duration-ms="9552" started-at="2014-01-09T18:12:42Z" finished-at="2014-01-09T18:12:51Z">
+    <test name="Default test" duration-ms="4659" started-at="2014-01-14T13:30:21Z" finished-at="2014-01-14T13:30:26Z">
+      <class name="com.cengage.automation.reports.ResultsIT">
+        <test-method status="PASS" signature="setupMailConfig()[pri:0, instance:com.cengage.automation.reports.ResultsIT@a9ae05]" name="setupMailConfig" is-config="true" duration-ms="7" started-at="2014-01-14T19:00:21Z" finished-at="2014-01-14T19:00:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="loginToTheSSOFrontDoor()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="loginToTheSSOFrontDoor" duration-ms="12327" started-at="2014-01-09T18:12:51Z" finished-at="2014-01-09T18:13:04Z">
+        </test-method> <!-- setupMailConfig -->
+        <test-method status="PASS" signature="sendResultsMail()[pri:0, instance:com.cengage.automation.reports.ResultsIT@a9ae05]" name="sendResultsMail" duration-ms="4640" started-at="2014-01-14T19:00:21Z" finished-at="2014-01-14T19:00:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginToTheSSOFrontDoor -->
-        <test-method status="PASS" signature="performOperationsOnHomePage()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="performOperationsOnHomePage" duration-ms="25360" started-at="2014-01-09T18:13:04Z" depends-on-methods="com.qait.automation.tests.Basic_Chemistry_SmokeTest.loginToTheSSOFrontDoor" finished-at="2014-01-09T18:13:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- performOperationsOnHomePage -->
-        <test-method status="PASS" signature="ActionsOnWeekWidgetView()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="ActionsOnWeekWidgetView" duration-ms="12682" started-at="2014-01-09T18:13:29Z" depends-on-methods="com.qait.automation.tests.Basic_Chemistry_SmokeTest.performOperationsOnHomePage" finished-at="2014-01-09T18:13:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ActionsOnWeekWidgetView -->
-        <test-method status="PASS" signature="verifyAllAppsButtonDisplays()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="verifyAllAppsButtonDisplays" duration-ms="3918" started-at="2014-01-09T18:13:42Z" depends-on-methods="com.qait.automation.tests.Basic_Chemistry_SmokeTest.ActionsOnWeekWidgetView" finished-at="2014-01-09T18:13:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAllAppsButtonDisplays -->
-        <test-method status="PASS" signature="clickOnAppsAndVerifyAllOpen()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="clickOnAppsAndVerifyAllOpen" duration-ms="28767" started-at="2014-01-09T18:13:46Z" depends-on-methods="com.qait.automation.tests.Basic_Chemistry_SmokeTest.verifyAllAppsButtonDisplays" finished-at="2014-01-09T18:14:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnAppsAndVerifyAllOpen -->
-        <test-method status="PASS" signature="verifyNumberOfWeekEqualswithWeekavailableinWeekSlider()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="verifyNumberOfWeekEqualswithWeekavailableinWeekSlider" duration-ms="680" started-at="2014-01-09T18:14:14Z" depends-on-methods="com.qait.automation.tests.Basic_Chemistry_SmokeTest.clickOnAppsAndVerifyAllOpen" finished-at="2014-01-09T18:14:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNumberOfWeekEqualswithWeekavailableinWeekSlider -->
-        <test-method status="PASS" signature="AttemptingTutoredActivity()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="AttemptingTutoredActivity" duration-ms="2380" started-at="2014-01-09T18:14:15Z" depends-on-methods="com.qait.automation.tests.Basic_Chemistry_SmokeTest.verifyNumberOfWeekEqualswithWeekavailableinWeekSlider" finished-at="2014-01-09T18:14:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AttemptingTutoredActivity -->
-        <test-method status="PASS" signature="startAndSubmitTutoredActivity()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="startAndSubmitTutoredActivity" duration-ms="33185" started-at="2014-01-09T18:14:17Z" depends-on-methods="com.qait.automation.tests.Basic_Chemistry_SmokeTest.AttemptingTutoredActivity" finished-at="2014-01-09T18:14:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startAndSubmitTutoredActivity -->
-        <test-method status="PASS" signature="verifyStatusdisplayAsCompletedForTutoredActivity()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="verifyStatusdisplayAsCompletedForTutoredActivity" duration-ms="11142" started-at="2014-01-09T18:14:51Z" depends-on-methods="com.qait.automation.tests.Basic_Chemistry_SmokeTest.startAndSubmitTutoredActivity" finished-at="2014-01-09T18:15:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyStatusdisplayAsCompletedForTutoredActivity -->
-        <test-method status="PASS" signature="OpenIntroductionandQuickPrepActivity()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="OpenIntroductionandQuickPrepActivity" duration-ms="1363" started-at="2014-01-09T18:15:02Z" depends-on-methods="com.qait.automation.tests.Basic_Chemistry_SmokeTest.verifyStatusdisplayAsCompletedForTutoredActivity" finished-at="2014-01-09T18:15:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenIntroductionandQuickPrepActivity -->
-        <test-method status="PASS" signature="verifyStartActiviyandSubmit()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="verifyStartActiviyandSubmit" duration-ms="7369" started-at="2014-01-09T18:15:03Z" depends-on-methods="com.qait.automation.tests.Basic_Chemistry_SmokeTest.OpenIntroductionandQuickPrepActivity" finished-at="2014-01-09T18:15:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyStartActiviyandSubmit -->
-        <test-method status="PASS" signature="verifyIntroductionandQuickPrepActivityStatusAsCompleted()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="verifyIntroductionandQuickPrepActivityStatusAsCompleted" duration-ms="7966" started-at="2014-01-09T18:15:10Z" depends-on-methods="com.qait.automation.tests.Basic_Chemistry_SmokeTest.verifyStartActiviyandSubmit" finished-at="2014-01-09T18:15:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyIntroductionandQuickPrepActivityStatusAsCompleted -->
-        <test-method status="PASS" signature="AttemptingMasteryActivity()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="AttemptingMasteryActivity" duration-ms="1876" started-at="2014-01-09T18:15:18Z" depends-on-methods="com.qait.automation.tests.Basic_Chemistry_SmokeTest.verifyIntroductionandQuickPrepActivityStatusAsCompleted" finished-at="2014-01-09T18:15:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AttemptingMasteryActivity -->
-        <test-method status="PASS" signature="startAndSubmitMasteryActivity()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="startAndSubmitMasteryActivity" duration-ms="125607" started-at="2014-01-09T18:15:20Z" depends-on-methods="com.qait.automation.tests.Basic_Chemistry_SmokeTest.AttemptingMasteryActivity" finished-at="2014-01-09T18:17:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startAndSubmitMasteryActivity -->
-        <test-method status="PASS" signature="verifyStatusdisplayAsCompletedForMasteryActivity()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="verifyStatusdisplayAsCompletedForMasteryActivity" duration-ms="7843" started-at="2014-01-09T18:17:26Z" depends-on-methods="com.qait.automation.tests.Basic_Chemistry_SmokeTest.startAndSubmitMasteryActivity" finished-at="2014-01-09T18:17:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyStatusdisplayAsCompletedForMasteryActivity -->
-        <test-method status="PASS" signature="AttemptingReviewandChallengeActivity()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="AttemptingReviewandChallengeActivity" duration-ms="1517" started-at="2014-01-09T18:17:34Z" depends-on-methods="com.qait.automation.tests.Basic_Chemistry_SmokeTest.verifyStatusdisplayAsCompletedForMasteryActivity" finished-at="2014-01-09T18:17:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AttemptingReviewandChallengeActivity -->
-        <test-method status="PASS" signature="startAndSubmitReviewandChallengeActivity()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="startAndSubmitReviewandChallengeActivity" duration-ms="8351" started-at="2014-01-09T18:17:35Z" depends-on-methods="com.qait.automation.tests.Basic_Chemistry_SmokeTest.AttemptingReviewandChallengeActivity" finished-at="2014-01-09T18:17:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startAndSubmitReviewandChallengeActivity -->
-        <test-method status="PASS" signature="verifyStatusdisplayAsCompletedForReviewandChallengeActivity()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="verifyStatusdisplayAsCompletedForReviewandChallengeActivity" duration-ms="7698" started-at="2014-01-09T18:17:44Z" depends-on-methods="com.qait.automation.tests.Basic_Chemistry_SmokeTest.startAndSubmitReviewandChallengeActivity" finished-at="2014-01-09T18:17:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyStatusdisplayAsCompletedForReviewandChallengeActivity -->
-        <test-method status="PASS" signature="AttemptingStudyGuide()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="AttemptingStudyGuide" duration-ms="1218" started-at="2014-01-09T18:17:51Z" depends-on-methods="com.qait.automation.tests.Basic_Chemistry_SmokeTest.verifyStatusdisplayAsCompletedForReviewandChallengeActivity" finished-at="2014-01-09T18:17:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AttemptingStudyGuide -->
-        <test-method status="PASS" signature="startAndSubmitStudyGuide()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="startAndSubmitStudyGuide" duration-ms="646" started-at="2014-01-09T18:17:53Z" depends-on-methods="com.qait.automation.tests.Basic_Chemistry_SmokeTest.AttemptingStudyGuide" finished-at="2014-01-09T18:17:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startAndSubmitStudyGuide -->
-        <test-method status="PASS" signature="logOutFromApplication()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="logOutFromApplication" duration-ms="2268" started-at="2014-01-09T18:17:53Z" depends-on-methods="com.qait.automation.tests.Basic_Chemistry_SmokeTest.startAndSubmitStudyGuide" finished-at="2014-01-09T18:17:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.qait.automation.tests.Basic_Chemistry_SmokeTest@1759d12]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2014-01-09T18:17:55Z" finished-at="2014-01-09T18:17:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- com.qait.automation.tests.Basic_Chemistry_SmokeTest -->
+        </test-method> <!-- sendResultsMail -->
+      </class> <!-- com.cengage.automation.reports.ResultsIT -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
