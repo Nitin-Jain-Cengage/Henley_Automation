@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.cengage.automation.reports.ResultsIT
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.453 sec

@@ -6,7 +6,7 @@ import org.testng.Assert;
 import com.cengage.automation.chemistry.pageuiobjects.WeekWidgetUi;
 
 public class WeekWidgetActions extends StudentHomePageActions {
-	WeekWidgetUi weekWidgetPge;
+	protected WeekWidgetUi weekWidgetPge;
 	WebDriver driver;
 	int numbr;
 	String currentWeek;

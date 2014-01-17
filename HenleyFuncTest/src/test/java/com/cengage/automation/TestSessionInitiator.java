@@ -17,6 +17,7 @@ import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import com.cengage.automation.InstructorTakeDelete.Keyword.InstructorTakeDeleteActions;
 import com.cengage.automation.MasterCourseSmoke.Keyword.Master_Admin_Dashboard_Action;
 import com.cengage.automation.MasterCourseSmoke.Keyword.Master_loginPage_Action;
 import com.cengage.automation.chemistry.keywords.*;
@@ -36,6 +37,8 @@ public class TestSessionInitiator {
 	public History_CourseContent_Action historyCourseContent;
 	public Master_loginPage_Action masterLoginPg;
 	public Master_Admin_Dashboard_Action adminDashboardPg;
+	public InstructorTakeDeleteActions instTakeDeletePg;
+	
 	String browser;
 	String seleniumserver;
 	String seleniumserverhost;

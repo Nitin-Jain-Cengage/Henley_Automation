@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.cengage.automation.BasicSmoke.tests.Henley_Basic_Smoke_TestRunner
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 221.706 sec - in com.cengage.automation.BasicSmoke.tests.Henley_Basic_Smoke_TestRunner

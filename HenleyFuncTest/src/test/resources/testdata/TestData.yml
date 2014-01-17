@@ -52,7 +52,25 @@ historyactivity:
     SingleAndMultipleSourceActivity: "9.3 Parties and Philosophies"
     StudyActivity: "9.7 Study Guide"
     
+
+
+##########################################################################################
+#
+#******* Testdata for Instructor Delete take  *******
+#
+##########################################################################################
+
+product:
+   isbn: "Cengage Learning, Cengage Learning's US History Survey Instant Access, 1st Edition"
+   
+course:
+   name: "US History_Social"
+   
+student:
+   name: "student, qai70"       
     
+
+
 ##########################################################################################
 #
 #******* Configurations for Email Module  *******
@@ -62,4 +80,6 @@ historyactivity:
 results:
    sendEmail: "yes"
    recipients: 
-       recipient1: shivamtiwari@qainfotech.net
+       recipient1: nitin.jain@contractor.cengage.com
+       recipient2: shivamtiwari@qainfotech.net
+       
