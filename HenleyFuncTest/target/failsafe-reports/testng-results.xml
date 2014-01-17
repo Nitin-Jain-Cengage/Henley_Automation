@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="com.cengage.automation.reports.ResultsIT" duration-ms="197" started-at="2014-01-14T13:23:38Z" finished-at="2014-01-14T13:23:38Z">
+  <suite name="com.cengage.automation.reports.ResultsIT" duration-ms="7098" started-at="2014-01-16T14:02:57Z" finished-at="2014-01-16T14:03:04Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="197" started-at="2014-01-14T13:23:38Z" finished-at="2014-01-14T13:23:38Z">
+    <test name="Command line test" duration-ms="7098" started-at="2014-01-16T14:02:57Z" finished-at="2014-01-16T14:03:04Z">
       <class name="com.cengage.automation.reports.ResultsIT">
-        <test-method status="PASS" signature="setupMailConfig()[pri:0, instance:com.cengage.automation.reports.ResultsIT@1546e25]" name="setupMailConfig" is-config="true" duration-ms="8" started-at="2014-01-14T18:53:38Z" finished-at="2014-01-14T18:53:38Z">
+        <test-method status="PASS" signature="setupMailConfig()[pri:0, instance:com.cengage.automation.reports.ResultsIT@1e4457d]" name="setupMailConfig" is-config="true" duration-ms="11" started-at="2014-01-16T19:32:57Z" finished-at="2014-01-16T19:32:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupMailConfig -->
-        <test-method status="PASS" signature="sendResultsMail()[pri:0, instance:com.cengage.automation.reports.ResultsIT@1546e25]" name="sendResultsMail" duration-ms="180" started-at="2014-01-14T18:53:38Z" finished-at="2014-01-14T18:53:38Z">
+        <test-method status="PASS" signature="sendResultsMail()[pri:0, instance:com.cengage.automation.reports.ResultsIT@1e4457d]" name="sendResultsMail" duration-ms="7073" started-at="2014-01-16T19:32:57Z" finished-at="2014-01-16T19:33:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendResultsMail -->

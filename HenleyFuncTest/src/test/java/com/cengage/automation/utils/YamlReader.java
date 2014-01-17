@@ -8,6 +8,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.Reader;
 import java.util.Map;
+import java.util.StringTokenizer;
 
 import org.yaml.snakeyaml.Yaml;
 
@@ -69,4 +70,28 @@ public class YamlReader {
         }
         return object;
     }
+    
+    public static  Map<String, Object> getYamlNodesArray(String yamlToken) {
+		Reader reader = null;
+		int tokenCount = 0, i = 0;
+		 Map<String, Object> map = null;
+
+		StringTokenizer st = new java.util.StringTokenizer(yamlToken + ".x", ".");
+		try {
+			reader = new FileReader(yamlFilePath);
+			Yaml yaml = new Yaml();
+			map = ( Map<String, Object>) yaml.load(reader);
+			tokenCount = st.countTokens();
+			for (i = 1; i < tokenCount; i++) {
+				String token = st.nextToken();
+				map = ( Map<String, Object>) map.get(token);
+			}
+			return map;
+		} catch (Exception e) {
+			System.out.println("Either Yaml file not found or there is problem with token passed!!!\n" + e);
+			return null;
+		}
+	}
+    
+
 }

@@ -5,7 +5,7 @@ selenium:
         port: 8080
     browser: firefox
     driverpath: "./src/test/resources/seleniumdriver/"
-    timeout: 120
+    timeout: 60
     
     
 baseurl: https://s-login.cengage.com/cb/
@@ -63,4 +63,3 @@ results:
    sendEmail: "yes"
    recipients: 
        recipient1: shivamtiwari@qainfotech.net
-       recipient2: samasgates@gmail.com

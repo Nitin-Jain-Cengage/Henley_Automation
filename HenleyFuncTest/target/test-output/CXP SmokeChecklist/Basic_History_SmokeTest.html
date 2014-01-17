@@ -1,0 +1,317 @@
+<html>
+<head>
+<title>TestNG:  Basic_History_SmokeTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Basic_History_SmokeTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/1/21</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jan 16 19:29:41 IST 2014</td>
+</tr>
+<tr><td>Total time:</td><td>187 seconds (187231 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.startActivityButtonInfographicDisplayAndClick()'><b>startActivityButtonInfographicDisplayAndClick</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 80 seconds waiting for visibility of element located by By.xpath: //*[contains(text(),&apos;Start Activity&apos;)]
+Build info: version: &apos;2.36.0&apos;, revision: &apos;9b50f805d0a53506a5ee6a55be8669f106d8d34e&apos;, time: &apos;2013-10-17 11:09:21&apos;
+System info: host: &apos;DLLB0015&apos;, ip: &apos;172.16.2.218&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_43&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.cengage.automation.utils.SeleniumWait.getWhenVisible(SeleniumWait.java:20)
+	at com.cengage.automation.history.pageuiobjects.History_CourseContent_Ui.getbtn_startActivity(History_CourseContent_Ui.java:27)
+	at com.cengage.automation.history.keywords.History_CourseContent_Action.verifyStartActivityButtonAndClick(History_CourseContent_Action.java:45)
+	at com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.startActivityButtonInfographicDisplayAndClick(Basic_History_SmokeTest.java:71)
+	at com.cengage.automation.BasicSmoke.tests.Henley_Basic_Smoke_TestRunner.Test(Henley_Basic_Smoke_TestRunner.java:17)
+... Removed 49 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace32336015", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace32336015'><pre>org.openqa.selenium.TimeoutException: Timed out after 80 seconds waiting for visibility of element located by By.xpath: //*[contains(text(),&apos;Start Activity&apos;)]
+Build info: version: &apos;2.36.0&apos;, revision: &apos;9b50f805d0a53506a5ee6a55be8669f106d8d34e&apos;, time: &apos;2013-10-17 11:09:21&apos;
+System info: host: &apos;DLLB0015&apos;, ip: &apos;172.16.2.218&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_43&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.cengage.automation.utils.SeleniumWait.getWhenVisible(SeleniumWait.java:20)
+	at com.cengage.automation.history.pageuiobjects.History_CourseContent_Ui.getbtn_startActivity(History_CourseContent_Ui.java:27)
+	at com.cengage.automation.history.keywords.History_CourseContent_Action.verifyStartActivityButtonAndClick(History_CourseContent_Action.java:45)
+	at com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.startActivityButtonInfographicDisplayAndClick(Basic_History_SmokeTest.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at com.cengage.automation.BasicSmoke.tests.Henley_Basic_Smoke_TestRunner.Test(Henley_Basic_Smoke_TestRunner.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:91)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:128)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>80</td>
+<td>com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest@1ce2dd4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.ActionsOnWeekWidgetView()'><b>ActionsOnWeekWidgetView</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>11</td>
+<td>com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest@1ce2dd4</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.clickOnAppsAndVerifyAllOpen()'><b>clickOnAppsAndVerifyAllOpen</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>18</td>
+<td>com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest@1ce2dd4</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.loginToTheSSOFrontDoor()'><b>loginToTheSSOFrontDoor</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>13</td>
+<td>com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest@1ce2dd4</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.openInfographicActivity()'><b>openInfographicActivity</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest@1ce2dd4</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.performOperationsOnHomePage()'><b>performOperationsOnHomePage</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>21</td>
+<td>com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest@1ce2dd4</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.verifyAllAppsButtonDisplays()'><b>verifyAllAppsButtonDisplays</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest@1ce2dd4</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.verifyInfographicActivityPanelDisplay()'><b>verifyInfographicActivityPanelDisplay</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>5</td>
+<td>com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest@1ce2dd4</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.verifyNumberOfWeekEqualswithWeekavailableinWeekSlider()'><b>verifyNumberOfWeekEqualswithWeekavailableinWeekSlider</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest@1ce2dd4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.attemptEssayActivityandSubmit()'><b>attemptEssayActivityandSubmit</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.attemptInfographicActivityandSubmit()'><b>attemptInfographicActivityandSubmit</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.attemptSingleAndMultipleSourceActivityandSubmit()'><b>attemptSingleAndMultipleSourceActivityandSubmit</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.attemptSourceActivityandSubmit()'><b>attemptSourceActivityandSubmit</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.logOutFromApplication()'><b>logOutFromApplication</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.openEssayActivity()'><b>openEssayActivity</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.openSingleAndMultipleSourceActivity()'><b>openSingleAndMultipleSourceActivity</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.openSourceActivityActivity()'><b>openSourceActivityActivity</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.openStudyActivity()'><b>openStudyActivity</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.startActivityButtonEssayActivityDisplayAndClick()'><b>startActivityButtonEssayActivityDisplayAndClick</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.startActivityButtonSingleAndMultipleSourceActivityDisplayAndClick()'><b>startActivityButtonSingleAndMultipleSourceActivityDisplayAndClick</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.startActivityButtonSourceActivityDisplayAndClick()'><b>startActivityButtonSourceActivityDisplayAndClick</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.startStudyActivityAndClose()'><b>startStudyActivityAndClose</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.verifyCompleteStatusForEssayActivity()'><b>verifyCompleteStatusForEssayActivity</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.verifyCompleteStatusForInfographicActivity()'><b>verifyCompleteStatusForInfographicActivity</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.verifyCompleteStatusForSingleAndMultipleSourceActivity()'><b>verifyCompleteStatusForSingleAndMultipleSourceActivity</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.verifyCompleteStatusForSourceActivity()'><b>verifyCompleteStatusForSourceActivity</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.verifyEssayActivityPanelDisplay()'><b>verifyEssayActivityPanelDisplay</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.verifySingleAndMultipleSourceActivityPanelDisplay()'><b>verifySingleAndMultipleSourceActivityPanelDisplay</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.verifySourceActivityPanelDisplay()'><b>verifySourceActivityPanelDisplay</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest.verifyStudyActivityPanelDisplay()'><b>verifyStudyActivityPanelDisplay</b><br>Test class: com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+</body>
+</html>

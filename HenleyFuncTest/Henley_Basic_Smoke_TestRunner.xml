@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CXP SmokeChecklist">
+
+
+	<test name="Basic_Chemistry_SmokeTest" preserve-order="true">
+		<classes>
+			<class name="com.cengage.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" />
+		</classes>
+	</test>
+
+
+	<test name="Basic_History_SmokeTest" preserve-order="true">
+		<classes>
+			<class name="com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest" />
+		</classes>
+	</test>
+
+
+	
+</suite> 

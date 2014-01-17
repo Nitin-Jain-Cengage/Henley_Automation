@@ -2,24 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="com.cengage.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" duration-ms="80805" started-at="2014-01-14T13:22:13Z" finished-at="2014-01-14T13:23:34Z">
+  <suite name="com.cengage.automation.BasicSmoke.tests.Henley_Basic_Smoke_TestRunner" duration-ms="221449" started-at="2014-01-16T13:59:12Z" finished-at="2014-01-16T14:02:54Z">
     <groups>
     </groups>
-    <test name="Command line test 43a61642-6539-496d-9607-dee8a35f6ebe" duration-ms="80805" started-at="2014-01-14T13:22:13Z" finished-at="2014-01-14T13:23:34Z">
-      <class name="com.cengage.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cengage.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest@b166b5]" name="setUpClass" is-config="true" duration-ms="51779" started-at="2014-01-14T18:52:13Z" finished-at="2014-01-14T18:53:05Z">
+    <test name="Command line test 27dc0bc7-25b7-4bbb-ab19-8e34ac77e9b6" duration-ms="221449" started-at="2014-01-16T13:59:12Z" finished-at="2014-01-16T14:02:54Z">
+      <class name="com.cengage.automation.BasicSmoke.tests.Henley_Basic_Smoke_TestRunner">
+        <test-method status="PASS" signature="Test()[pri:0, instance:com.cengage.automation.BasicSmoke.tests.Henley_Basic_Smoke_TestRunner@15c7850]" name="Test" duration-ms="221440" started-at="2014-01-16T19:29:12Z" finished-at="2014-01-16T19:32:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="loginToTheSSOFrontDoor()[pri:0, instance:com.cengage.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest@b166b5]" name="loginToTheSSOFrontDoor" duration-ms="28438" started-at="2014-01-14T18:53:05Z" finished-at="2014-01-14T18:53:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToTheSSOFrontDoor -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cengage.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest@b166b5]" name="tearDownClass" is-config="true" duration-ms="579" started-at="2014-01-14T18:53:33Z" finished-at="2014-01-14T18:53:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- com.cengage.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest -->
-    </test> <!-- Command line test 43a61642-6539-496d-9607-dee8a35f6ebe -->
-  </suite> <!-- com.cengage.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest -->
+        </test-method> <!-- Test -->
+      </class> <!-- com.cengage.automation.BasicSmoke.tests.Henley_Basic_Smoke_TestRunner -->
+    </test> <!-- Command line test 27dc0bc7-25b7-4bbb-ab19-8e34ac77e9b6 -->
+  </suite> <!-- com.cengage.automation.BasicSmoke.tests.Henley_Basic_Smoke_TestRunner -->
 </testng-results>

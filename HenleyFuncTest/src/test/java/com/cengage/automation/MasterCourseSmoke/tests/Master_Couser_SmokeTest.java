@@ -41,7 +41,7 @@ public class Master_Couser_SmokeTest {
 	public void navigateToISBNbook() {
 		test.adminDashboardPg.clickOnISBNBookAfterSearch(getYamlValue("users.Admin.ISBN"));
 		test.adminDashboardPg.verifyBookContentLoaded();
-		// test.adminDashboardPg.verifyLaunchAllActivity();
+		 test.adminDashboardPg.verifyLaunchAllActivity();
 	}
 
 	@AfterClass
