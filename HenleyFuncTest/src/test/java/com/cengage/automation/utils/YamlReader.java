@@ -25,7 +25,7 @@ public class YamlReader {
     
     public static String getYamlValue(String token){
         try {
-            return getValue(token);
+            return getValue(token).trim();
         } catch (FileNotFoundException ex) {
             System.out.println(ex.getMessage());
             return null;

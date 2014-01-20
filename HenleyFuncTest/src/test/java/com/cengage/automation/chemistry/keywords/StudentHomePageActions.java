@@ -31,6 +31,8 @@ public class StudentHomePageActions extends LoginPageActions{
         return false;
     }
     
+
+    
 	public void clickOnOpenButton(String bookName, String env)
     {
 		stdPage.waitForSyncPage();

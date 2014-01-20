@@ -27,8 +27,8 @@ public class ResultsIT {
 	String testdata;
 	Date today = new Date();
 	String host = "smtp.gmail.com";
-    String from = "automation.results.qait@gmail.com";
-    String password = "QaitAutomation";
+	String from = "automation.results.qait@gmail.com";
+	String password = "QaitAutomation";
 	String port = "465";
 	Message message;
 	public String textFile1;
@@ -43,20 +43,17 @@ public class ResultsIT {
 	public void sendResultsMail() throws Exception {
 		try {
 			if (YamlReader.getYamlValue("results.sendEmail").equalsIgnoreCase("yes")) {
-				
-				 Properties props = new Properties();
-	        	 props.put("mail.smtps.auth", "true");       
-	             Session session = Session.getInstance(props,null);
-	             Message message = new MimeMessage(getSession());
-	            setMailRecipient(message);  
-	            message.setSubject(setMailSubject());              
-	            message.setContent(setAttachement());     
-	            Transport transport = session.getTransport("smtps");
-	            transport.connect(host, from, password);
-	            transport.sendMessage(message, message.getAllRecipients());
-	            transport.close();
-          
-
+				Properties props = new Properties();
+				props.put("mail.smtps.auth", "true");
+				Session session = Session.getInstance(props, null);
+				Message message = new MimeMessage(getSession());
+				setMailRecipient(message);
+				message.setSubject(setMailSubject());
+				message.setContent(setAttachement());
+				Transport transport = session.getTransport("smtps");
+				transport.connect(host, from, password);
+				transport.sendMessage(message, message.getAllRecipients());
+				transport.close();
 			} else {
 				System.out.println("enteredElse");
 			}
@@ -64,20 +61,18 @@ public class ResultsIT {
 			e.printStackTrace();
 		}
 	}
-	
-    public Session getSession() {
-        Authenticator authenticator = new Authenticator(from, password);       
-        Properties properties = new Properties();
-        properties.setProperty("mail.transport.protocol", "smtps");
-        properties.put("mail.smtps.auth", "true");       
-        properties.setProperty("mail.smtp.submitter", authenticator.getPasswordAuthentication().getUserName());
-        properties.setProperty("mail.smtp.auth", "true");
-        properties.setProperty("mail.smtp.host", host);
-        properties.setProperty("mail.smtp.port", port);
-        return Session.getInstance(properties, authenticator);
-    }
 
-
+	public Session getSession() {
+		Authenticator authenticator = new Authenticator(from, password);
+		Properties properties = new Properties();
+		properties.setProperty("mail.transport.protocol", "smtps");
+		properties.put("mail.smtps.auth", "true");
+		properties.setProperty("mail.smtp.submitter", authenticator.getPasswordAuthentication().getUserName());
+		properties.setProperty("mail.smtp.auth", "true");
+		properties.setProperty("mail.smtp.host", host);
+		properties.setProperty("mail.smtp.port", port);
+		return Session.getInstance(properties, authenticator);
+	}
 
 	public String setBodyText() throws IOException {
 		String mailtext = "";
@@ -88,13 +83,9 @@ public class ResultsIT {
 		mailtext = mailtext + "<br><b><font color = green>Test Browser: </font></b>" + YamlReader.getYamlValue("selenium.browser");
 		mailtext = mailtext + "<br><b><font color = green>Test Environment: </font></b>" + YamlReader.getYamlValue("testenv");
 		mailtext = mailtext + "<br><b><font color = green>Test Case Executed By: </font></b>" + "Henley Automation Team";
-		// mailtext = mailtext +
-		// "<br><b><font color = green>Test Case Executed By: </font></b>" +
-		// System.getProperty("user.name");
+		mailtext = mailtext + "<br><b><font color = green>Test Case Executed By: </font></b>" + System.getProperty("user.name");
 		mailtext = mailtext + "<b>" + testSetResult() + "</b>";
-
 		mailtext = mailtext + "<br><br>The detailed test results are given in the attached <i>emailable-report.html</i> </br></br>";
-		
 		mailtext = mailtext + "<br><br>Best Regards" + "</br></br>";
 		mailtext = mailtext + "<br>Henley Automation QA Team" + "</br>";
 		mailtext = mailtext + "<br><br>Note: This is a system generated mail. Please do not reply." + "</br></br>";
@@ -131,19 +122,14 @@ public class ResultsIT {
 		multipart.addBodyPart(messageBodyPart);
 		// Part two is attachment
 		messageBodyPart = new MimeBodyPart();
-		System.out.println("getTestName() :::::::::::: "+getTestName());
-		
-		
-		if (getTestName().contains("TestRunner")){
+		System.out.println("getTestName() :::::::::::: " + getTestName());
+		if (getTestName().contains("TestRunner")) {
 			messageBodyPart.attachFile(".\\target\\test-output\\emailable-report.html");
 			multipart.addBodyPart(messageBodyPart);
-		}else{
+		} else {
 			messageBodyPart.attachFile(".\\target\\surefire-reports\\emailable-report.html");
 			multipart.addBodyPart(messageBodyPart);
-			
 		}
-				
-		
 		return multipart;
 	}
 
@@ -178,20 +164,20 @@ public class ResultsIT {
 		}
 	}
 
-	   public String testSetResult() throws IOException {
-	        String messageToBeSent = ("");
-	        getFilePath();//calling method getFilepath()
-	        String textFilePath = "./target/surefire-reports/" + textFile1;
-	        FileInputStream fstream = new FileInputStream(textFilePath);
-	        BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
-	        int num = 4;
-	        //Read File Line By Line
-	        String[] strLine = new String[num];
-	        for (int i = 0; i < num; i++) {
-	            strLine[i] = br.readLine();
-	            messageToBeSent = messageToBeSent + "<br>" + strLine[i] + "</br>";
-	        }
-	        br.close();
-	        return messageToBeSent;
-	    }
+	public String testSetResult() throws IOException {
+		String messageToBeSent = ("");
+		getFilePath();// calling method getFilepath()
+		String textFilePath = "./target/surefire-reports/" + textFile1;
+		FileInputStream fstream = new FileInputStream(textFilePath);
+		BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
+		int num = 4;
+		// Read File Line By Line
+		String[] strLine = new String[num];
+		for (int i = 0; i < num; i++) {
+			strLine[i] = br.readLine();
+			messageToBeSent = messageToBeSent + "<br>" + strLine[i] + "</br>";
+		}
+		br.close();
+		return messageToBeSent;
+	}
 }

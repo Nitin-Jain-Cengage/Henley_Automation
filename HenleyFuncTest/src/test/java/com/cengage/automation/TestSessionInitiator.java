@@ -84,6 +84,7 @@ public class TestSessionInitiator {
 		historyCourseContent = new History_CourseContent_Action(driver);
 		masterLoginPg = new Master_loginPage_Action(driver);
 		adminDashboardPg = new Master_Admin_Dashboard_Action(driver);
+		instTakeDeletePg = new InstructorTakeDeleteActions(driver);
 	}
 
 	public void launchApplication() {

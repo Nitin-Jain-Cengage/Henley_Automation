@@ -77,4 +77,13 @@ public class BasePage extends SeleniumWait{
     public void waitForSyncPage(){
     	expWait.waitForDomToLoad();
     }
+    
+    public void waitLong(int i){
+    	try {
+			Thread.sleep(i*1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
 }

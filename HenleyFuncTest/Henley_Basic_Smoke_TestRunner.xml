@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="CXP SmokeChecklist">
+<suite name="Henley Basic Smoke">
 
+
+	<test name="Chemistry Delete Take" preserve-order="true">
+		<parameter name="myName" value="chemistry" />
+		<classes>
+			<class
+				name="com.cengage.automation.BasicSmoke.tests.InstructorTakeDelete_Test" />
+		</classes>
+	</test>
 
 	<test name="Basic_Chemistry_SmokeTest" preserve-order="true">
 		<classes>
-			<class name="com.cengage.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" />
+			<class
+				name="com.cengage.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" />
 		</classes>
 	</test>
 
+	<test name="History Delete Take" preserve-order="true">
+		<parameter name="myName" value="history" />
+		<classes>
+			<class
+				name="com.cengage.automation.BasicSmoke.tests.InstructorTakeDelete_Test" />
+		</classes>
+	</test>
 
 	<test name="Basic_History_SmokeTest" preserve-order="true">
 		<classes>
-			<class name="com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest" />
+			<class
+				name="com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest" />
 		</classes>
 	</test>
 
 
-	
 </suite> 

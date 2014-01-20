@@ -29,9 +29,9 @@ users:
 Chemistry:
   BookName: General_Chemistry
 week:
-    weeknumber: week 5
+    weeknumber: week 6
 activity:
-    tutored: "3.2e Hydrated Compounds"
+    tutored: "4.1b Displacement Reactions"
 
 ##########################################################################################
 #
@@ -60,14 +60,17 @@ historyactivity:
 #
 ##########################################################################################
 
-product:
-   isbn: "Cengage Learning, Cengage Learning's US History Survey Instant Access, 1st Edition"
-   
-course:
-   name: "US History_Social"
-   
-student:
-   name: "student, qai70"       
+DeleteTake:
+  history:
+    isbn: "Cengage Learning, Cengage Learning's US History Survey Instant Access, 1st Edition"   
+    coursename: "US History_Social"
+    studentname: "student, qai70"
+
+
+  chemistry:
+    isbn: "Cengage Learning, IAC for Cengage Learning's General Chemistry, 1st Edition"   
+    coursename: "General_Chemistry"   
+    studentname: "student, qai70"       
     
 
 

@@ -29,7 +29,6 @@ public class Basic_Chemistry_SmokeTest {
 	@Test
 	public void loginToTheSSOFrontDoor() {
 		test.loginActionsPg.loginToTheApplication(getYamlValue("users.student.chemistryusername"), getYamlValue("users.student.chemistrypassword"));
-
 	}
 
 	@Test(dependsOnMethods = "loginToTheSSOFrontDoor")

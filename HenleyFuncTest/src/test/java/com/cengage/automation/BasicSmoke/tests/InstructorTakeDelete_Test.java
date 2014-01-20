@@ -4,6 +4,8 @@ import static com.cengage.automation.utils.YamlReader.getYamlValue;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.cengage.automation.TestSessionInitiator;
@@ -12,6 +14,7 @@ import com.cengage.automation.TestSessionInitiator;
 public class InstructorTakeDelete_Test {
 
 	TestSessionInitiator test;
+	static String bookType;
 
 	@BeforeClass
 	public void setUpClass() {
@@ -20,16 +23,19 @@ public class InstructorTakeDelete_Test {
 	}
 
 	@Test
-	public void loginToTheSSOFrontDoor() {
+	@Parameters({"myName"})
+	public void loginToTheSSOFrontDoor(@Optional("chemistry") String myName) {
 		test.loginActionsPg.loginToTheApplication(getYamlValue("users.instructor.username"), getYamlValue("users.instructor.password"));
+		bookType = myName.toLowerCase().trim();
 
 	}
 	
 	@Test(dependsOnMethods="loginToTheSSOFrontDoor") 
 	public void performOperationsOnHomePage()
 	{
-		test.instTakeDeletePg.selectProdIsbn(getYamlValue("product.isbn"));
-		test.instTakeDeletePg.clickOnCourseName(getYamlValue("course.name"), getYamlValue("testenv"));
+
+		test.instTakeDeletePg.selectProdIsbn(getYamlValue("DeleteTake."+bookType+".isbn"));
+		test.instTakeDeletePg.clickOnCourseName(getYamlValue("DeleteTake."+bookType+".coursename"), getYamlValue("testenv"));
 	}
 	
 	@Test(dependsOnMethods="performOperationsOnHomePage")
@@ -42,7 +48,7 @@ public class InstructorTakeDelete_Test {
 	@Test(dependsOnMethods="actionsOnWeekWidgetView")
 	public void actionsOnStudentTab(){
 		test.instTakeDeletePg.clickOnStudentRoasterTab();
-		test.instTakeDeletePg.clickOnStudent(getYamlValue("student.name"));
+		test.instTakeDeletePg.clickOnStudent(getYamlValue("DeleteTake."+bookType+".studentname"));
 	}
 	
 	@Test(dependsOnMethods="actionsOnStudentTab")

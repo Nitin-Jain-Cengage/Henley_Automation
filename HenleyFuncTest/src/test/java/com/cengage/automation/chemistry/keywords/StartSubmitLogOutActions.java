@@ -46,6 +46,7 @@ public class StartSubmitLogOutActions extends DifferentActivitiesActions {
 	public void clickOnSubmitMasterLink() {
 		startSubmitLogOutPg.checkOverviewStatus();
 		startSubmitLogOutPg.waitForSyncPage();
+		startSubmitLogOutPg.waitLong(4);
 		startSubmitLogOutPg.get_StateForSubmitMaster().isDisplayed();
 		startSubmitLogOutPg.getbtn_Next().isDisplayed();
 		startSubmitLogOutPg.getbtn_Next().click();
