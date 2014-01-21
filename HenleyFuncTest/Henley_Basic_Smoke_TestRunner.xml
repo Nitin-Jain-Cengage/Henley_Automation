@@ -7,14 +7,14 @@
 		<parameter name="myName" value="chemistry" />
 		<classes>
 			<class
-				name="com.cengage.automation.BasicSmoke.tests.InstructorTakeDelete_Test" />
+				name="com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test" />
 		</classes>
 	</test>
 
 	<test name="Basic_Chemistry_SmokeTest" preserve-order="true">
 		<classes>
 			<class
-				name="com.cengage.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" />
+				name="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" />
 		</classes>
 	</test>
 
@@ -22,14 +22,14 @@
 		<parameter name="myName" value="history" />
 		<classes>
 			<class
-				name="com.cengage.automation.BasicSmoke.tests.InstructorTakeDelete_Test" />
+				name="com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test" />
 		</classes>
 	</test>
 
 	<test name="Basic_History_SmokeTest" preserve-order="true">
 		<classes>
 			<class
-				name="com.cengage.automation.BasicSmoke.tests.Basic_History_SmokeTest" />
+				name="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" />
 		</classes>
 	</test>
 
