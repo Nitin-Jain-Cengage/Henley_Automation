@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Henley Basic Smoke]">
+  <parameter name="myName" value="history"/>
+  <test name="Basic_Chemistry_SmokeTest(failed)">
+    <classes>
+      <class name="com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="setUpClass"/>
+          <include name="takeresult"/>
+          <include name="takeresult"/>
+          <include name="tearDownClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test -->
+      <class name="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+          <include name="takeresult"/>
+        </methods>
+      </class> <!-- com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest -->
+      <class name="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest">
+        <methods>
+          <include name="Tc009_verifyStatusdisplayAsCompletedForTutoredActivity"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="Tc008_startAndSubmitTutoredActivity"/>
+          <include name="Tc007_AttemptingTutoredActivity"/>
+          <include name="captureScreenShotOnFailure"/>
+        </methods>
+      </class> <!-- com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest -->
+    </classes>
+  </test> <!-- Basic_Chemistry_SmokeTest(failed) -->
+</suite> <!-- Failed suite [Henley Basic Smoke] -->

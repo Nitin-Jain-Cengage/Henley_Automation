@@ -30,32 +30,76 @@ import com.cengage.mtx.automation.MasterCourseSmoke.Keyword.Master_loginPage_Act
 import com.cengage.mtx.automation.chemistry.keywords.*;
 import com.cengage.mtx.automation.history.keywords.History_CourseContent_Action;
 
+// TODO: Auto-generated Javadoc
 /**
- * 
+ * The Class TestSessionInitiator.
+ *
  * @author QAIT
  */
 public class TestSessionInitiator {
+	
+	/** The driver. */
 	WebDriver driver;
+	
+	/** The login actions pg. */
 	public LoginPageActions loginActionsPg;
+	
+	/** The stud home page actions pg. */
 	public StudentHomePageActions studHomePageActionsPg;
+	
+	/** The week widget actions pg. */
 	public WeekWidgetActions weekWidgetActionsPg;
+	
+	/** The diff activities actions pg. */
 	public DifferentActivitiesActions diffActivitiesActionsPg;
+	
+	/** The start submit log out actions pg. */
 	public StartSubmitLogOutActions startSubmitLogOutActionsPg;
+	
+	/** The history course content. */
 	public History_CourseContent_Action historyCourseContent;
+	
+	/** The master login pg. */
 	public Master_loginPage_Action masterLoginPg;
+	
+	/** The admin dashboard pg. */
 	public Master_Admin_Dashboard_Action adminDashboardPg;
+	
+	/** The inst take delete pg. */
 	public InstructorTakeDeleteActions instTakeDeletePg;
 	
+	/** The browser. */
 	String browser;
+	
+	/** The seleniumserver. */
 	String seleniumserver;
+	
+	/** The seleniumserverhost. */
 	String seleniumserverhost;
+	
+	/** The appbaseurl. */
 	String appbaseurl;
+	
+	/** The applicationpath. */
 	String applicationpath;
+	
+	/** The chromedriverpath. */
 	String chromedriverpath;
+	
+	/** The timeout. */
 	long timeout;
+	
+	/** The chrome options. */
 	Map<String, Object> chromeOptions = null;
+	
+	/** The capabilities. */
 	DesiredCapabilities capabilities;
 
+	/**
+	 * Instantiates a new test session initiator.
+	 *
+	 * @param datafileloc the datafileloc
+	 */
 	public TestSessionInitiator(String datafileloc) {
 		System.out.println(setYamlFilePath(datafileloc));
 		_getSessionConfig();
@@ -63,6 +107,9 @@ public class TestSessionInitiator {
 		_initPage();
 	}
 
+	/**
+	 * _configure browser.
+	 */
 	private void _configureBrowser() {
 		Map<String, Object> driverConfig = getYamlValues("selenium");
 		driver = WebDriverFactory.getDriver(driverConfig);
@@ -73,6 +120,9 @@ public class TestSessionInitiator {
 		driver.manage().window().setSize(dim);
 	}
 
+	/**
+	 * _get session config.
+	 */
 	private void _getSessionConfig() {
 		browser = getYamlValue("selenium.browser");
 		seleniumserver = getYamlValue("selenium.server");
@@ -82,6 +132,9 @@ public class TestSessionInitiator {
 		timeout = Integer.parseInt(getYamlValue("selenium.timeout"));
 	}
 
+	/**
+	 * _init page.
+	 */
 	private void _initPage() {
 		loginActionsPg = new LoginPageActions(driver);
 		studHomePageActionsPg = new StudentHomePageActions(driver);
@@ -94,24 +147,45 @@ public class TestSessionInitiator {
 		instTakeDeletePg = new InstructorTakeDeleteActions(driver);
 	}
 
+	/**
+	 * Launch application.
+	 */
 	public void launchApplication() {
 		System.out.println("The application url is :- " + applicationpath);
 		driver.get(applicationpath);
 	}
 
+	/**
+	 * Launch url.
+	 *
+	 * @param URL the url
+	 */
 	public void launchUrl(String URL) {
 		driver.get(URL);
 	}
 
+	/**
+	 * Launch application url.
+	 *
+	 * @param URL the url
+	 */
 	public void launchApplicationUrl(String URL) {
 		launchUrl(URL);
 	}
 
+	/**
+	 * Close browser session.
+	 */
 	public void closeBrowserSession() {
 		driver.quit();
 	}
 	
-	 public void takeScreenshotOfFailure(ITestResult result) {
+	 /**
+ 	 * Take screenshot of failure.
+ 	 *
+ 	 * @param result the result
+ 	 */
+ 	public void takeScreenshotOfFailure(ITestResult result) {
 	        Calendar calendar = Calendar.getInstance();
 	        SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 

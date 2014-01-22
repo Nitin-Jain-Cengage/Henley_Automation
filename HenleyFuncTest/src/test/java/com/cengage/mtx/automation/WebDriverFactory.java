@@ -21,11 +21,25 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
+// TODO: Auto-generated Javadoc
+/**
+ * A factory for creating WebDriver objects.
+ */
 @SuppressWarnings("unchecked")
 public class WebDriverFactory {
+	
+	/** The browser. */
 	private static String browser;
+	
+	/** The capabilities. */
 	private static DesiredCapabilities capabilities = new DesiredCapabilities();
 
+	/**
+	 * Gets the driver.
+	 *
+	 * @param seleniumconfig the seleniumconfig
+	 * @return the driver
+	 */
 	public static WebDriver getDriver(Map<String, Object> seleniumconfig) {
 		seleniumconfig = (Map<String, Object>) seleniumconfig.get("selenium");
 		browser = seleniumconfig.get("browser").toString();
@@ -46,6 +60,12 @@ public class WebDriverFactory {
 		return new FirefoxDriver();
 	}
 
+	/**
+	 * Sets the remote driver.
+	 *
+	 * @param selConfig the sel config
+	 * @return the web driver
+	 */
 	private static WebDriver setRemoteDriver(Map<String, Object> selConfig) {
 		DesiredCapabilities cap = null;
 		browser = selConfig.get("browser").toString();
@@ -69,25 +89,53 @@ public class WebDriverFactory {
 		return new RemoteWebDriver(selserverhost, capabilities);
 	}
 
+	/**
+	 * Sets the chrome driver.
+	 *
+	 * @param driverpath the driverpath
+	 * @return the web driver
+	 */
 	private static WebDriver setChromeDriver(String driverpath) {
 		System.setProperty("webdriver.chrome.driver", driverpath+"chromedriver.exe");
 		capabilities.setJavascriptEnabled(true);
 		return new ChromeDriver();
 	}
 
+	/**
+	 * Sets the internet explorer driver.
+	 *
+	 * @param driverpath the driverpath
+	 * @return the web driver
+	 */
 	private static WebDriver setInternetExplorerDriver(String driverpath) {
 		System.setProperty("webdriver.ie.driver", driverpath);
 		return new InternetExplorerDriver();
 	}
 
+	/**
+	 * Sets the safari driver.
+	 *
+	 * @return the web driver
+	 */
 	private static WebDriver setSafariDriver() {
 		return new SafariDriver();
 	}
 
+	/**
+	 * Creates a new WebDriver object.
+	 *
+	 * @param firefoxProfile the firefox profile
+	 * @return the web driver
+	 */
 	private static WebDriver createFirefoxDriver(FirefoxProfile firefoxProfile) {
 		return new FirefoxDriver(firefoxProfile);
 	}
 
+	/**
+	 * Gets the firefox profile.
+	 *
+	 * @return the firefox profile
+	 */
 	private static FirefoxProfile getFirefoxProfile() {
 		FirefoxProfile firefoxProfile = new FirefoxProfile();
 		try {

@@ -5,16 +5,32 @@ import org.testng.Assert;
 
 import com.cengage.mtx.automation.chemistry.pageuiobjects.StartSubmitLogOutUi;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class StartSubmitLogOutActions.
+ */
 public class StartSubmitLogOutActions extends DifferentActivitiesActions {
+	
+	/** The start submit log out pg. */
 	StartSubmitLogOutUi startSubmitLogOutPg;
+	
+	/** The driver. */
 	WebDriver driver;
 
+	/**
+	 * Instantiates a new start submit log out actions.
+	 *
+	 * @param driver the driver
+	 */
 	public StartSubmitLogOutActions(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 		startSubmitLogOutPg = new StartSubmitLogOutUi(driver);
 	}
 
+	/**
+	 * Click on start activity.
+	 */
 	public void clickOnStartActivity() {
 		startSubmitLogOutPg.switchToDefaultContent();
 		startSubmitLogOutPg.switchToFrame(startSubmitLogOutPg.getFrame_Content().getAttribute("id"));
@@ -23,6 +39,9 @@ public class StartSubmitLogOutActions extends DifferentActivitiesActions {
 		startSubmitLogOutPg.btn_startActivity.click();
 	}
 
+	/**
+	 * Click on start activity for tutored.
+	 */
 	public void clickOnStartActivityForTutored() {
 		startSubmitLogOutPg.switchToDefaultContent();
 		startSubmitLogOutPg.switchToFrame(startSubmitLogOutPg.getFrame_Content().getAttribute("id"));
@@ -33,6 +52,9 @@ public class StartSubmitLogOutActions extends DifferentActivitiesActions {
 	
 
 
+	/**
+	 * Click on submit link.
+	 */
 	public void clickOnSubmitLink() {
 		startSubmitLogOutPg.checkOverviewStatus();
 		startSubmitLogOutPg.waitForSyncPage();
@@ -43,6 +65,9 @@ public class StartSubmitLogOutActions extends DifferentActivitiesActions {
 		startSubmitLogOutPg.waitForSyncPage();
 	}
 	
+	/**
+	 * Click on submit master link.
+	 */
 	public void clickOnSubmitMasterLink() {
 		startSubmitLogOutPg.checkOverviewStatus();
 		startSubmitLogOutPg.waitForSyncPage();
@@ -57,6 +82,9 @@ public class StartSubmitLogOutActions extends DifferentActivitiesActions {
 		startSubmitLogOutPg.waitForSyncPage();
 	}
 
+	/**
+	 * Click on submit link for tutored.
+	 */
 	public void clickOnSubmitLinkForTutored() {
 		startSubmitLogOutPg.getOverviewGradedOut();
 		startSubmitLogOutPg.waitForSyncPage();
@@ -66,6 +94,9 @@ public class StartSubmitLogOutActions extends DifferentActivitiesActions {
 		startSubmitLogOutPg.waitForSyncPage();
 	}
 
+	/**
+	 * Click on submit button.
+	 */
 	public void clickOnSubmitButton() {
 		startSubmitLogOutPg.waitForSyncPage();
 		startSubmitLogOutPg.getBtn_SubmitActivity().isDisplayed();
@@ -75,29 +106,44 @@ public class StartSubmitLogOutActions extends DifferentActivitiesActions {
 		startSubmitLogOutPg.getBtn_ConceptMap().isDisplayed();
 	}
 
+	/**
+	 * Click on close.
+	 */
 	public void clickOnClose() {
 		startSubmitLogOutPg.switchToDefaultContent();
 		startSubmitLogOutPg.close.click();
 	}
 
+	/**
+	 * Start submit actions.
+	 */
 	public void startSubmitActions() {
 		clickOnStartActivity();
 		clickOnSubmitLink();
 		clickOnSubmitButton();
 	}
 	
+	/**
+	 * Start submit master actions.
+	 */
 	public void startSubmitMasterActions() {
 		clickOnStartActivity();
 		clickOnSubmitMasterLink();
 		clickOnSubmitButton();
 	}
 
+	/**
+	 * Log out from app.
+	 */
 	public void logOutFromApp() {
 		startSubmitLogOutPg.switchToDefaultContent();
 		startSubmitLogOutPg.clickOnLogOut();
 		startSubmitLogOutPg.waitForSyncPage();
 	}
 	
+	/**
+	 * Verify log out message.
+	 */
 	public void verifyLogOutMessage(){
 		System.out.println(startSubmitLogOutPg.getTxt_LogoutMessage().getText());
 		Assert.assertTrue(startSubmitLogOutPg.getTxt_LogoutMessage().getText().contains("You have logged out or timed out of your course.") &&

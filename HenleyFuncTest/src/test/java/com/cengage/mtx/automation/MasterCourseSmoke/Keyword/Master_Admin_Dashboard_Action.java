@@ -9,32 +9,62 @@ import org.testng.Reporter;
 
 import com.cengage.mtx.automation.MasterCourseSmoke.pageuiobjects.*;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Master_Admin_Dashboard_Action.
+ */
 public class Master_Admin_Dashboard_Action {
+	
+	/** The admin dashboard. */
 	Master_Admin_Dashboard_Ui adminDashboard;
 
+	/**
+	 * Instantiates a new master_ admin_ dashboard_ action.
+	 *
+	 * @param driver the driver
+	 */
 	public Master_Admin_Dashboard_Action(WebDriver driver) {
 		adminDashboard = new Master_Admin_Dashboard_Ui(driver);
 	}
 
+	/**
+	 * Verify user navigate to dashboard page.
+	 */
 	public void verifyUserNavigateToDashboardPage() {
 		adminDashboard.getinput_SearchTextBoxAdminDashboard().isDisplayed();
 	}
 
+	/**
+	 * Enter search term.
+	 *
+	 * @param bookName the book name
+	 */
 	public void enterSearchTerm(String bookName) {
 		adminDashboard.getinput_SearchTextBoxAdminDashboard().click();
 		adminDashboard.getinput_SearchTextBoxAdminDashboard().clear();
 		adminDashboard.getinput_SearchTextBoxAdminDashboard().sendKeys(bookName);
 	}
 
+	/**
+	 * Click on isbn book after search.
+	 *
+	 * @param isbnNumber the isbn number
+	 */
 	public void clickOnISBNBookAfterSearch(String isbnNumber) {
 		adminDashboard.getlink_isbnBook(isbnNumber).isDisplayed();
 		adminDashboard.getlink_isbnBook(isbnNumber).click();
 	}
 
+	/**
+	 * Verify book content loaded.
+	 */
 	public void verifyBookContentLoaded() {
 		adminDashboard.gettxt_ConeptMap().isDisplayed();
 	}
 
+	/**
+	 * Verify launch all activity.
+	 */
 	public void verifyLaunchAllActivity() {
 		List<WebElement> UnitList = adminDashboard.getLink_AllUnitName();
 		for (int i = 1; i < UnitList.size(); i++) {

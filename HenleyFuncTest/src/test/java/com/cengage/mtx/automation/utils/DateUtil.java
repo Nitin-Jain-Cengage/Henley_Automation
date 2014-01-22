@@ -8,8 +8,17 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.TimeZone;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class DateUtil.
+ */
 public class DateUtil {
 
+	/**
+	 * Gets the current date time.
+	 *
+	 * @return the current date time
+	 */
 	public static String getCurrentDateTime() {
 		String ranNum="";
 		DateFormat formatter = new SimpleDateFormat("MMM");
@@ -25,6 +34,11 @@ public class DateUtil {
 		return ranNum;
 	}
 
+	/**
+	 * Gets the date.
+	 *
+	 * @return the date
+	 */
 	public static String getDate(){
 		DateFormat formatter = new SimpleDateFormat("MM");
 		SimpleDateFormat monthParse = new SimpleDateFormat("MM");
@@ -43,6 +57,11 @@ public class DateUtil {
 	}
 
 
+	/**
+	 * Gets the tommorrows date.
+	 *
+	 * @return the tommorrows date
+	 */
 	public static String getTommorrowsDate(){
 		DateFormat formatter = new SimpleDateFormat("MM");
 		SimpleDateFormat monthParse = new SimpleDateFormat("MM");
@@ -60,6 +79,11 @@ public class DateUtil {
 		return calDate;
 	}
 
+	/**
+	 * Gets the tommorrows date fne.
+	 *
+	 * @return the tommorrows date fne
+	 */
 	public static String getTommorrowsDateFne(){
 		DateFormat formatter = new SimpleDateFormat("MMM");
 		SimpleDateFormat monthParse = new SimpleDateFormat("MM");
@@ -76,6 +100,11 @@ public class DateUtil {
 		return calDate;
 	}
 
+	/**
+	 * Gets the day after tommorrows date.
+	 *
+	 * @return the day after tommorrows date
+	 */
 	public static String getDayAfterTommorrowsDate(){
 		DateFormat formatter = new SimpleDateFormat("MM");
 		SimpleDateFormat monthParse = new SimpleDateFormat("MM");
@@ -93,6 +122,11 @@ public class DateUtil {
 		return calDate;
 	}
 
+	/**
+	 * Gets the day after tommorrows date fne.
+	 *
+	 * @return the day after tommorrows date fne
+	 */
 	public static String getDayAfterTommorrowsDateFne(){
 		DateFormat formatter = new SimpleDateFormat("MMM");
 		SimpleDateFormat monthParse = new SimpleDateFormat("MM");
@@ -109,6 +143,11 @@ public class DateUtil {
 		return calDate;
 	}
 
+	/**
+	 * Gets the day to day after tommorrows date.
+	 *
+	 * @return the day to day after tommorrows date
+	 */
 	public static String getDayToDayAfterTommorrowsDate(){
 		DateFormat formatter = new SimpleDateFormat("MM");
 		SimpleDateFormat monthParse = new SimpleDateFormat("MM");
@@ -126,6 +165,11 @@ public class DateUtil {
 		return calDate;
 	}
 
+	/**
+	 * Gets the day to day after tommorrows date fne.
+	 *
+	 * @return the day to day after tommorrows date fne
+	 */
 	public static String getDayToDayAfterTommorrowsDateFne(){
 		DateFormat formatter = new SimpleDateFormat("MMM");
 		SimpleDateFormat monthParse = new SimpleDateFormat("MM");
@@ -142,6 +186,12 @@ public class DateUtil {
 		return calDate;
 	}
 
+	/**
+	 * Gets the date.
+	 *
+	 * @param date the date
+	 * @return the date
+	 */
 	public static String getDate(String date){
 		if (date.equalsIgnoreCase("TomorrowDate"))
 			return getTommorrowsDate();
@@ -152,6 +202,12 @@ public class DateUtil {
 		return fixedDate();
 	}
 
+	/**
+	 * Gets the date for fne.
+	 *
+	 * @param date the date
+	 * @return the date for fne
+	 */
 	public static String getDateForFne(String date){
 		if (date.equalsIgnoreCase("TomorrowDate"))
 			return getTommorrowsDateFne();
@@ -162,6 +218,13 @@ public class DateUtil {
 		return fixedDate();
 	}
 
+	/**
+	 * Gets the time as per time zone.
+	 *
+	 * @param time the time
+	 * @param timeZOne the time z one
+	 * @return the time as per time zone
+	 */
 	public static String getTimeAsPerTimeZone(String time,String timeZOne){
 		time = time.split("Minutes")[1];
 		DateFormat formatter = new SimpleDateFormat("hh:mm a");
@@ -185,10 +248,20 @@ public class DateUtil {
 	//
 	//	}
 
+	/**
+	 * Fixed date.
+	 *
+	 * @return the string
+	 */
 	public static String fixedDate(){
 		return "12/31/2013";
 	}
 
+	/**
+	 * Gets the current time.
+	 *
+	 * @return the current time
+	 */
 	public static String getCurrentTime(){
 		Date date = new Date();
 		String strDateFormat = "HH:mm a";

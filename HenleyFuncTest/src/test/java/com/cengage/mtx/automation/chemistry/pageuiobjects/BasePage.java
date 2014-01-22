@@ -15,15 +15,25 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.cengage.mtx.automation.utils.SeleniumWait;
 
+// TODO: Auto-generated Javadoc
 /**
+ * The Class BasePage.
  *
  * @author prashantshukla
  */
 public class BasePage extends SeleniumWait{
 
+    /** The driver. */
     protected WebDriver driver;
+    
+    /** The exp wait. */
     protected SeleniumWait expWait;
 
+    /**
+     * Instantiates a new base page.
+     *
+     * @param driver the driver
+     */
     public BasePage(WebDriver driver) {
     	super(driver);
         PageFactory.initElements(driver, this);
@@ -31,14 +41,33 @@ public class BasePage extends SeleniumWait{
         expWait = new SeleniumWait(driver);
     }
 
+    /**
+     * Gets the page title.
+     *
+     * @return the page title
+     */
     public String getPageTitle() {
         return driver.getTitle();
     }
 
+    /**
+     * Gets the element by index.
+     *
+     * @param elementlist the elementlist
+     * @param index the index
+     * @return the element by index
+     */
     protected WebElement getElementByIndex(List<WebElement> elementlist, int index) {
         return elementlist.get(index);
     }
 
+    /**
+     * Gets the element by text.
+     *
+     * @param elementlist the elementlist
+     * @param elementtext the elementtext
+     * @return the element by text
+     */
     protected WebElement getElementByText(List<WebElement> elementlist, String elementtext) {
         WebElement element = null;
         for (WebElement elem : elementlist) {
@@ -52,6 +81,11 @@ public class BasePage extends SeleniumWait{
         return element;
     }
     
+    /**
+     * Gets the window handle.
+     *
+     * @return the window handle
+     */
     public void getWindowHandle(){
     	
     		for(String winHandle : driver.getWindowHandles()){
@@ -59,25 +93,44 @@ public class BasePage extends SeleniumWait{
        		}
         }
     
+    /**
+     * Switch to frame.
+     *
+     * @param stf the stf
+     */
     public void switchToFrame(String stf) {
 		WebDriverWait wait = new WebDriverWait(driver, 120);
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(stf));
 	}
     
+    /**
+     * Switch to default content.
+     */
     public void switchToDefaultContent() {
     	driver.switchTo().defaultContent();
 	}
     
+    /**
+     * Click on log out.
+     */
     public void clickOnLogOut(){
        	driver.findElement(By.xpath(".//*[@class[contains(.,'user-menu-link')]]")).click();
        	driver.findElement(By.id("logout_link")).click();
       	
     }
     
+    /**
+     * Wait for sync page.
+     */
     public void waitForSyncPage(){
     	expWait.waitForDomToLoad();
     }
     
+    /**
+     * Wait long.
+     *
+     * @param i the i
+     */
     public void waitLong(int i){
     	try {
 			Thread.sleep(i*1000);

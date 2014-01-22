@@ -1,0 +1,1878 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Henley_Basic_Smoke">
+              <span class="suite-name border-failed">Henley Basic Smoke</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Henley_Basic_Smoke">
+                    <span>C:\Users\shivamtiwari\workspace\HenleyFuncTest\Henley_Basic_Smoke_TestRunner.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Henley_Basic_Smoke">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Henley_Basic_Smoke">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Henley_Basic_Smoke">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Henley_Basic_Smoke">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Henley_Basic_Smoke">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Henley_Basic_Smoke">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">61 methods, 3 failed,   58 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Henley_Basic_Smoke" class="hide-methods failed suite-Henley_Basic_Smoke"> (hide)</a> <!-- hide-methods failed suite-Henley_Basic_Smoke -->
+                      <a href="#" panel-name="suite-Henley_Basic_Smoke" class="show-methods failed suite-Henley_Basic_Smoke"> (show)</a> <!-- show-methods failed suite-Henley_Basic_Smoke -->
+                    </span>
+                    <div class="method-list-content failed suite-Henley_Basic_Smoke">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc007_AttemptingTutoredActivity">Tc007_AttemptingTutoredActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc008_startAndSubmitTutoredActivity">Tc008_startAndSubmitTutoredActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc009_verifyStatusdisplayAsCompletedForTutoredActivity">Tc009_verifyStatusdisplayAsCompletedForTutoredActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Henley_Basic_Smoke -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Henley_Basic_Smoke" class="hide-methods passed suite-Henley_Basic_Smoke"> (hide)</a> <!-- hide-methods passed suite-Henley_Basic_Smoke -->
+                      <a href="#" panel-name="suite-Henley_Basic_Smoke" class="show-methods passed suite-Henley_Basic_Smoke"> (show)</a> <!-- show-methods passed suite-Henley_Basic_Smoke -->
+                    </span>
+                    <div class="method-list-content passed suite-Henley_Basic_Smoke">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc001_loginToTheSSOFrontDoor">Tc001_loginToTheSSOFrontDoor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc001_loginToTheSSOFrontDoor">Tc001_loginToTheSSOFrontDoor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc002_performOperationsOnHomePage">Tc002_performOperationsOnHomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc002_performOperationsOnHomePage">Tc002_performOperationsOnHomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc003_ActionsOnWeekWidgetView">Tc003_ActionsOnWeekWidgetView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc003_ActionsOnWeekWidgetView">Tc003_ActionsOnWeekWidgetView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc004_verifyAllAppsButtonDisplays">Tc004_verifyAllAppsButtonDisplays</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc004_verifyAllAppsButtonDisplays">Tc004_verifyAllAppsButtonDisplays</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc005_clickOnAppsAndVerifyAllOpen">Tc005_clickOnAppsAndVerifyAllOpen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc005_clickOnAppsAndVerifyAllOpen">Tc005_clickOnAppsAndVerifyAllOpen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider">Tc006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider">Tc006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc007_openInfographicActivity">Tc007_openInfographicActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc008_verifyInfographicActivityPanelDisplay">Tc008_verifyInfographicActivityPanelDisplay</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc009_startActivityButtonInfographicDisplayAndClick">Tc009_startActivityButtonInfographicDisplayAndClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc010_OpenIntroductionandQuickPrepActivity">Tc010_OpenIntroductionandQuickPrepActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc010_attemptInfographicActivityandSubmit">Tc010_attemptInfographicActivityandSubmit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc011_verifyCompleteStatusForInfographicActivity">Tc011_verifyCompleteStatusForInfographicActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc011_verifyStartActiviyandSubmit">Tc011_verifyStartActiviyandSubmit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc012_openSourceActivityActivity">Tc012_openSourceActivityActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc012_verifyIntroductionandQuickPrepActivityStatusAsCompleted">Tc012_verifyIntroductionandQuickPrepActivityStatusAsCompleted</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc013_AttemptingMasteryActivity">Tc013_AttemptingMasteryActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc013_verifySourceActivityPanelDisplay">Tc013_verifySourceActivityPanelDisplay</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc014_startActivityButtonSourceActivityDisplayAndClick">Tc014_startActivityButtonSourceActivityDisplayAndClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc014_startAndSubmitMasteryActivity">Tc014_startAndSubmitMasteryActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc015_attemptSourceActivityandSubmit">Tc015_attemptSourceActivityandSubmit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc015_verifyStatusdisplayAsCompletedForMasteryActivity">Tc015_verifyStatusdisplayAsCompletedForMasteryActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc016_AttemptingReviewandChallengeActivity">Tc016_AttemptingReviewandChallengeActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc016_verifyCompleteStatusForSourceActivity">Tc016_verifyCompleteStatusForSourceActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc017_openEssayActivity">Tc017_openEssayActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc017_startAndSubmitReviewandChallengeActivity">Tc017_startAndSubmitReviewandChallengeActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc018_verifyEssayActivityPanelDisplay">Tc018_verifyEssayActivityPanelDisplay</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc018_verifyStatusdisplayAsCompletedForReviewandChallengeActivity">Tc018_verifyStatusdisplayAsCompletedForReviewandChallengeActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc019_AttemptingStudyGuide">Tc019_AttemptingStudyGuide</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc019_startActivityButtonEssayActivityDisplayAndClick">Tc019_startActivityButtonEssayActivityDisplayAndClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc020_attemptEssayActivityandSubmit">Tc020_attemptEssayActivityandSubmit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc020_startAndSubmitStudyGuide">Tc020_startAndSubmitStudyGuide</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" hash-for-method="Tc021_logOutFromApplication">Tc021_logOutFromApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc021_verifyCompleteStatusForEssayActivity">Tc021_verifyCompleteStatusForEssayActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc022_openSingleAndMultipleSourceActivity">Tc022_openSingleAndMultipleSourceActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc023_verifySingleAndMultipleSourceActivityPanelDisplay">Tc023_verifySingleAndMultipleSourceActivityPanelDisplay</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc024_startActivityButtonSingleAndMultipleSourceActivityDisplayAndClick">Tc024_startActivityButtonSingleAndMultipleSourceActivityDisplayAndClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc025_attemptSingleAndMultipleSourceActivityandSubmit">Tc025_attemptSingleAndMultipleSourceActivityandSubmit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc026_verifyCompleteStatusForSingleAndMultipleSourceActivity">Tc026_verifyCompleteStatusForSingleAndMultipleSourceActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc027_openStudyActivity">Tc027_openStudyActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc028_verifyStudyActivityPanelDisplay">Tc028_verifyStudyActivityPanelDisplay</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc029_startStudyActivityAndClose">Tc029_startStudyActivityAndClose</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" hash-for-method="Tc030_logOutFromApplication">Tc030_logOutFromApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test" hash-for-method="actionsOnStudentTab">actionsOnStudentTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test" hash-for-method="actionsOnStudentTab">actionsOnStudentTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test" hash-for-method="actionsOnWeekWidgetView">actionsOnWeekWidgetView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test" hash-for-method="actionsOnWeekWidgetView">actionsOnWeekWidgetView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test" hash-for-method="loginToTheSSOFrontDoor(chemistry)">loginToTheSSOFrontDoor(chemistry)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test" hash-for-method="loginToTheSSOFrontDoor(history)">loginToTheSSOFrontDoor(history)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test" hash-for-method="performDeleteOfStudentScore">performDeleteOfStudentScore</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test" hash-for-method="performDeleteOfStudentScore">performDeleteOfStudentScore</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test" hash-for-method="performOperationsOnHomePage">performOperationsOnHomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Henley_Basic_Smoke" title="com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test" hash-for-method="performOperationsOnHomePage">performOperationsOnHomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Henley_Basic_Smoke -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Henley_Basic_Smoke" class="panel Henley_Basic_Smoke">
+          <div class="suite-Henley_Basic_Smoke-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc007_AttemptingTutoredActivity">
+                  </a> <!-- Tc007_AttemptingTutoredActivity -->
+                  <span class="method-name">Tc007_AttemptingTutoredActivity</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out after 90 seconds waiting for element to be clickable: By.xpath: .//div[contains(@class,&apos;dash-middle&apos;)]//div[contains(@title,&apos;4.1b Displacement Reactions&apos;)]
+Build info: version: &apos;2.36.0&apos;, revision: &apos;9b50f805d0a53506a5ee6a55be8669f106d8d34e&apos;, time: &apos;2013-10-17 11:09:21&apos;
+System info: host: &apos;DLLB0015&apos;, ip: &apos;172.16.2.218&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_43&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.cengage.mtx.automation.utils.SeleniumWait.getWhenClickable(SeleniumWait.java:52)
+	at com.cengage.mtx.automation.chemistry.pageuiobjects.DifferentActivitiesUi.getlbl_TutoredActivity_Clickable(DifferentActivitiesUi.java:122)
+	at com.cengage.mtx.automation.chemistry.keywords.DifferentActivitiesActions.clickOnTutoredActivity(DifferentActivitiesActions.java:65)
+	at com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest.Tc007_AttemptingTutoredActivity(Basic_Chemistry_SmokeTest.java:93)
+	at com.cengage.mtx.automation.BasicSmoke.tests.Henley_Basic_Smoke_TestRunner.Test(Henley_Basic_Smoke_TestRunner.java:25)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//div[contains(@class,&apos;dash-middle&apos;)]//div[contains(@title,&apos;4.1b Displacement Reactions&apos;)]&quot;}
+Command duration or timeout: 60.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.36.0&apos;, revision: &apos;9b50f805d0a53506a5ee6a55be8669f106d8d34e&apos;, time: &apos;2013-10-17 11:09:21&apos;
+System info: host: &apos;DLLB0015&apos;, ip: &apos;172.16.2.218&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_43&apos;
+Session ID: 6f710cc7-9d11-464e-84bc-1f4acd3d092d
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=26.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:579)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:126)
+	at org.openqa.selenium.support.ui.ExpectedConditions$14.apply(ExpectedConditions.java:412)
+	at org.openqa.selenium.support.ui.ExpectedConditions$14.apply(ExpectedConditions.java:405)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 54 more
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//div[contains(@class,&apos;dash-middle&apos;)]//div[contains(@title,&apos;4.1b Displacement Reactions&apos;)]&quot;}
+Build info: version: &apos;2.36.0&apos;, revision: &apos;9b50f805d0a53506a5ee6a55be8669f106d8d34e&apos;, time: &apos;2013-10-17 11:09:21&apos;
+System info: host: &apos;DLLB0015&apos;, ip: &apos;172.16.2.218&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_43&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SHIVAM~1/AppData/Local/Temp/anonymous2278455543000723990webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8882)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/SHIVAM~1/AppData/Local/Temp/anonymous2278455543000723990webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:396)
+... Removed 53 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc008_startAndSubmitTutoredActivity">
+                  </a> <!-- Tc008_startAndSubmitTutoredActivity -->
+                  <span class="method-name">Tc008_startAndSubmitTutoredActivity</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out after 120 seconds waiting for frame to be available: easyXDM_activityService_cxp_Target_provider
+Build info: version: &apos;2.36.0&apos;, revision: &apos;9b50f805d0a53506a5ee6a55be8669f106d8d34e&apos;, time: &apos;2013-10-17 11:09:21&apos;
+System info: host: &apos;DLLB0015&apos;, ip: &apos;172.16.2.218&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_43&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.cengage.mtx.automation.chemistry.pageuiobjects.BasePage.switchToFrame(BasePage.java:103)
+	at com.cengage.mtx.automation.chemistry.keywords.StartSubmitLogOutActions.clickOnStartActivityForTutored(StartSubmitLogOutActions.java:48)
+	at com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest.Tc008_startAndSubmitTutoredActivity(Basic_Chemistry_SmokeTest.java:102)
+	at com.cengage.mtx.automation.BasicSmoke.tests.Henley_Basic_Smoke_TestRunner.Test(Henley_Basic_Smoke_TestRunner.java:25)
+... Removed 49 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc009_verifyStatusdisplayAsCompletedForTutoredActivity">
+                  </a> <!-- Tc009_verifyStatusdisplayAsCompletedForTutoredActivity -->
+                  <span class="method-name">Tc009_verifyStatusdisplayAsCompletedForTutoredActivity</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out after 80 seconds waiting for visibility of element located by By.xpath: //div[contains(@class,&apos;dash-middle&apos;)]//ul[contains(@class,&apos;assignments &apos;)]//label[contains(text(),&apos;null&apos;)]/parent::div/parent::li/i[@class=&apos;statusIcon completed&apos;]
+Build info: version: &apos;2.36.0&apos;, revision: &apos;9b50f805d0a53506a5ee6a55be8669f106d8d34e&apos;, time: &apos;2013-10-17 11:09:21&apos;
+System info: host: &apos;DLLB0015&apos;, ip: &apos;172.16.2.218&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_43&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.cengage.mtx.automation.utils.SeleniumWait.getWhenVisible(SeleniumWait.java:37)
+	at com.cengage.mtx.automation.chemistry.pageuiobjects.WeekWidgetUi.getPreocessingIndicator(WeekWidgetUi.java:129)
+	at com.cengage.mtx.automation.chemistry.keywords.WeekWidgetActions.verifyStausDisplayAsCompleted(WeekWidgetActions.java:88)
+	at com.cengage.mtx.automation.chemistry.keywords.WeekWidgetActions.verifyActivityStatusDisplayAsCompleted(WeekWidgetActions.java:79)
+	at com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest.Tc009_verifyStatusdisplayAsCompletedForTutoredActivity(Basic_Chemistry_SmokeTest.java:112)
+	at com.cengage.mtx.automation.BasicSmoke.tests.Henley_Basic_Smoke_TestRunner.Test(Henley_Basic_Smoke_TestRunner.java:25)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&apos;dash-middle&apos;)]//ul[contains(@class,&apos;assignments &apos;)]//label[contains(text(),&apos;null&apos;)]/parent::div/parent::li/i[@class=&apos;statusIcon completed&apos;]&quot;}
+Command duration or timeout: 60.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.36.0&apos;, revision: &apos;9b50f805d0a53506a5ee6a55be8669f106d8d34e&apos;, time: &apos;2013-10-17 11:09:21&apos;
+System info: host: &apos;DLLB0015&apos;, ip: &apos;172.16.2.218&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_43&apos;
+Session ID: 6f710cc7-9d11-464e-84bc-1f4acd3d092d
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=26.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:579)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:126)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 55 more
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&apos;dash-middle&apos;)]//ul[contains(@class,&apos;assignments &apos;)]//label[contains(text(),&apos;null&apos;)]/parent::div/parent::li/i[@class=&apos;statusIcon completed&apos;]&quot;}
+Build info: version: &apos;2.36.0&apos;, revision: &apos;9b50f805d0a53506a5ee6a55be8669f106d8d34e&apos;, time: &apos;2013-10-17 11:09:21&apos;
+System info: host: &apos;DLLB0015&apos;, ip: &apos;172.16.2.218&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_43&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SHIVAM~1/AppData/Local/Temp/anonymous2278455543000723990webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8882)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/SHIVAM~1/AppData/Local/Temp/anonymous2278455543000723990webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:396)
+... Removed 53 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Henley_Basic_Smoke-class-failed -->
+          <div class="suite-Henley_Basic_Smoke-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="actionsOnStudentTab">
+                  </a> <!-- actionsOnStudentTab -->
+                  <span class="method-name">actionsOnStudentTab</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="actionsOnStudentTab">
+                  </a> <!-- actionsOnStudentTab -->
+                  <span class="method-name">actionsOnStudentTab</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="actionsOnWeekWidgetView">
+                  </a> <!-- actionsOnWeekWidgetView -->
+                  <span class="method-name">actionsOnWeekWidgetView</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="actionsOnWeekWidgetView">
+                  </a> <!-- actionsOnWeekWidgetView -->
+                  <span class="method-name">actionsOnWeekWidgetView</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginToTheSSOFrontDoor(chemistry)">
+                  </a> <!-- loginToTheSSOFrontDoor(chemistry) -->
+                  <span class="method-name">loginToTheSSOFrontDoor</span>
+                  <span class="parameters">(chemistry)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginToTheSSOFrontDoor(history)">
+                  </a> <!-- loginToTheSSOFrontDoor(history) -->
+                  <span class="method-name">loginToTheSSOFrontDoor</span>
+                  <span class="parameters">(history)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="performDeleteOfStudentScore">
+                  </a> <!-- performDeleteOfStudentScore -->
+                  <span class="method-name">performDeleteOfStudentScore</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="performDeleteOfStudentScore">
+                  </a> <!-- performDeleteOfStudentScore -->
+                  <span class="method-name">performDeleteOfStudentScore</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="performOperationsOnHomePage">
+                  </a> <!-- performOperationsOnHomePage -->
+                  <span class="method-name">performOperationsOnHomePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="performOperationsOnHomePage">
+                  </a> <!-- performOperationsOnHomePage -->
+                  <span class="method-name">performOperationsOnHomePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Henley_Basic_Smoke-class-passed -->
+          <div class="suite-Henley_Basic_Smoke-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc001_loginToTheSSOFrontDoor">
+                  </a> <!-- Tc001_loginToTheSSOFrontDoor -->
+                  <span class="method-name">Tc001_loginToTheSSOFrontDoor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc002_performOperationsOnHomePage">
+                  </a> <!-- Tc002_performOperationsOnHomePage -->
+                  <span class="method-name">Tc002_performOperationsOnHomePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc003_ActionsOnWeekWidgetView">
+                  </a> <!-- Tc003_ActionsOnWeekWidgetView -->
+                  <span class="method-name">Tc003_ActionsOnWeekWidgetView</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc004_verifyAllAppsButtonDisplays">
+                  </a> <!-- Tc004_verifyAllAppsButtonDisplays -->
+                  <span class="method-name">Tc004_verifyAllAppsButtonDisplays</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc005_clickOnAppsAndVerifyAllOpen">
+                  </a> <!-- Tc005_clickOnAppsAndVerifyAllOpen -->
+                  <span class="method-name">Tc005_clickOnAppsAndVerifyAllOpen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider">
+                  </a> <!-- Tc006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider -->
+                  <span class="method-name">Tc006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc007_openInfographicActivity">
+                  </a> <!-- Tc007_openInfographicActivity -->
+                  <span class="method-name">Tc007_openInfographicActivity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc008_verifyInfographicActivityPanelDisplay">
+                  </a> <!-- Tc008_verifyInfographicActivityPanelDisplay -->
+                  <span class="method-name">Tc008_verifyInfographicActivityPanelDisplay</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc009_startActivityButtonInfographicDisplayAndClick">
+                  </a> <!-- Tc009_startActivityButtonInfographicDisplayAndClick -->
+                  <span class="method-name">Tc009_startActivityButtonInfographicDisplayAndClick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc010_attemptInfographicActivityandSubmit">
+                  </a> <!-- Tc010_attemptInfographicActivityandSubmit -->
+                  <span class="method-name">Tc010_attemptInfographicActivityandSubmit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc011_verifyCompleteStatusForInfographicActivity">
+                  </a> <!-- Tc011_verifyCompleteStatusForInfographicActivity -->
+                  <span class="method-name">Tc011_verifyCompleteStatusForInfographicActivity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc012_openSourceActivityActivity">
+                  </a> <!-- Tc012_openSourceActivityActivity -->
+                  <span class="method-name">Tc012_openSourceActivityActivity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc013_verifySourceActivityPanelDisplay">
+                  </a> <!-- Tc013_verifySourceActivityPanelDisplay -->
+                  <span class="method-name">Tc013_verifySourceActivityPanelDisplay</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc014_startActivityButtonSourceActivityDisplayAndClick">
+                  </a> <!-- Tc014_startActivityButtonSourceActivityDisplayAndClick -->
+                  <span class="method-name">Tc014_startActivityButtonSourceActivityDisplayAndClick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc015_attemptSourceActivityandSubmit">
+                  </a> <!-- Tc015_attemptSourceActivityandSubmit -->
+                  <span class="method-name">Tc015_attemptSourceActivityandSubmit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc016_verifyCompleteStatusForSourceActivity">
+                  </a> <!-- Tc016_verifyCompleteStatusForSourceActivity -->
+                  <span class="method-name">Tc016_verifyCompleteStatusForSourceActivity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc017_openEssayActivity">
+                  </a> <!-- Tc017_openEssayActivity -->
+                  <span class="method-name">Tc017_openEssayActivity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc018_verifyEssayActivityPanelDisplay">
+                  </a> <!-- Tc018_verifyEssayActivityPanelDisplay -->
+                  <span class="method-name">Tc018_verifyEssayActivityPanelDisplay</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc019_startActivityButtonEssayActivityDisplayAndClick">
+                  </a> <!-- Tc019_startActivityButtonEssayActivityDisplayAndClick -->
+                  <span class="method-name">Tc019_startActivityButtonEssayActivityDisplayAndClick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc020_attemptEssayActivityandSubmit">
+                  </a> <!-- Tc020_attemptEssayActivityandSubmit -->
+                  <span class="method-name">Tc020_attemptEssayActivityandSubmit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc021_verifyCompleteStatusForEssayActivity">
+                  </a> <!-- Tc021_verifyCompleteStatusForEssayActivity -->
+                  <span class="method-name">Tc021_verifyCompleteStatusForEssayActivity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc022_openSingleAndMultipleSourceActivity">
+                  </a> <!-- Tc022_openSingleAndMultipleSourceActivity -->
+                  <span class="method-name">Tc022_openSingleAndMultipleSourceActivity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc023_verifySingleAndMultipleSourceActivityPanelDisplay">
+                  </a> <!-- Tc023_verifySingleAndMultipleSourceActivityPanelDisplay -->
+                  <span class="method-name">Tc023_verifySingleAndMultipleSourceActivityPanelDisplay</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc024_startActivityButtonSingleAndMultipleSourceActivityDisplayAndClick">
+                  </a> <!-- Tc024_startActivityButtonSingleAndMultipleSourceActivityDisplayAndClick -->
+                  <span class="method-name">Tc024_startActivityButtonSingleAndMultipleSourceActivityDisplayAndClick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc025_attemptSingleAndMultipleSourceActivityandSubmit">
+                  </a> <!-- Tc025_attemptSingleAndMultipleSourceActivityandSubmit -->
+                  <span class="method-name">Tc025_attemptSingleAndMultipleSourceActivityandSubmit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc026_verifyCompleteStatusForSingleAndMultipleSourceActivity">
+                  </a> <!-- Tc026_verifyCompleteStatusForSingleAndMultipleSourceActivity -->
+                  <span class="method-name">Tc026_verifyCompleteStatusForSingleAndMultipleSourceActivity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc027_openStudyActivity">
+                  </a> <!-- Tc027_openStudyActivity -->
+                  <span class="method-name">Tc027_openStudyActivity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc028_verifyStudyActivityPanelDisplay">
+                  </a> <!-- Tc028_verifyStudyActivityPanelDisplay -->
+                  <span class="method-name">Tc028_verifyStudyActivityPanelDisplay</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc029_startStudyActivityAndClose">
+                  </a> <!-- Tc029_startStudyActivityAndClose -->
+                  <span class="method-name">Tc029_startStudyActivityAndClose</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc030_logOutFromApplication">
+                  </a> <!-- Tc030_logOutFromApplication -->
+                  <span class="method-name">Tc030_logOutFromApplication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Henley_Basic_Smoke-class-passed -->
+          <div class="suite-Henley_Basic_Smoke-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc001_loginToTheSSOFrontDoor">
+                  </a> <!-- Tc001_loginToTheSSOFrontDoor -->
+                  <span class="method-name">Tc001_loginToTheSSOFrontDoor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc002_performOperationsOnHomePage">
+                  </a> <!-- Tc002_performOperationsOnHomePage -->
+                  <span class="method-name">Tc002_performOperationsOnHomePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc003_ActionsOnWeekWidgetView">
+                  </a> <!-- Tc003_ActionsOnWeekWidgetView -->
+                  <span class="method-name">Tc003_ActionsOnWeekWidgetView</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc004_verifyAllAppsButtonDisplays">
+                  </a> <!-- Tc004_verifyAllAppsButtonDisplays -->
+                  <span class="method-name">Tc004_verifyAllAppsButtonDisplays</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc005_clickOnAppsAndVerifyAllOpen">
+                  </a> <!-- Tc005_clickOnAppsAndVerifyAllOpen -->
+                  <span class="method-name">Tc005_clickOnAppsAndVerifyAllOpen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider">
+                  </a> <!-- Tc006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider -->
+                  <span class="method-name">Tc006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc010_OpenIntroductionandQuickPrepActivity">
+                  </a> <!-- Tc010_OpenIntroductionandQuickPrepActivity -->
+                  <span class="method-name">Tc010_OpenIntroductionandQuickPrepActivity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc011_verifyStartActiviyandSubmit">
+                  </a> <!-- Tc011_verifyStartActiviyandSubmit -->
+                  <span class="method-name">Tc011_verifyStartActiviyandSubmit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc012_verifyIntroductionandQuickPrepActivityStatusAsCompleted">
+                  </a> <!-- Tc012_verifyIntroductionandQuickPrepActivityStatusAsCompleted -->
+                  <span class="method-name">Tc012_verifyIntroductionandQuickPrepActivityStatusAsCompleted</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc013_AttemptingMasteryActivity">
+                  </a> <!-- Tc013_AttemptingMasteryActivity -->
+                  <span class="method-name">Tc013_AttemptingMasteryActivity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc014_startAndSubmitMasteryActivity">
+                  </a> <!-- Tc014_startAndSubmitMasteryActivity -->
+                  <span class="method-name">Tc014_startAndSubmitMasteryActivity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc015_verifyStatusdisplayAsCompletedForMasteryActivity">
+                  </a> <!-- Tc015_verifyStatusdisplayAsCompletedForMasteryActivity -->
+                  <span class="method-name">Tc015_verifyStatusdisplayAsCompletedForMasteryActivity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc016_AttemptingReviewandChallengeActivity">
+                  </a> <!-- Tc016_AttemptingReviewandChallengeActivity -->
+                  <span class="method-name">Tc016_AttemptingReviewandChallengeActivity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc017_startAndSubmitReviewandChallengeActivity">
+                  </a> <!-- Tc017_startAndSubmitReviewandChallengeActivity -->
+                  <span class="method-name">Tc017_startAndSubmitReviewandChallengeActivity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc018_verifyStatusdisplayAsCompletedForReviewandChallengeActivity">
+                  </a> <!-- Tc018_verifyStatusdisplayAsCompletedForReviewandChallengeActivity -->
+                  <span class="method-name">Tc018_verifyStatusdisplayAsCompletedForReviewandChallengeActivity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc019_AttemptingStudyGuide">
+                  </a> <!-- Tc019_AttemptingStudyGuide -->
+                  <span class="method-name">Tc019_AttemptingStudyGuide</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc020_startAndSubmitStudyGuide">
+                  </a> <!-- Tc020_startAndSubmitStudyGuide -->
+                  <span class="method-name">Tc020_startAndSubmitStudyGuide</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tc021_logOutFromApplication">
+                  </a> <!-- Tc021_logOutFromApplication -->
+                  <span class="method-name">Tc021_logOutFromApplication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Henley_Basic_Smoke-class-passed -->
+        </div> <!-- panel Henley_Basic_Smoke -->
+        <div panel-name="test-xml-Henley_Basic_Smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\shivamtiwari\workspace\HenleyFuncTest\Henley_Basic_Smoke_TestRunner.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Henley Basic Smoke&quot;&gt;
+  &lt;test name=&quot;Chemistry Delete Take&quot;&gt;
+    &lt;parameter name=&quot;myName&quot; value=&quot;chemistry&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Chemistry Delete Take --&gt;
+  &lt;test name=&quot;Basic_Chemistry_SmokeTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Basic_Chemistry_SmokeTest --&gt;
+  &lt;test name=&quot;History Delete Take&quot;&gt;
+    &lt;parameter name=&quot;myName&quot; value=&quot;history&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- History Delete Take --&gt;
+  &lt;test name=&quot;Basic_History_SmokeTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Basic_History_SmokeTest --&gt;
+&lt;/suite&gt; &lt;!-- Henley Basic Smoke --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Henley_Basic_Smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Henley Basic Smoke</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Chemistry Delete Take (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Basic_Chemistry_SmokeTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">History Delete Take (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Basic_History_SmokeTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Henley_Basic_Smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Henley Basic Smoke</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Henley_Basic_Smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Henley Basic Smoke</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Henley_Basic_Smoke');
+function tableData_Henley_Basic_Smoke() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(61);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Tc008_startAndSubmitTutoredActivity')
+data.setCell(0, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(0, 3, 188443);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Tc009_verifyStatusdisplayAsCompletedForTutoredActivity')
+data.setCell(1, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(1, 3, 120640);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Tc007_AttemptingTutoredActivity')
+data.setCell(2, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(2, 3, 120630);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'performDeleteOfStudentScore')
+data.setCell(3, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test')
+data.setCell(3, 3, 71286);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Tc014_startAndSubmitMasteryActivity')
+data.setCell(4, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(4, 3, 71176);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Tc011_verifyStartActiviyandSubmit')
+data.setCell(5, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(5, 3, 69797);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Tc005_clickOnAppsAndVerifyAllOpen')
+data.setCell(6, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(6, 3, 33740);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'performOperationsOnHomePage')
+data.setCell(7, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test')
+data.setCell(7, 3, 33437);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'performOperationsOnHomePage')
+data.setCell(8, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test')
+data.setCell(8, 3, 31529);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Tc002_performOperationsOnHomePage')
+data.setCell(9, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(9, 3, 28137);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Tc015_attemptSourceActivityandSubmit')
+data.setCell(10, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(10, 3, 22453);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'Tc002_performOperationsOnHomePage')
+data.setCell(11, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(11, 3, 22424);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'Tc005_clickOnAppsAndVerifyAllOpen')
+data.setCell(12, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(12, 3, 20236);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'actionsOnWeekWidgetView')
+data.setCell(13, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test')
+data.setCell(13, 3, 17820);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'performDeleteOfStudentScore')
+data.setCell(14, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test')
+data.setCell(14, 3, 17376);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'loginToTheSSOFrontDoor')
+data.setCell(15, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test')
+data.setCell(15, 3, 15699);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'loginToTheSSOFrontDoor')
+data.setCell(16, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test')
+data.setCell(16, 3, 13619);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'Tc003_ActionsOnWeekWidgetView')
+data.setCell(17, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(17, 3, 13209);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'actionsOnWeekWidgetView')
+data.setCell(18, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test')
+data.setCell(18, 3, 11931);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'Tc017_startAndSubmitReviewandChallengeActivity')
+data.setCell(19, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(19, 3, 11262);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'Tc001_loginToTheSSOFrontDoor')
+data.setCell(20, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(20, 3, 10650);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'Tc001_loginToTheSSOFrontDoor')
+data.setCell(21, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(21, 3, 9749);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'Tc010_attemptInfographicActivityandSubmit')
+data.setCell(22, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(22, 3, 8758);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'Tc003_ActionsOnWeekWidgetView')
+data.setCell(23, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(23, 3, 7808);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'Tc012_verifyIntroductionandQuickPrepActivityStatusAsCompleted')
+data.setCell(24, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(24, 3, 7367);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'Tc018_verifyStatusdisplayAsCompletedForReviewandChallengeActivity')
+data.setCell(25, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(25, 3, 7332);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'Tc020_attemptEssayActivityandSubmit')
+data.setCell(26, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(26, 3, 7305);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'Tc025_attemptSingleAndMultipleSourceActivityandSubmit')
+data.setCell(27, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(27, 3, 7211);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'actionsOnStudentTab')
+data.setCell(28, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test')
+data.setCell(28, 3, 7104);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'Tc008_verifyInfographicActivityPanelDisplay')
+data.setCell(29, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(29, 3, 6987);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'Tc015_verifyStatusdisplayAsCompletedForMasteryActivity')
+data.setCell(30, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(30, 3, 6946);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'Tc009_startActivityButtonInfographicDisplayAndClick')
+data.setCell(31, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(31, 3, 6180);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'actionsOnStudentTab')
+data.setCell(32, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test')
+data.setCell(32, 3, 5260);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'Tc014_startActivityButtonSourceActivityDisplayAndClick')
+data.setCell(33, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(33, 3, 4364);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'Tc024_startActivityButtonSingleAndMultipleSourceActivityDisplayAndClick')
+data.setCell(34, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(34, 3, 3762);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'Tc004_verifyAllAppsButtonDisplays')
+data.setCell(35, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(35, 3, 3696);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'Tc011_verifyCompleteStatusForInfographicActivity')
+data.setCell(36, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(36, 3, 3493);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'Tc029_startStudyActivityAndClose')
+data.setCell(37, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(37, 3, 3350);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'Tc019_startActivityButtonEssayActivityDisplayAndClick')
+data.setCell(38, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(38, 3, 2559);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'Tc010_OpenIntroductionandQuickPrepActivity')
+data.setCell(39, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(39, 3, 2523);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'Tc004_verifyAllAppsButtonDisplays')
+data.setCell(40, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(40, 3, 2301);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'Tc030_logOutFromApplication')
+data.setCell(41, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(41, 3, 2157);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'Tc021_logOutFromApplication')
+data.setCell(42, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(42, 3, 2145);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'Tc028_verifyStudyActivityPanelDisplay')
+data.setCell(43, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(43, 3, 1401);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'Tc023_verifySingleAndMultipleSourceActivityPanelDisplay')
+data.setCell(44, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(44, 3, 1332);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'Tc026_verifyCompleteStatusForSingleAndMultipleSourceActivity')
+data.setCell(45, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(45, 3, 1325);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'Tc021_verifyCompleteStatusForEssayActivity')
+data.setCell(46, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(46, 3, 1240);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'Tc013_verifySourceActivityPanelDisplay')
+data.setCell(47, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(47, 3, 1239);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'Tc018_verifyEssayActivityPanelDisplay')
+data.setCell(48, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(48, 3, 1164);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'Tc016_verifyCompleteStatusForSourceActivity')
+data.setCell(49, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(49, 3, 1147);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'Tc013_AttemptingMasteryActivity')
+data.setCell(50, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(50, 3, 1117);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'Tc016_AttemptingReviewandChallengeActivity')
+data.setCell(51, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(51, 3, 1060);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'Tc027_openStudyActivity')
+data.setCell(52, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(52, 3, 998);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'Tc017_openEssayActivity')
+data.setCell(53, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(53, 3, 854);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'Tc019_AttemptingStudyGuide')
+data.setCell(54, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(54, 3, 774);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'Tc012_openSourceActivityActivity')
+data.setCell(55, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(55, 3, 580);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'Tc022_openSingleAndMultipleSourceActivity')
+data.setCell(56, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(56, 3, 521);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'Tc020_startAndSubmitStudyGuide')
+data.setCell(57, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(57, 3, 490);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'Tc006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider')
+data.setCell(58, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest')
+data.setCell(58, 3, 213);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'Tc007_openInfographicActivity')
+data.setCell(59, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(59, 3, 203);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'Tc006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider')
+data.setCell(60, 2, 'com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest')
+data.setCell(60, 3, 185);
+window.suiteTableData['Henley_Basic_Smoke']= { tableData: data, tableDiv: 'times-div-Henley_Basic_Smoke'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 17 minutes</span>
+              <div id="times-div-Henley_Basic_Smoke">
+              </div> <!-- times-div-Henley_Basic_Smoke -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Henley_Basic_Smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Henley Basic Smoke</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Henley_Basic_Smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Henley_Basic_Smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">loginToTheSSOFrontDoor(chemistry)</span>
+                <span class="method-start">36332 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=loginToTheSSOFrontDoor status=SUCCESS method=InstructorTakeDelete_Test.loginToTheSS...)</span>
+                <span class="method-start">52031 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">performOperationsOnHomePage</span>
+                <span class="method-start">52041 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">actionsOnWeekWidgetView</span>
+                <span class="method-start">83570 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=performOperationsOnHomePage status=SUCCESS method=InstructorTakeDelete_Test.perform...)</span>
+                <span class="method-start">83570 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">actionsOnStudentTab</span>
+                <span class="method-start">101390 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=actionsOnWeekWidgetView status=SUCCESS method=InstructorTakeDelete_Test.actionsOnWe...)</span>
+                <span class="method-start">101390 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">performDeleteOfStudentScore</span>
+                <span class="method-start">106650 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=actionsOnStudentTab status=SUCCESS method=InstructorTakeDelete_Test.actionsOnStuden...)</span>
+                <span class="method-start">106650 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=performDeleteOfStudentScore status=SUCCESS method=InstructorTakeDelete_Test.perform...)</span>
+                <span class="method-start">177936 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">177936 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">178876 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Tc001_loginToTheSSOFrontDoor</span>
+                <span class="method-start">213074 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc001_loginToTheSSOFrontDoor status=SUCCESS method=Basic_Chemistry_SmokeTest.Tc001_...)</span>
+                <span class="method-start">223724 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc002_performOperationsOnHomePage</span>
+                <span class="method-start">223725 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tc003_ActionsOnWeekWidgetView</span>
+                <span class="method-start">251862 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc002_performOperationsOnHomePage status=SUCCESS method=Basic_Chemistry_SmokeTest.T...)</span>
+                <span class="method-start">251862 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc003_ActionsOnWeekWidgetView status=SUCCESS method=Basic_Chemistry_SmokeTest.Tc003...)</span>
+                <span class="method-start">265071 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc004_verifyAllAppsButtonDisplays</span>
+                <span class="method-start">265072 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc004_verifyAllAppsButtonDisplays status=SUCCESS method=Basic_Chemistry_SmokeTest.T...)</span>
+                <span class="method-start">268768 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc005_clickOnAppsAndVerifyAllOpen</span>
+                <span class="method-start">268769 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc005_clickOnAppsAndVerifyAllOpen status=SUCCESS method=Basic_Chemistry_SmokeTest.T...)</span>
+                <span class="method-start">302509 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider</span>
+                <span class="method-start">302510 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider status=SUCCESS method=B...)</span>
+                <span class="method-start">302723 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Tc007_AttemptingTutoredActivity</span>
+                <span class="method-start">302724 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc007_AttemptingTutoredActivity status=FAILURE method=Basic_Chemistry_SmokeTest.Tc0...)</span>
+                <span class="method-start">423355 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Tc008_startAndSubmitTutoredActivity</span>
+                <span class="method-start">423768 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc008_startAndSubmitTutoredActivity status=FAILURE method=Basic_Chemistry_SmokeTest...)</span>
+                <span class="method-start">612211 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Tc009_verifyStatusdisplayAsCompletedForTutoredActivity</span>
+                <span class="method-start">612497 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc009_verifyStatusdisplayAsCompletedForTutoredActivity status=FAILURE method=Basic_...)</span>
+                <span class="method-start">733137 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc010_OpenIntroductionandQuickPrepActivity</span>
+                <span class="method-start">733466 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc010_OpenIntroductionandQuickPrepActivity status=SUCCESS method=Basic_Chemistry_Sm...)</span>
+                <span class="method-start">735989 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc011_verifyStartActiviyandSubmit</span>
+                <span class="method-start">735990 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc011_verifyStartActiviyandSubmit status=SUCCESS method=Basic_Chemistry_SmokeTest.T...)</span>
+                <span class="method-start">805787 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc012_verifyIntroductionandQuickPrepActivityStatusAsCompleted</span>
+                <span class="method-start">805788 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tc013_AttemptingMasteryActivity</span>
+                <span class="method-start">813155 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc012_verifyIntroductionandQuickPrepActivityStatusAsCompleted status=SUCCESS method...)</span>
+                <span class="method-start">813155 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc014_startAndSubmitMasteryActivity</span>
+                <span class="method-start">814272 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc013_AttemptingMasteryActivity status=SUCCESS method=Basic_Chemistry_SmokeTest.Tc0...)</span>
+                <span class="method-start">814272 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc014_startAndSubmitMasteryActivity status=SUCCESS method=Basic_Chemistry_SmokeTest...)</span>
+                <span class="method-start">885448 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc015_verifyStatusdisplayAsCompletedForMasteryActivity</span>
+                <span class="method-start">885449 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tc016_AttemptingReviewandChallengeActivity</span>
+                <span class="method-start">892395 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc015_verifyStatusdisplayAsCompletedForMasteryActivity status=SUCCESS method=Basic_...)</span>
+                <span class="method-start">892395 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc016_AttemptingReviewandChallengeActivity status=SUCCESS method=Basic_Chemistry_Sm...)</span>
+                <span class="method-start">893455 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc017_startAndSubmitReviewandChallengeActivity</span>
+                <span class="method-start">893456 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tc018_verifyStatusdisplayAsCompletedForReviewandChallengeActivity</span>
+                <span class="method-start">904718 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc017_startAndSubmitReviewandChallengeActivity status=SUCCESS method=Basic_Chemistr...)</span>
+                <span class="method-start">904718 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc018_verifyStatusdisplayAsCompletedForReviewandChallengeActivity status=SUCCESS me...)</span>
+                <span class="method-start">912050 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc019_AttemptingStudyGuide</span>
+                <span class="method-start">912051 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc019_AttemptingStudyGuide status=SUCCESS method=Basic_Chemistry_SmokeTest.Tc019_At...)</span>
+                <span class="method-start">912825 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc020_startAndSubmitStudyGuide</span>
+                <span class="method-start">912826 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tc021_logOutFromApplication</span>
+                <span class="method-start">913316 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc020_startAndSubmitStudyGuide status=SUCCESS method=Basic_Chemistry_SmokeTest.Tc02...)</span>
+                <span class="method-start">913316 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShotOnFailure([TestResult name=Tc021_logOutFromApplication status=SUCCESS method=Basic_Chemistry_SmokeTest.Tc021_l...)</span>
+                <span class="method-start">915461 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">915461 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">916260 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">loginToTheSSOFrontDoor(history)</span>
+                <span class="method-start">953032 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=loginToTheSSOFrontDoor status=SUCCESS method=InstructorTakeDelete_Test.loginToTheSS...)</span>
+                <span class="method-start">966651 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">performOperationsOnHomePage</span>
+                <span class="method-start">966652 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">actionsOnWeekWidgetView</span>
+                <span class="method-start">1000089 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=performOperationsOnHomePage status=SUCCESS method=InstructorTakeDelete_Test.perform...)</span>
+                <span class="method-start">1000089 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=actionsOnWeekWidgetView status=SUCCESS method=InstructorTakeDelete_Test.actionsOnWe...)</span>
+                <span class="method-start">1012020 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">actionsOnStudentTab</span>
+                <span class="method-start">1012021 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">performDeleteOfStudentScore</span>
+                <span class="method-start">1019125 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=actionsOnStudentTab status=SUCCESS method=InstructorTakeDelete_Test.actionsOnStuden...)</span>
+                <span class="method-start">1019125 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=performDeleteOfStudentScore status=SUCCESS method=InstructorTakeDelete_Test.perform...)</span>
+                <span class="method-start">1036501 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">1036502 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">1037195 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Tc001_loginToTheSSOFrontDoor</span>
+                <span class="method-start">1073014 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tc002_performOperationsOnHomePage</span>
+                <span class="method-start">1082764 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc001_loginToTheSSOFrontDoor status=SUCCESS method=Basic_History_SmokeTest.Tc001_lo...)</span>
+                <span class="method-start">1082764 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc002_performOperationsOnHomePage status=SUCCESS method=Basic_History_SmokeTest.Tc0...)</span>
+                <span class="method-start">1105188 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc003_ActionsOnWeekWidgetView</span>
+                <span class="method-start">1105189 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc003_ActionsOnWeekWidgetView status=SUCCESS method=Basic_History_SmokeTest.Tc003_A...)</span>
+                <span class="method-start">1112997 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc004_verifyAllAppsButtonDisplays</span>
+                <span class="method-start">1112998 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tc005_clickOnAppsAndVerifyAllOpen</span>
+                <span class="method-start">1115299 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc004_verifyAllAppsButtonDisplays status=SUCCESS method=Basic_History_SmokeTest.Tc0...)</span>
+                <span class="method-start">1115299 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider</span>
+                <span class="method-start">1135535 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc005_clickOnAppsAndVerifyAllOpen status=SUCCESS method=Basic_History_SmokeTest.Tc0...)</span>
+                <span class="method-start">1135535 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider status=SUCCESS method=B...)</span>
+                <span class="method-start">1135720 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc007_openInfographicActivity</span>
+                <span class="method-start">1135721 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tc008_verifyInfographicActivityPanelDisplay</span>
+                <span class="method-start">1135924 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc007_openInfographicActivity status=SUCCESS method=Basic_History_SmokeTest.Tc007_o...)</span>
+                <span class="method-start">1135924 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc008_verifyInfographicActivityPanelDisplay status=SUCCESS method=Basic_History_Smo...)</span>
+                <span class="method-start">1142911 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc009_startActivityButtonInfographicDisplayAndClick</span>
+                <span class="method-start">1142912 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tc010_attemptInfographicActivityandSubmit</span>
+                <span class="method-start">1149092 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc009_startActivityButtonInfographicDisplayAndClick status=SUCCESS method=Basic_His...)</span>
+                <span class="method-start">1149092 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc011_verifyCompleteStatusForInfographicActivity</span>
+                <span class="method-start">1157850 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc010_attemptInfographicActivityandSubmit status=SUCCESS method=Basic_History_Smoke...)</span>
+                <span class="method-start">1157850 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc011_verifyCompleteStatusForInfographicActivity status=SUCCESS method=Basic_Histor...)</span>
+                <span class="method-start">1161343 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc012_openSourceActivityActivity</span>
+                <span class="method-start">1161344 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tc013_verifySourceActivityPanelDisplay</span>
+                <span class="method-start">1161924 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc012_openSourceActivityActivity status=SUCCESS method=Basic_History_SmokeTest.Tc01...)</span>
+                <span class="method-start">1161924 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc013_verifySourceActivityPanelDisplay status=SUCCESS method=Basic_History_SmokeTes...)</span>
+                <span class="method-start">1163163 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc014_startActivityButtonSourceActivityDisplayAndClick</span>
+                <span class="method-start">1163164 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tc015_attemptSourceActivityandSubmit</span>
+                <span class="method-start">1167528 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc014_startActivityButtonSourceActivityDisplayAndClick status=SUCCESS method=Basic_...)</span>
+                <span class="method-start">1167528 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc016_verifyCompleteStatusForSourceActivity</span>
+                <span class="method-start">1189982 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc015_attemptSourceActivityandSubmit status=SUCCESS method=Basic_History_SmokeTest....)</span>
+                <span class="method-start">1189982 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc016_verifyCompleteStatusForSourceActivity status=SUCCESS method=Basic_History_Smo...)</span>
+                <span class="method-start">1191129 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc017_openEssayActivity</span>
+                <span class="method-start">1191130 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc017_openEssayActivity status=SUCCESS method=Basic_History_SmokeTest.Tc017_openEss...)</span>
+                <span class="method-start">1191984 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc018_verifyEssayActivityPanelDisplay</span>
+                <span class="method-start">1191985 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tc019_startActivityButtonEssayActivityDisplayAndClick</span>
+                <span class="method-start">1193149 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc018_verifyEssayActivityPanelDisplay status=SUCCESS method=Basic_History_SmokeTest...)</span>
+                <span class="method-start">1193149 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc019_startActivityButtonEssayActivityDisplayAndClick status=SUCCESS method=Basic_H...)</span>
+                <span class="method-start">1195708 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc020_attemptEssayActivityandSubmit</span>
+                <span class="method-start">1195709 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tc021_verifyCompleteStatusForEssayActivity</span>
+                <span class="method-start">1203015 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc020_attemptEssayActivityandSubmit status=SUCCESS method=Basic_History_SmokeTest.T...)</span>
+                <span class="method-start">1203015 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc022_openSingleAndMultipleSourceActivity</span>
+                <span class="method-start">1204255 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc021_verifyCompleteStatusForEssayActivity status=SUCCESS method=Basic_History_Smok...)</span>
+                <span class="method-start">1204255 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc023_verifySingleAndMultipleSourceActivityPanelDisplay</span>
+                <span class="method-start">1204777 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc022_openSingleAndMultipleSourceActivity status=SUCCESS method=Basic_History_Smoke...)</span>
+                <span class="method-start">1204777 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc024_startActivityButtonSingleAndMultipleSourceActivityDisplayAndClick</span>
+                <span class="method-start">1206110 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc023_verifySingleAndMultipleSourceActivityPanelDisplay status=SUCCESS method=Basic...)</span>
+                <span class="method-start">1206110 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc025_attemptSingleAndMultipleSourceActivityandSubmit</span>
+                <span class="method-start">1209872 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc024_startActivityButtonSingleAndMultipleSourceActivityDisplayAndClick status=SUCC...)</span>
+                <span class="method-start">1209872 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc026_verifyCompleteStatusForSingleAndMultipleSourceActivity</span>
+                <span class="method-start">1217083 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc025_attemptSingleAndMultipleSourceActivityandSubmit status=SUCCESS method=Basic_H...)</span>
+                <span class="method-start">1217083 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc026_verifyCompleteStatusForSingleAndMultipleSourceActivity status=SUCCESS method=...)</span>
+                <span class="method-start">1218408 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc027_openStudyActivity</span>
+                <span class="method-start">1218409 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tc028_verifyStudyActivityPanelDisplay</span>
+                <span class="method-start">1219407 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc027_openStudyActivity status=SUCCESS method=Basic_History_SmokeTest.Tc027_openStu...)</span>
+                <span class="method-start">1219407 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc029_startStudyActivityAndClose</span>
+                <span class="method-start">1220808 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc028_verifyStudyActivityPanelDisplay status=SUCCESS method=Basic_History_SmokeTest...)</span>
+                <span class="method-start">1220808 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc029_startStudyActivityAndClose status=SUCCESS method=Basic_History_SmokeTest.Tc02...)</span>
+                <span class="method-start">1224158 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Tc030_logOutFromApplication</span>
+                <span class="method-start">1224159 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeresult([TestResult name=Tc030_logOutFromApplication status=SUCCESS method=Basic_History_SmokeTest.Tc030_log...)</span>
+                <span class="method-start">1226316 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">1226316 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

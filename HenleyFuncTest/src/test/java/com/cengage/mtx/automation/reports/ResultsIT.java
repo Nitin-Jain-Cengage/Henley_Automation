@@ -23,22 +23,50 @@ import org.testng.annotations.Test;
 
 import com.cengage.mtx.automation.utils.YamlReader;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class ResultsIT.
+ */
 public class ResultsIT {
+	
+	/** The testdata. */
 	String testdata;
+	
+	/** The today. */
 	Date today = new Date();
+	
+	/** The host. */
 	String host = "smtp.gmail.com";
+	
+	/** The from. */
 	String from = "automation.results.qait@gmail.com";
+	
+	/** The password. */
 	String password = "QaitAutomation";
+	
+	/** The port. */
 	String port = "465";
+	
+	/** The message. */
 	Message message;
+	
+	/** The text file1. */
 	public String textFile1;
 
+	/**
+	 * Setup mail config.
+	 */
 	@BeforeClass
 	void setupMailConfig() {
 		YamlReader.setYamlFilePath("src\\test\\resources\\testdata\\TestData.yml");
 		System.out.println("%%%%%%%%%%%%%%%%%%%%%");
 	}
 
+	/**
+	 * Send results mail.
+	 *
+	 * @throws Exception the exception
+	 */
 	@Test
 	public void sendResultsMail() throws Exception {
 		try {
@@ -62,6 +90,11 @@ public class ResultsIT {
 		}
 	}
 
+	/**
+	 * Gets the session.
+	 *
+	 * @return the session
+	 */
 	public Session getSession() {
 		Authenticator authenticator = new Authenticator(from, password);
 		Properties properties = new Properties();
@@ -74,6 +107,12 @@ public class ResultsIT {
 		return Session.getInstance(properties, authenticator);
 	}
 
+	/**
+	 * Sets the body text.
+	 *
+	 * @return the string
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	public String setBodyText() throws IOException {
 		String mailtext = "";
 		mailtext = "Hi,<br>";
@@ -93,10 +132,20 @@ public class ResultsIT {
 		return mailtext;
 	}
 
+	/**
+	 * Sets the mail subject.
+	 *
+	 * @return the string
+	 */
 	private String setMailSubject() {
 		return ("Henley Automated Test Execution Report - " + today);
 	}
 
+	/**
+	 * Sets the mail recipient.
+	 *
+	 * @param message the new mail recipient
+	 */
 	private void setMailRecipient(Message message) {
 		// System.out.println("EnteredsetMailRecipient");
 		try {
@@ -111,6 +160,12 @@ public class ResultsIT {
 		}
 	}
 
+	/**
+	 * Sets the attachement.
+	 *
+	 * @return the multipart
+	 * @throws Exception the exception
+	 */
 	private Multipart setAttachement() throws Exception {
 		// Create the message part
 		MimeBodyPart messageBodyPart = new MimeBodyPart();
@@ -133,6 +188,11 @@ public class ResultsIT {
 		return multipart;
 	}
 
+	/**
+	 * Gets the test name.
+	 *
+	 * @return the test name
+	 */
 	private String getTestName() {
 		String test = System.getProperty("test", "null");
 		String testsuite = System.getProperty("testsuite", "null");
@@ -149,6 +209,11 @@ public class ResultsIT {
 		}
 	}
 
+	/**
+	 * Gets the file path.
+	 *
+	 * @return the file path
+	 */
 	public void getFilePath() {
 		File folder = new File("./target/surefire-reports");
 		String[] fileNames = folder.list();
@@ -164,6 +229,12 @@ public class ResultsIT {
 		}
 	}
 
+	/**
+	 * Test set result.
+	 *
+	 * @return the string
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	public String testSetResult() throws IOException {
 		String messageToBeSent = ("");
 		getFilePath();// calling method getFilepath()

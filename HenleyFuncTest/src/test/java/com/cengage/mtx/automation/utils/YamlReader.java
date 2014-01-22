@@ -12,17 +12,34 @@ import java.util.StringTokenizer;
 
 import org.yaml.snakeyaml.Yaml;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class YamlReader.
+ */
 @SuppressWarnings("unchecked")
 public class YamlReader {
 
+    /** The yaml file path. */
     public static String yamlFilePath = "src\\test\\resources\\testdata\\TestData.yml";
 
+    /**
+     * Sets the yaml file path.
+     *
+     * @param filePath the file path
+     * @return the string
+     */
     public static String setYamlFilePath(String filePath) {
         yamlFilePath = filePath;
         System.out.println(yamlFilePath);
         return yamlFilePath;
     }
     
+    /**
+     * Gets the yaml value.
+     *
+     * @param token the token
+     * @return the yaml value
+     */
     public static String getYamlValue(String token){
         try {
             return getValue(token).trim();
@@ -33,6 +50,12 @@ public class YamlReader {
     }
     
   
+	/**
+	 * Gets the yaml values.
+	 *
+	 * @param token the token
+	 * @return the yaml values
+	 */
 	public static Map<String, Object> getYamlValues(String token){
         Reader doc;
         try {
@@ -49,6 +72,13 @@ public class YamlReader {
     }
 
     
+    /**
+     * Gets the value.
+     *
+     * @param token the token
+     * @return the value
+     * @throws FileNotFoundException the file not found exception
+     */
     private static String getValue(String token) throws FileNotFoundException {
         Reader doc = new FileReader(yamlFilePath);
         Yaml yaml = new Yaml();
@@ -57,12 +87,26 @@ public class YamlReader {
 
     }
 
+    /**
+     * Gets the map value.
+     *
+     * @param object the object
+     * @param token the token
+     * @return the map value
+     */
     public static String getMapValue(Map<String, Object> object, String token) {
         //TODO: check for proper yaml token string based on presence of '.'
         String[] st = token.split("\\.");
         return parseMap(object, token).get(st[st.length - 1]).toString();
     }
 
+    /**
+     * Parses the map.
+     *
+     * @param object the object
+     * @param token the token
+     * @return the map
+     */
     private static Map<String, Object> parseMap(Map<String, Object> object, String token) {
         if (token.contains(".")) {
             String[] st = token.split("\\.");
@@ -71,6 +115,12 @@ public class YamlReader {
         return object;
     }
     
+    /**
+     * Gets the yaml nodes array.
+     *
+     * @param yamlToken the yaml token
+     * @return the yaml nodes array
+     */
     public static  Map<String, Object> getYamlNodesArray(String yamlToken) {
 		Reader reader = null;
 		int tokenCount = 0, i = 0;

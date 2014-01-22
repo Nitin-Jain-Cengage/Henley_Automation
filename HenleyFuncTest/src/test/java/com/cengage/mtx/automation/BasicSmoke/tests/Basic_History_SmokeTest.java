@@ -10,201 +10,311 @@ import org.testng.annotations.Test;
 
 import com.cengage.mtx.automation.TestSessionInitiator;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Basic_History_SmokeTest.
+ */
 public class Basic_History_SmokeTest {
+	
 	/**
+	 * The test.
+	 *
 	 * @author QAIT
 	 */
 	TestSessionInitiator test;
 
+	/**
+	 * Sets the up class.
+	 */
 	@BeforeClass
 	public void setUpClass() {
 		test = new TestSessionInitiator("src\\test\\resources\\testdata\\TestData.yml");
 		test.launchApplication();
 	}
 
+	/**
+	 * Tc001_login to the sso front door.
+	 */
 	@Test
-	public void loginToTheSSOFrontDoor() {
+	public void Tc001_loginToTheSSOFrontDoor() {
 		test.loginActionsPg.loginToTheApplication(getYamlValue("users.student.chemistryusername"), getYamlValue("users.student.chemistrypassword"));
 
 	}
 
-	@Test(dependsOnMethods = "loginToTheSSOFrontDoor")
-	public void performOperationsOnHomePage() {
+	/**
+	 * Tc002_perform operations on home page.
+	 */
+	@Test
+	public void Tc002_performOperationsOnHomePage() {
 		test.studHomePageActionsPg.verifyStudentHomePageContent();
 		test.studHomePageActionsPg.clickOnOpenButton(getYamlValue("History.BookName").trim(), getYamlValue("testenv"));
 
 	}
 
-	@Test(dependsOnMethods = "performOperationsOnHomePage")
-	public void ActionsOnWeekWidgetView() {
+	/**
+	 * Tc003_ actions on week widget view.
+	 */
+	@Test
+	public void Tc003_ActionsOnWeekWidgetView() {
 		test.weekWidgetActionsPg.verifyConceptMapButton();
 	}
 
-	@Test(dependsOnMethods = "ActionsOnWeekWidgetView")
-	public void verifyAllAppsButtonDisplays() {
+	/**
+	 * Tc004_verify all apps button displays.
+	 */
+	@Test
+	public void Tc004_verifyAllAppsButtonDisplays() {
 		 test.weekWidgetActionsPg.clickOnAllApps();
 	}
 
-	@Test(dependsOnMethods = "verifyAllAppsButtonDisplays")
-	public void clickOnAppsAndVerifyAllOpen() {
+	/**
+	 * Tc005_click on apps and verify all open.
+	 */
+	@Test
+	public void Tc005_clickOnAppsAndVerifyAllOpen() {
 		 test.weekWidgetActionsPg.clickOnMerriamWebsterApp();
 	}
 
-	@Test(dependsOnMethods = "clickOnAppsAndVerifyAllOpen")
-	public void verifyNumberOfWeekEqualswithWeekavailableinWeekSlider() {
+	/**
+	 * Tc006_verify number of week equalswith weekavailablein week slider.
+	 */
+	@Test
+	public void Tc006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider() {
 		test.weekWidgetActionsPg.verifyTotalNoOfWeeks();
 		test.weekWidgetActionsPg.navigateToWeek(getYamlValue("historyweek.weeknumber"));
 	}
 
 	// Infographic
-	@Test(dependsOnMethods = "verifyNumberOfWeekEqualswithWeekavailableinWeekSlider")
-	public void openInfographicActivity() {
+	/**
+	 * Tc007_open infographic activity.
+	 */
+	@Test
+	public void Tc007_openInfographicActivity() {
 		test.historyCourseContent.verifyAndClickOnActivity(getYamlValue("historyactivity.InfographicActivity"));
 	}
 
-	@Test(dependsOnMethods = "openInfographicActivity")
-	public void verifyInfographicActivityPanelDisplay() {
+	/**
+	 * Tc008_verify infographic activity panel display.
+	 */
+	@Test
+	public void Tc008_verifyInfographicActivityPanelDisplay() {
 		test.historyCourseContent.verifyActivityHeading();
 		test.historyCourseContent.switchToActivityContentFrame();
 	}
 
-	@Test(dependsOnMethods = "verifyInfographicActivityPanelDisplay")
-	public void startActivityButtonInfographicDisplayAndClick() {
+	/**
+	 * Tc009_start activity button infographic display and click.
+	 */
+	@Test
+	public void Tc009_startActivityButtonInfographicDisplayAndClick() {
 		test.historyCourseContent.verifyStartActivityButtonAndClick();
 	}
 
-	@Test(dependsOnMethods = "startActivityButtonInfographicDisplayAndClick")
-	public void attemptInfographicActivityandSubmit() {
+	/**
+	 * Tc010_attempt infographic activityand submit.
+	 */
+	@Test
+	public void Tc010_attemptInfographicActivityandSubmit() {
 		test.historyCourseContent.verifyNextButtonDisplays();
 		test.historyCourseContent.clickOnNextButtonAndSubmitActivity();
 		test.historyCourseContent.verifySubmitActivityButtonDisplayAndClick();
 		test.historyCourseContent.verifyUserNavigateToWeekWidget();
 	}
 
-	@Test(dependsOnMethods = "attemptInfographicActivityandSubmit")
-	public void verifyCompleteStatusForInfographicActivity() {
+	/**
+	 * Tc011_verify complete status for infographic activity.
+	 */
+	@Test
+	public void Tc011_verifyCompleteStatusForInfographicActivity() {
 		test.historyCourseContent.verifyCompletedStatus();
 	}
 
 	// Source Activity
-	@Test(dependsOnMethods = "verifyCompleteStatusForInfographicActivity")
-	public void openSourceActivityActivity() {
+	/**
+	 * Tc012_open source activity activity.
+	 */
+	@Test
+	public void Tc012_openSourceActivityActivity() {
 		test.historyCourseContent.verifyAndClickOnActivity(getYamlValue("historyactivity.SourceActivity"));
 	}
 
-	@Test(dependsOnMethods = "openSourceActivityActivity")
-	public void verifySourceActivityPanelDisplay() {
+	/**
+	 * Tc013_verify source activity panel display.
+	 */
+	@Test
+	public void Tc013_verifySourceActivityPanelDisplay() {
 		test.historyCourseContent.verifyActivityHeading();
 		test.historyCourseContent.switchToActivityContentFrame();
 	}
 
-	@Test(dependsOnMethods = "verifySourceActivityPanelDisplay")
-	public void startActivityButtonSourceActivityDisplayAndClick() {
+	/**
+	 * Tc014_start activity button source activity display and click.
+	 */
+	@Test
+	public void Tc014_startActivityButtonSourceActivityDisplayAndClick() {
 		test.historyCourseContent.verifyStartActivityButtonAndClick();
 	}
 
-	@Test(dependsOnMethods = "startActivityButtonSourceActivityDisplayAndClick")
-	public void attemptSourceActivityandSubmit() {
+	/**
+	 * Tc015_attempt source activityand submit.
+	 */
+	@Test
+	public void Tc015_attemptSourceActivityandSubmit() {
 		test.historyCourseContent.verifyNextButtonDisplays();
 		test.historyCourseContent.clickOnNextButtonAndSubmitActivity();
 		test.historyCourseContent.verifySubmitActivityButtonDisplayAndClick();
 		test.historyCourseContent.verifyUserNavigateToWeekWidget();
 	}
 
-	@Test(dependsOnMethods = "attemptSourceActivityandSubmit")
-	public void verifyCompleteStatusForSourceActivity() {
+	/**
+	 * Tc016_verify complete status for source activity.
+	 */
+	@Test
+	public void Tc016_verifyCompleteStatusForSourceActivity() {
 		test.historyCourseContent.verifyCompletedStatus();
 	}
 
 	// Essay Activity
-	@Test(dependsOnMethods = "verifyCompleteStatusForSourceActivity")
-	public void openEssayActivity() {
+	/**
+	 * Tc017_open essay activity.
+	 */
+	@Test
+	public void Tc017_openEssayActivity() {
 		test.historyCourseContent.verifyAndClickOnActivity(getYamlValue("historyactivity.EssayActivity"));
 	}
 
-	@Test(dependsOnMethods = "openEssayActivity")
-	public void verifyEssayActivityPanelDisplay() {
+	/**
+	 * Tc018_verify essay activity panel display.
+	 */
+	@Test
+	public void Tc018_verifyEssayActivityPanelDisplay() {
 		test.historyCourseContent.verifyActivityHeading();
 		test.historyCourseContent.switchToActivityContentFrame();
 	}
 
-	@Test(dependsOnMethods = "verifyEssayActivityPanelDisplay")
-	public void startActivityButtonEssayActivityDisplayAndClick() {
+	/**
+	 * Tc019_start activity button essay activity display and click.
+	 */
+	@Test
+	public void Tc019_startActivityButtonEssayActivityDisplayAndClick() {
 		test.historyCourseContent.verifyStartActivityButtonAndClick();
 	}
 
-	@Test(dependsOnMethods = "startActivityButtonEssayActivityDisplayAndClick")
-	public void attemptEssayActivityandSubmit() {
+	/**
+	 * Tc020_attempt essay activityand submit.
+	 */
+	@Test
+	public void Tc020_attemptEssayActivityandSubmit() {
 		test.historyCourseContent.verifyNextButtonDisplays();
 		test.historyCourseContent.clickOnNextButtonAndSubmitActivity();
 		test.historyCourseContent.verifySubmitActivityButtonDisplayAndClick();
 		test.historyCourseContent.verifyUserNavigateToWeekWidget();
 	}
 
-	@Test(dependsOnMethods = "attemptEssayActivityandSubmit")
-	public void verifyCompleteStatusForEssayActivity() {
+	/**
+	 * Tc021_verify complete status for essay activity.
+	 */
+	@Test
+	public void Tc021_verifyCompleteStatusForEssayActivity() {
 		test.historyCourseContent.verifyCompletedStatus();
 	}
 
 	// Single And Multiple Source Activity
-	@Test(dependsOnMethods = "verifyCompleteStatusForEssayActivity")
-	public void openSingleAndMultipleSourceActivity() {
+	/**
+	 * Tc022_open single and multiple source activity.
+	 */
+	@Test
+	public void Tc022_openSingleAndMultipleSourceActivity() {
 		test.historyCourseContent.verifyAndClickOnActivity(getYamlValue("historyactivity.SingleAndMultipleSourceActivity"));
 	}
 
-	@Test(dependsOnMethods = "openSingleAndMultipleSourceActivity")
-	public void verifySingleAndMultipleSourceActivityPanelDisplay() {
+	/**
+	 * Tc023_verify single and multiple source activity panel display.
+	 */
+	@Test
+	public void Tc023_verifySingleAndMultipleSourceActivityPanelDisplay() {
 		test.historyCourseContent.verifyActivityHeading();
 		test.historyCourseContent.switchToActivityContentFrame();
 	}
 
-	@Test(dependsOnMethods = "verifySingleAndMultipleSourceActivityPanelDisplay")
-	public void startActivityButtonSingleAndMultipleSourceActivityDisplayAndClick() {
+	/**
+	 * Tc024_start activity button single and multiple source activity display and click.
+	 */
+	@Test
+	public void Tc024_startActivityButtonSingleAndMultipleSourceActivityDisplayAndClick() {
 		test.historyCourseContent.verifyStartActivityButtonAndClick();
 	}
 
-	@Test(dependsOnMethods = "startActivityButtonSingleAndMultipleSourceActivityDisplayAndClick")
-	public void attemptSingleAndMultipleSourceActivityandSubmit() {
+	/**
+	 * Tc025_attempt single and multiple source activityand submit.
+	 */
+	@Test
+	public void Tc025_attemptSingleAndMultipleSourceActivityandSubmit() {
 		test.historyCourseContent.verifyNextButtonDisplays();
 		test.historyCourseContent.clickOnNextButtonAndSubmitActivity();
 		test.historyCourseContent.verifySubmitActivityButtonDisplayAndClick();
 		test.historyCourseContent.verifyUserNavigateToWeekWidget();
 	}
 
-	@Test(dependsOnMethods = "attemptSingleAndMultipleSourceActivityandSubmit")
-	public void verifyCompleteStatusForSingleAndMultipleSourceActivity() {
+	/**
+	 * Tc026_verify complete status for single and multiple source activity.
+	 */
+	@Test
+	public void Tc026_verifyCompleteStatusForSingleAndMultipleSourceActivity() {
 		test.historyCourseContent.verifyCompletedStatus();
 	}
 
 	// study
-	@Test(dependsOnMethods = "verifyCompleteStatusForSingleAndMultipleSourceActivity")
-	public void openStudyActivity() {
+	/**
+	 * Tc027_open study activity.
+	 */
+	@Test
+	public void Tc027_openStudyActivity() {
 		test.historyCourseContent.verifyAndClickOnActivity(getYamlValue("historyactivity.StudyActivity"));
 	}
 
-	@Test(dependsOnMethods = "openStudyActivity")
-	public void verifyStudyActivityPanelDisplay() {
+	/**
+	 * Tc028_verify study activity panel display.
+	 */
+	@Test
+	public void Tc028_verifyStudyActivityPanelDisplay() {
 		test.historyCourseContent.verifyActivityHeading();
 		test.historyCourseContent.switchToActivityContentFrame();
 	}
 
-	@Test(dependsOnMethods = "verifyStudyActivityPanelDisplay")
-	public void startStudyActivityAndClose() {
+	/**
+	 * Tc029_start study activity and close.
+	 */
+	@Test
+	public void Tc029_startStudyActivityAndClose() {
 		test.historyCourseContent.verifyPrintButtonDisplayInStudy();
 		test.historyCourseContent.closeStudyActivity();
 	}
 
-	@Test(dependsOnMethods = "startStudyActivityAndClose")
-	public void logOutFromApplication() {
+	/**
+	 * Tc030_log out from application.
+	 */
+	@Test
+	public void Tc030_logOutFromApplication() {
 		test.startSubmitLogOutActionsPg.logOutFromApp();
 		test.startSubmitLogOutActionsPg.verifyLogOutMessage();
 	}
 	
-	 @AfterMethod
+	 /**
+ 	 * Takeresult.
+ 	 *
+ 	 * @param result the result
+ 	 */
+ 	@AfterMethod
 	 public void takeresult(ITestResult  result){
 		  test.takeScreenshotOfFailure(result);	  
 	 }
 
+	/**
+	 * Tear down class.
+	 *
+	 * @throws Exception the exception
+	 */
 	@AfterClass
 	public void tearDownClass() throws Exception {
 		test.closeBrowserSession();
