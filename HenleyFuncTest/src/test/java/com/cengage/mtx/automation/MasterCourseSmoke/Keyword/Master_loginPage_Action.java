@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 
 import com.cengage.mtx.automation.MasterCourseSmoke.pageuiobjects.Master_loginPage_Ui;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class Master_loginPage_Action.
  */

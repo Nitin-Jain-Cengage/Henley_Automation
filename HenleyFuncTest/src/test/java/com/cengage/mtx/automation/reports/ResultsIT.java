@@ -23,7 +23,6 @@ import org.testng.annotations.Test;
 
 import com.cengage.mtx.automation.utils.YamlReader;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class ResultsIT.
  */

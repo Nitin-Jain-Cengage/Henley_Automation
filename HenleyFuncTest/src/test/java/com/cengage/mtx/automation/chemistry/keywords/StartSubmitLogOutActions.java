@@ -5,7 +5,6 @@ import org.testng.Assert;
 
 import com.cengage.mtx.automation.chemistry.pageuiobjects.StartSubmitLogOutUi;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class StartSubmitLogOutActions.
  */

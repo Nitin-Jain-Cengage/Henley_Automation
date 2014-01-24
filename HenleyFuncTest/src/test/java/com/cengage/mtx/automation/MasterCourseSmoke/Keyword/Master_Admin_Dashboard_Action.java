@@ -9,7 +9,6 @@ import org.testng.Reporter;
 
 import com.cengage.mtx.automation.MasterCourseSmoke.pageuiobjects.*;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class Master_Admin_Dashboard_Action.
  */

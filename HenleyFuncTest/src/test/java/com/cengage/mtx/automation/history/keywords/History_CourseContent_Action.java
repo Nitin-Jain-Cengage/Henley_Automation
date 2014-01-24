@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import com.cengage.mtx.automation.chemistry.keywords.StartSubmitLogOutActions;
 import com.cengage.mtx.automation.history.pageuiobjects.History_CourseContent_Ui;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class History_CourseContent_Action.
  */

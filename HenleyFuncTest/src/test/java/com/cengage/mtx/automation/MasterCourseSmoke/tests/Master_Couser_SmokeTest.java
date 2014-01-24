@@ -15,7 +15,6 @@ import static com.cengage.mtx.automation.utils.YamlReader.getYamlValue;
 
 import com.cengage.mtx.automation.TestSessionInitiator;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class Master_Couser_SmokeTest.
  *

@@ -10,17 +10,12 @@ import org.testng.annotations.Test;
 
 import com.cengage.mtx.automation.TestSessionInitiator;
 
-// TODO: Auto-generated Javadoc
 /**
- * The Class Basic_History_SmokeTest.
+ * The Class MTXAutomationSmokeTestHistoryStudentWorkFlow.
  */
-public class Basic_History_SmokeTest {
+public class MTXAutomationSmokeTestHistoryStudentWorkFlow {
 	
-	/**
-	 * The test.
-	 *
-	 * @author QAIT
-	 */
+	/** The test. */
 	TestSessionInitiator test;
 
 	/**
@@ -33,88 +28,65 @@ public class Basic_History_SmokeTest {
 	}
 
 	/**
-	 * Tc001_login to the sso front door.
+	 * TC001_login to the sso front door.
 	 */
 	@Test
-	public void Tc001_loginToTheSSOFrontDoor() {
+	public void TC001_loginToTheSSOFrontDoor() {
 		test.loginActionsPg.loginToTheApplication(getYamlValue("users.student.chemistryusername"), getYamlValue("users.student.chemistrypassword"));
-
 	}
 
 	/**
-	 * Tc002_perform operations on home page.
+	 * TC002_verify user navigate to dashboard page and click on open button.
 	 */
 	@Test
-	public void Tc002_performOperationsOnHomePage() {
+	public void TC002_verifyUserNavigateToDashboardPageAndClickOnOpenButton() {
 		test.studHomePageActionsPg.verifyStudentHomePageContent();
 		test.studHomePageActionsPg.clickOnOpenButton(getYamlValue("History.BookName").trim(), getYamlValue("testenv"));
-
 	}
 
 	/**
-	 * Tc003_ actions on week widget view.
+	 * TC003_verify user redirect to student dashboard and concept map button display.
 	 */
 	@Test
-	public void Tc003_ActionsOnWeekWidgetView() {
+	public void TC003_verifyUserRedirectToStudentDashboardAndConceptMapButtonDisplay() {
 		test.weekWidgetActionsPg.verifyConceptMapButton();
 	}
 
 	/**
-	 * Tc004_verify all apps button displays.
+	 * TC004_verify all apps button displays on student home page.
 	 */
 	@Test
-	public void Tc004_verifyAllAppsButtonDisplays() {
-		 test.weekWidgetActionsPg.clickOnAllApps();
+	public void TC004_verifyAllAppsButtonDisplaysOnStudentHomePage() {
+		test.weekWidgetActionsPg.clickOnAllApps();
 	}
 
 	/**
-	 * Tc005_click on apps and verify all open.
+	 * TC005_verify student launch activities display on student home page.
 	 */
 	@Test
-	public void Tc005_clickOnAppsAndVerifyAllOpen() {
-		 test.weekWidgetActionsPg.clickOnMerriamWebsterApp();
+	public void TC005_verifyStudentLaunchActivitiesDisplayOnStudentHomePage() {
+		test.weekWidgetActionsPg.clickOnMerriamWebsterApp();
 	}
 
 	/**
-	 * Tc006_verify number of week equalswith weekavailablein week slider.
+	 * TC006_verify number of week equalswith weekavailablein week slider.
 	 */
 	@Test
-	public void Tc006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider() {
+	public void TC006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider() {
 		test.weekWidgetActionsPg.verifyTotalNoOfWeeks();
 		test.weekWidgetActionsPg.navigateToWeek(getYamlValue("historyweek.weeknumber"));
 	}
 
 	// Infographic
 	/**
-	 * Tc007_open infographic activity.
+	 * TC007_verify student attempt and submit infographic activity.
 	 */
 	@Test
-	public void Tc007_openInfographicActivity() {
+	public void TC007_verifyStudentAttemptAndSubmitInfographicActivity() {
 		test.historyCourseContent.verifyAndClickOnActivity(getYamlValue("historyactivity.InfographicActivity"));
-	}
-
-	/**
-	 * Tc008_verify infographic activity panel display.
-	 */
-	@Test
-	public void Tc008_verifyInfographicActivityPanelDisplay() {
 		test.historyCourseContent.verifyActivityHeading();
 		test.historyCourseContent.switchToActivityContentFrame();
-	}
-
-	/**
-	 * Tc009_start activity button infographic display and click.
-	 */
-	@Test
-	public void Tc009_startActivityButtonInfographicDisplayAndClick() {
 		test.historyCourseContent.verifyStartActivityButtonAndClick();
-	}
-
-	/**
-	 * Tc010_attempt infographic activityand submit.
-	 */
-	@Test
-	public void Tc010_attemptInfographicActivityandSubmit() {
 		test.historyCourseContent.verifyNextButtonDisplays();
 		test.historyCourseContent.clickOnNextButtonAndSubmitActivity();
 		test.historyCourseContent.verifySubmitActivityButtonDisplayAndClick();
@@ -122,44 +94,23 @@ public class Basic_History_SmokeTest {
 	}
 
 	/**
-	 * Tc011_verify complete status for infographic activity.
+	 * TC008_verify status display as completed for infographic activity.
 	 */
 	@Test
-	public void Tc011_verifyCompleteStatusForInfographicActivity() {
+	public void TC008_verifyStatusDisplayAsCompletedForInfographicActivity() {
 		test.historyCourseContent.verifyCompletedStatus();
 	}
 
 	// Source Activity
 	/**
-	 * Tc012_open source activity activity.
+	 * TC009_verify student attemptopen source activity.
 	 */
 	@Test
-	public void Tc012_openSourceActivityActivity() {
+	public void TC009_verifyStudentAttemptopenSourceActivity() {
 		test.historyCourseContent.verifyAndClickOnActivity(getYamlValue("historyactivity.SourceActivity"));
-	}
-
-	/**
-	 * Tc013_verify source activity panel display.
-	 */
-	@Test
-	public void Tc013_verifySourceActivityPanelDisplay() {
 		test.historyCourseContent.verifyActivityHeading();
 		test.historyCourseContent.switchToActivityContentFrame();
-	}
-
-	/**
-	 * Tc014_start activity button source activity display and click.
-	 */
-	@Test
-	public void Tc014_startActivityButtonSourceActivityDisplayAndClick() {
 		test.historyCourseContent.verifyStartActivityButtonAndClick();
-	}
-
-	/**
-	 * Tc015_attempt source activityand submit.
-	 */
-	@Test
-	public void Tc015_attemptSourceActivityandSubmit() {
 		test.historyCourseContent.verifyNextButtonDisplays();
 		test.historyCourseContent.clickOnNextButtonAndSubmitActivity();
 		test.historyCourseContent.verifySubmitActivityButtonDisplayAndClick();
@@ -167,44 +118,23 @@ public class Basic_History_SmokeTest {
 	}
 
 	/**
-	 * Tc016_verify complete status for source activity.
+	 * TC010_verify status display as completed for source activity.
 	 */
 	@Test
-	public void Tc016_verifyCompleteStatusForSourceActivity() {
+	public void TC010_verifyStatusDisplayAsCompletedForSourceActivity() {
 		test.historyCourseContent.verifyCompletedStatus();
 	}
 
 	// Essay Activity
 	/**
-	 * Tc017_open essay activity.
+	 * TC011_verify student attempt essay activity.
 	 */
 	@Test
-	public void Tc017_openEssayActivity() {
+	public void TC011_verifyStudentAttemptEssayActivity() {
 		test.historyCourseContent.verifyAndClickOnActivity(getYamlValue("historyactivity.EssayActivity"));
-	}
-
-	/**
-	 * Tc018_verify essay activity panel display.
-	 */
-	@Test
-	public void Tc018_verifyEssayActivityPanelDisplay() {
 		test.historyCourseContent.verifyActivityHeading();
 		test.historyCourseContent.switchToActivityContentFrame();
-	}
-
-	/**
-	 * Tc019_start activity button essay activity display and click.
-	 */
-	@Test
-	public void Tc019_startActivityButtonEssayActivityDisplayAndClick() {
 		test.historyCourseContent.verifyStartActivityButtonAndClick();
-	}
-
-	/**
-	 * Tc020_attempt essay activityand submit.
-	 */
-	@Test
-	public void Tc020_attemptEssayActivityandSubmit() {
 		test.historyCourseContent.verifyNextButtonDisplays();
 		test.historyCourseContent.clickOnNextButtonAndSubmitActivity();
 		test.historyCourseContent.verifySubmitActivityButtonDisplayAndClick();
@@ -212,44 +142,23 @@ public class Basic_History_SmokeTest {
 	}
 
 	/**
-	 * Tc021_verify complete status for essay activity.
+	 * TC012_verify status display as completed for essay activity.
 	 */
 	@Test
-	public void Tc021_verifyCompleteStatusForEssayActivity() {
+	public void TC012_verifyStatusDisplayAsCompletedForEssayActivity() {
 		test.historyCourseContent.verifyCompletedStatus();
 	}
 
 	// Single And Multiple Source Activity
 	/**
-	 * Tc022_open single and multiple source activity.
+	 * TC013_verify student attempt single and multiple source activity.
 	 */
 	@Test
-	public void Tc022_openSingleAndMultipleSourceActivity() {
+	public void TC013_verifyStudentAttemptSingleAndMultipleSourceActivity() {
 		test.historyCourseContent.verifyAndClickOnActivity(getYamlValue("historyactivity.SingleAndMultipleSourceActivity"));
-	}
-
-	/**
-	 * Tc023_verify single and multiple source activity panel display.
-	 */
-	@Test
-	public void Tc023_verifySingleAndMultipleSourceActivityPanelDisplay() {
 		test.historyCourseContent.verifyActivityHeading();
 		test.historyCourseContent.switchToActivityContentFrame();
-	}
-
-	/**
-	 * Tc024_start activity button single and multiple source activity display and click.
-	 */
-	@Test
-	public void Tc024_startActivityButtonSingleAndMultipleSourceActivityDisplayAndClick() {
 		test.historyCourseContent.verifyStartActivityButtonAndClick();
-	}
-
-	/**
-	 * Tc025_attempt single and multiple source activityand submit.
-	 */
-	@Test
-	public void Tc025_attemptSingleAndMultipleSourceActivityandSubmit() {
 		test.historyCourseContent.verifyNextButtonDisplays();
 		test.historyCourseContent.clickOnNextButtonAndSubmitActivity();
 		test.historyCourseContent.verifySubmitActivityButtonDisplayAndClick();
@@ -257,58 +166,44 @@ public class Basic_History_SmokeTest {
 	}
 
 	/**
-	 * Tc026_verify complete status for single and multiple source activity.
+	 * TC014_verify status display as completed for single and multiple source activity.
 	 */
 	@Test
-	public void Tc026_verifyCompleteStatusForSingleAndMultipleSourceActivity() {
+	public void TC014_verifyStatusDisplayAsCompletedForSingleAndMultipleSourceActivity() {
 		test.historyCourseContent.verifyCompletedStatus();
 	}
 
 	// study
 	/**
-	 * Tc027_open study activity.
+	 * TC015_verify student attempt study activity.
 	 */
 	@Test
-	public void Tc027_openStudyActivity() {
+	public void TC015_verifyStudentAttemptStudyActivity() {
 		test.historyCourseContent.verifyAndClickOnActivity(getYamlValue("historyactivity.StudyActivity"));
-	}
-
-	/**
-	 * Tc028_verify study activity panel display.
-	 */
-	@Test
-	public void Tc028_verifyStudyActivityPanelDisplay() {
 		test.historyCourseContent.verifyActivityHeading();
 		test.historyCourseContent.switchToActivityContentFrame();
-	}
-
-	/**
-	 * Tc029_start study activity and close.
-	 */
-	@Test
-	public void Tc029_startStudyActivityAndClose() {
 		test.historyCourseContent.verifyPrintButtonDisplayInStudy();
 		test.historyCourseContent.closeStudyActivity();
 	}
 
 	/**
-	 * Tc030_log out from application.
+	 * TC016_log out from application.
 	 */
 	@Test
-	public void Tc030_logOutFromApplication() {
+	public void TC016_logOutFromApplication() {
 		test.startSubmitLogOutActionsPg.logOutFromApp();
 		test.startSubmitLogOutActionsPg.verifyLogOutMessage();
 	}
-	
-	 /**
- 	 * Takeresult.
- 	 *
- 	 * @param result the result
- 	 */
- 	@AfterMethod
-	 public void takeresult(ITestResult  result){
-		  test.takeScreenshotOfFailure(result);	  
-	 }
+
+	/**
+	 * Takeresult.
+	 *
+	 * @param result the result
+	 */
+	@AfterMethod
+	public void takeresult(ITestResult result) {
+		test.takeScreenshotOfFailure(result);
+	}
 
 	/**
 	 * Tear down class.

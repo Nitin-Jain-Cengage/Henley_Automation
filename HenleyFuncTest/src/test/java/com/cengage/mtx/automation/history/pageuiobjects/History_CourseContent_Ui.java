@@ -8,7 +8,6 @@ import org.openqa.selenium.WebElement;
 
 import com.cengage.mtx.automation.chemistry.pageuiobjects.BasePage;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class History_CourseContent_Ui.
  */

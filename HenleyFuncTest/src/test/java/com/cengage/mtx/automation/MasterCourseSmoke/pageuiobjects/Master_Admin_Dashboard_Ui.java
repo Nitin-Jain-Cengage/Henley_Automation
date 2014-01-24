@@ -8,7 +8,6 @@ import org.openqa.selenium.WebElement;
 
 import com.cengage.mtx.automation.chemistry.pageuiobjects.BasePage;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class Master_Admin_Dashboard_Ui.
  */

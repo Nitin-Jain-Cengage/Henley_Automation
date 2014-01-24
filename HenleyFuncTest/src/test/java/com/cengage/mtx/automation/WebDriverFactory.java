@@ -21,7 +21,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
-// TODO: Auto-generated Javadoc
 /**
  * A factory for creating WebDriver objects.
  */
@@ -98,6 +97,7 @@ public class WebDriverFactory {
 	private static WebDriver setChromeDriver(String driverpath) {
 		System.setProperty("webdriver.chrome.driver", driverpath+"chromedriver.exe");
 		capabilities.setJavascriptEnabled(true);
+		capabilities.setCapability("applicationCacheEnabled", "false");
 		return new ChromeDriver();
 	}
 
@@ -128,9 +128,11 @@ public class WebDriverFactory {
 	 * @return the web driver
 	 */
 	private static WebDriver createFirefoxDriver(FirefoxProfile firefoxProfile) {
+		capabilities.setJavascriptEnabled(true);
+		capabilities.setCapability("applicationCacheEnabled", "false");
 		return new FirefoxDriver(firefoxProfile);
 	}
-
+	
 	/**
 	 * Gets the firefox profile.
 	 *

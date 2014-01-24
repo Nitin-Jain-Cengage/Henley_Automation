@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 
 import com.cengage.mtx.automation.chemistry.pageuiobjects.LoginPageUi;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class LoginPageActions.
  *

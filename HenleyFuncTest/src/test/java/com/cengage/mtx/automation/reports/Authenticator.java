@@ -7,7 +7,6 @@ package com.cengage.mtx.automation.reports;
 
 import javax.mail.PasswordAuthentication;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class Authenticator.
  */

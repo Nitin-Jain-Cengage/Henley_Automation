@@ -7,6 +7,7 @@ package com.cengage.mtx.automation.chemistry.pageuiobjects;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -15,7 +16,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.cengage.mtx.automation.utils.SeleniumWait;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class BasePage.
  *
@@ -139,6 +139,17 @@ public class BasePage extends SeleniumWait{
 			e.printStackTrace();
 		}
     }
+    
+    /**
+     * Execute js.
+     *
+     * @param script the script
+     */
+    public void executeJs(String script)
+    {
+         JavascriptExecutor js = (JavascriptExecutor) driver;
+         js.executeScript(script, (Object) null);
+     }
     
    
 }

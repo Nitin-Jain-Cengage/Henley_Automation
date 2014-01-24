@@ -4,32 +4,32 @@
 
 
 	<test name="Chemistry Delete Take" preserve-order="true">
-		<parameter name="myName" value="chemistry" />
+		<parameter name="courseType" value="chemistry" />
 		<classes>
 			<class
-				name="com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test" />
+				name="com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest" />
 		</classes>
 	</test>
 
-	<test name="Basic_Chemistry_SmokeTest" preserve-order="true">
+	<test name="Chemistry SmokeTest Student WorkFlow" preserve-order="true">
 		<classes>
 			<class
-				name="com.cengage.mtx.automation.BasicSmoke.tests.Basic_Chemistry_SmokeTest" />
+				name="com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow" />
 		</classes>
 	</test>
 
 	<test name="History Delete Take" preserve-order="true">
-		<parameter name="myName" value="history" />
+		<parameter name="courseType" value="history" />
 		<classes>
 			<class
-				name="com.cengage.mtx.automation.BasicSmoke.tests.InstructorTakeDelete_Test" />
+				name="com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest" />
 		</classes>
 	</test>
 
-	<test name="Basic_History_SmokeTest" preserve-order="true">
+	<test name="History SmokeTest Student WorkFlow" preserve-order="true">
 		<classes>
 			<class
-				name="com.cengage.mtx.automation.BasicSmoke.tests.Basic_History_SmokeTest" />
+				name="com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow" />
 		</classes>
 	</test>
 

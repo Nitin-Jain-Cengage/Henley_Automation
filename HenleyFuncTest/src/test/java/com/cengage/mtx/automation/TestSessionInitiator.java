@@ -30,11 +30,8 @@ import com.cengage.mtx.automation.MasterCourseSmoke.Keyword.Master_loginPage_Act
 import com.cengage.mtx.automation.chemistry.keywords.*;
 import com.cengage.mtx.automation.history.keywords.History_CourseContent_Action;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class TestSessionInitiator.
- *
- * @author QAIT
  */
 public class TestSessionInitiator {
 	
@@ -98,10 +95,10 @@ public class TestSessionInitiator {
 	/**
 	 * Instantiates a new test session initiator.
 	 *
-	 * @param datafileloc the datafileloc
+	 * @param datafilelocator the datafilelocator
 	 */
-	public TestSessionInitiator(String datafileloc) {
-		System.out.println(setYamlFilePath(datafileloc));
+	public TestSessionInitiator(String datafilelocator) {
+		System.out.println(setYamlFilePath(datafilelocator));
 		_getSessionConfig();
 		_configureBrowser();
 		_initPage();
@@ -189,7 +186,7 @@ public class TestSessionInitiator {
 	        Calendar calendar = Calendar.getInstance();
 	        SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 
-	        String methodName = result.getInstanceName()+"_" + result.getName();
+	        String methodName = result.getName();
 	      if (!result.isSuccess()) {
 	         try {
 	          File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

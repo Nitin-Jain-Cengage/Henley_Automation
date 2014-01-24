@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 
 import com.cengage.mtx.automation.chemistry.pageuiobjects.DifferentActivitiesUi;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class DifferentActivitiesActions.
  */

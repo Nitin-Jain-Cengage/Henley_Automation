@@ -14,9 +14,9 @@ import com.cengage.mtx.automation.TestSessionInitiator;
 
 
 /**
- * The Class InstructorTakeDelete_Test.
+ * The Class MTXAutomationInstructorTakeDeleteTest.
  */
-public class InstructorTakeDelete_Test {
+public class MTXAutomationInstructorTakeDeleteTest {
 
 	/** The test. */
 	TestSessionInitiator test;
@@ -34,23 +34,23 @@ public class InstructorTakeDelete_Test {
 	}
 
 	/**
-	 * Login to the sso front door.
+	 * TC001_login to the sso front door.
 	 *
 	 * @param myName the my name
 	 */
 	@Test
-	@Parameters({"myName"})
-	public void loginToTheSSOFrontDoor(@Optional("history") String myName) {
+	@Parameters({"courseType"})
+	public void TC001_loginToTheSSOFrontDoor(@Optional("chemistry") String myName) {
 		test.loginActionsPg.loginToTheApplication(getYamlValue("users.instructor.username"), getYamlValue("users.instructor.password"));
 		bookType = myName.toLowerCase().trim();
 
 	}
 	
 	/**
-	 * Perform operations on home page.
+	 * TC002_perform operations on home page.
 	 */
-	@Test(dependsOnMethods="loginToTheSSOFrontDoor") 
-	public void performOperationsOnHomePage()
+	@Test 
+	public void TC002_performOperationsOnHomePage()
 	{
 
 		test.instTakeDeletePg.selectProdIsbn(getYamlValue("DeleteTake."+bookType+".isbn"));
@@ -58,29 +58,29 @@ public class InstructorTakeDelete_Test {
 	}
 	
 	/**
-	 * Actions on week widget view.
+	 * TC003_actions on week widget view.
 	 */
-	@Test(dependsOnMethods="performOperationsOnHomePage")
-	public void actionsOnWeekWidgetView()
+	@Test
+	public void TC003_actionsOnWeekWidgetView()
 	{
 		test.instTakeDeletePg.clickOnAllApps();
 		test.instTakeDeletePg.clickOnViewProgressApp();
 	}
 	
 	/**
-	 * Actions on student tab.
+	 * TC004_actions on student tab.
 	 */
-	@Test(dependsOnMethods="actionsOnWeekWidgetView")
-	public void actionsOnStudentTab(){
+	@Test
+	public void TC004_actionsOnStudentTab(){
 		test.instTakeDeletePg.clickOnStudentRoasterTab();
 		test.instTakeDeletePg.clickOnStudent(getYamlValue("DeleteTake."+bookType+".studentname"));
 	}
 	
 	/**
-	 * Perform delete of student score.
+	 * TC005_perform delete of student score.
 	 */
-	@Test(dependsOnMethods="actionsOnStudentTab")
-	public void performDeleteOfStudentScore() {
+	@Test
+	public void TC005_performDeleteOfStudentScore() {
 		test.instTakeDeletePg.getListOfActivityScoresAndDelete();
 	}
 	

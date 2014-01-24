@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 
 import com.cengage.mtx.automation.chemistry.pageuiobjects.BasePage;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class Master_loginPage_Ui.
  */

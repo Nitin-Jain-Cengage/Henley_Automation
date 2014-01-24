@@ -12,7 +12,6 @@ import java.util.StringTokenizer;
 
 import org.yaml.snakeyaml.Yaml;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class YamlReader.
  */

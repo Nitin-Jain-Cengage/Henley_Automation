@@ -5,7 +5,7 @@ selenium:
         port: 8080
     browser: firefox
     driverpath: "./src/test/resources/seleniumdriver/"
-    timeout: 60
+    timeout: 90
     
     
 baseurl: https://s-login.cengage.com/cb/
@@ -29,9 +29,9 @@ users:
 Chemistry:
   BookName: General_Chemistry
 week:
-    weeknumber: week 6
+    weeknumber: week 8
 activity:
-    tutored: "4.1b Displacement Reactions"
+    tutored: "5.1a Kinetic and Potential Energy"
 
 ##########################################################################################
 #
@@ -43,14 +43,14 @@ History:
   BookName: "US History_Social"
   
 historyweek:
-    weeknumber: week 9
+    weeknumber: week 4
     
 historyactivity:
-    InfographicActivity: "9.1 Infographic"
-    SourceActivity: "9.4 Social Primary Source Activity"
-    EssayActivity: "9.6 Social Primary Source Essay Activity"
-    SingleAndMultipleSourceActivity: "9.3 Parties and Philosophies"
-    StudyActivity: "9.7 Study Guide"
+    InfographicActivity: "4.1 Infographic"
+    SourceActivity: "4.4 Social Primary Source Activity"
+    EssayActivity: "4.6 Social Primary Source Essay Activity"
+    SingleAndMultipleSourceActivity: "4.2 Shifting Territorial Claims in North America"
+    StudyActivity: "4.7 Study Guide"
     
 
 

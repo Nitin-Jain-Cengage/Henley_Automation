@@ -5,7 +5,6 @@ import org.testng.Assert;
 
 import com.cengage.mtx.automation.chemistry.pageuiobjects.WeekWidgetUi;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class WeekWidgetActions.
  */

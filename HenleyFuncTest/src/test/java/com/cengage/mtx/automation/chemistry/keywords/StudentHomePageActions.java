@@ -9,11 +9,8 @@ import org.openqa.selenium.WebDriver;
 import com.cengage.mtx.automation.chemistry.pageuiobjects.StudentHomePageUI;
 
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class StudentHomePageActions.
- * 
- * @author shivamtiwari
  */
 public class StudentHomePageActions extends LoginPageActions {
 	
@@ -25,9 +22,8 @@ public class StudentHomePageActions extends LoginPageActions {
 
 	/**
 	 * Instantiates a new student home page actions.
-	 * 
-	 * @param driver
-	 *            the driver
+	 *
+	 * @param driver the driver
 	 */
 	public StudentHomePageActions(WebDriver driver) {
 		super(driver);
@@ -49,11 +45,9 @@ public class StudentHomePageActions extends LoginPageActions {
 
 	/**
 	 * Click on open button.
-	 * 
-	 * @param bookName
-	 *            the book name
-	 * @param env
-	 *            the env
+	 *
+	 * @param bookName the book name
+	 * @param env the env
 	 */
 	public void clickOnOpenButton(String bookName, String env) {
 		stdPage.waitForSyncPage();

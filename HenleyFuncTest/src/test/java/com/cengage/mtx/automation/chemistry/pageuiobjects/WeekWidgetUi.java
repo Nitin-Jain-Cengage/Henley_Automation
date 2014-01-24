@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class WeekWidgetUi.
  */
@@ -80,7 +79,19 @@ public class WeekWidgetUi extends BasePage {
 	 * @return the web element
 	 */
 	public WebElement btn_allApps() {
-		return driver.findElement(By.xpath("//a[@id='app_toggle']"));
+		
+		return expWait.getWhenVisible(By.id("app_toggle"), 90);
+	}
+	
+	/**
+	 * Js_block all app view.
+	 */
+	public void js_blockAllAppView(){
+		driver.findElement(By.id("nb_dock")).isDisplayed();
+		String str = driver.findElement(By.id("nb_dock")).getAttribute("style");
+		str = str.replaceAll("none", "block");
+		System.out.println("document.getElementById('nb_dock').setAttribute(\"style\","+str+");");
+		executeJs("document.getElementById('nb_dock').setAttribute(\"style\","+str+");");
 	}
 
 	/**

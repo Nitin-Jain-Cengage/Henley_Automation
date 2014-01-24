@@ -15,13 +15,11 @@ import static com.cengage.mtx.automation.utils.YamlReader.getYamlValue;
 
 import com.cengage.mtx.automation.TestSessionInitiator;
 
-// TODO: Auto-generated Javadoc
 /**
- * The Class Basic_Chemistry_SmokeTest.
- * 
- * @author QAIT
+ * The Class MTXAutomationSmokeTestChemistryStudentWorkFlow.
  */
-public class Basic_Chemistry_SmokeTest {
+public class MTXAutomationSmokeTestChemistryStudentWorkFlow {
+	
 	/** The test. */
 	TestSessionInitiator test;
 
@@ -35,192 +33,156 @@ public class Basic_Chemistry_SmokeTest {
 	}
 
 	/**
-	 * Tc001_login to the sso front door.
+	 * TC001_login to the sso front door.
 	 */
 	@Test
-	public void Tc001_loginToTheSSOFrontDoor() {
+	public void TC001_loginToTheSSOFrontDoor() {
 		test.loginActionsPg.loginToTheApplication(getYamlValue("users.student.chemistryusername"), getYamlValue("users.student.chemistrypassword"));
 	}
 
 	/**
-	 * Tc002_perform operations on home page.
+	 * TC002_verify user navigate to dashboard page and click on open button.
 	 */
 	@Test
-	public void Tc002_performOperationsOnHomePage() {
+	public void TC002_verifyUserNavigateToDashboardPageAndClickOnOpenButton() {
 		test.studHomePageActionsPg.verifyStudentHomePageContent();
 		test.studHomePageActionsPg.clickOnOpenButton(getYamlValue("Chemistry.BookName"), getYamlValue("testenv"));
 	}
 
 	/**
-	 * Tc003_ actions on week widget view.
+	 * TC003_verify user redirect to student dashboard and concept map button display.
 	 */
 	@Test
-	public void Tc003_ActionsOnWeekWidgetView() {
+	public void TC003_verifyUserRedirectToStudentDashboardAndConceptMapButtonDisplay() {
 		test.weekWidgetActionsPg.verifyConceptMapButton();
 	}
 
 	/**
-	 * Tc004_verify all apps button displays.
+	 * TC004_verify all apps button displays on student home page.
 	 */
 	@Test
-	public void Tc004_verifyAllAppsButtonDisplays() {
+	public void TC004_verifyAllAppsButtonDisplaysOnStudentHomePage() {
 		test.weekWidgetActionsPg.clickOnAllApps();
 	}
 
 	/**
-	 * Tc005_click on apps and verify all open.
+	 * TC005_verify student launch activities display on student home page.
 	 */
 	@Test
-	public void Tc005_clickOnAppsAndVerifyAllOpen() {
+	public void TC005_verifyStudentLaunchActivitiesDisplayOnStudentHomePage() {
 		test.weekWidgetActionsPg.clickOnMerriamWebsterApp();
 	}
 
 	/**
-	 * Tc006_verify number of week equalswith weekavailablein week slider.
+	 * TC006_verify number of week equalswith weekavailablein week slider.
 	 */
 	@Test
-	public void Tc006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider() {
+	public void TC006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider() {
 		test.weekWidgetActionsPg.verifyTotalNoOfWeeks();
 		test.weekWidgetActionsPg.navigateToWeek(getYamlValue("week.weeknumber"));
 	}
 
 	/**
-	 * Tc007_ attempting tutored activity.
+	 * TC007_verify student attempt and submit conceptual tutored activity.
 	 */
 	@Test
-	public void Tc007_AttemptingTutoredActivity() {
+	public void TC007_verifyStudentAttemptAndSubmitConceptualTutoredActivity() {
 		// Tutored Activity
 		test.diffActivitiesActionsPg.clickOnTutoredActivity(getYamlValue("activity.tutored"));
 		test.diffActivitiesActionsPg.getTitleOfActivity();
-	}
-
-	/**
-	 * Tc008_start and submit tutored activity.
-	 */
-	@Test
-	public void Tc008_startAndSubmitTutoredActivity() {
 		test.startSubmitLogOutActionsPg.clickOnStartActivityForTutored();
 		test.startSubmitLogOutActionsPg.clickOnSubmitLinkForTutored();
 		test.startSubmitLogOutActionsPg.clickOnSubmitButton();
 	}
 
 	/**
-	 * Tc009_verify statusdisplay as completed for tutored activity.
+	 * TC008_verify statusdisplay as completed for conceptual tutored activity.
 	 */
 	@Test
-	public void Tc009_verifyStatusdisplayAsCompletedForTutoredActivity() {
+	public void TC008_verifyStatusdisplayAsCompletedForConceptualTutoredActivity() {
 		test.weekWidgetActionsPg.verifyActivityStatusDisplayAsCompleted();
 	}
 
 	/**
-	 * Tc010_ open introductionand quick prep activity.
+	 * TC009_verify student attempt and submit introductionand quick prep activity.
 	 */
 	@Test
-	public void Tc010_OpenIntroductionandQuickPrepActivity() {
+	public void TC009_verifyStudentAttemptAndSubmitIntroductionandQuickPrepActivity() {
 		// Introduction and Quick Prep Activity
 		test.diffActivitiesActionsPg.clickOnIntroQuickPrep();
 		test.diffActivitiesActionsPg.getTitleOfActivity();
-	}
-
-	/**
-	 * Tc011_verify start activiyand submit.
-	 */
-	@Test
-	public void Tc011_verifyStartActiviyandSubmit() {
 		test.startSubmitLogOutActionsPg.startSubmitActions();
 	}
 
 	/**
-	 * Tc012_verify introductionand quick prep activity status as completed.
+	 * TC010_verify introductionand quick prep activity status as completed.
 	 */
 	@Test
-	public void Tc012_verifyIntroductionandQuickPrepActivityStatusAsCompleted() {
+	public void TC010_verifyIntroductionandQuickPrepActivityStatusAsCompleted() {
 		test.weekWidgetActionsPg.verifyActivityStatusDisplayAsCompleted();
 	}
 
 	/**
-	 * Tc013_ attempting mastery activity.
+	 * TC011_verify student attempt and submit mastery activity.
 	 */
 	@Test
-	public void Tc013_AttemptingMasteryActivity() {
+	public void TC011_verifyStudentAttemptAndSubmitMasteryActivity() {
 		// Mastery Activity
 		test.diffActivitiesActionsPg.clickOnMasteryActivity();
 		test.diffActivitiesActionsPg.getTitleOfActivity();
-	}
-
-	/**
-	 * Tc014_start and submit mastery activity.
-	 */
-	@Test
-	public void Tc014_startAndSubmitMasteryActivity() {
 		test.startSubmitLogOutActionsPg.startSubmitMasterActions();
 	}
 
 	/**
-	 * Tc015_verify statusdisplay as completed for mastery activity.
+	 * TC012_verify statusdisplay as completed for mastery activity.
 	 */
 	@Test
-	public void Tc015_verifyStatusdisplayAsCompletedForMasteryActivity() {
+	public void TC012_verifyStatusdisplayAsCompletedForMasteryActivity() {
 		test.weekWidgetActionsPg.verifyActivityStatusDisplayAsCompleted();
 	}
 
 	/**
-	 * Tc016_ attempting reviewand challenge activity.
+	 * TC013_verify student attempt and submit reviewand challenge activity.
 	 */
 	@Test
-	public void Tc016_AttemptingReviewandChallengeActivity() {
+	public void TC013_verifyStudentAttemptAndSubmitReviewandChallengeActivity() {
 		// Review and Challenge Activity
 		test.diffActivitiesActionsPg.clickOnReviewAndChallenge();
 		test.diffActivitiesActionsPg.getTitleOfActivity();
-	}
-
-	/**
-	 * Tc017_start and submit reviewand challenge activity.
-	 */
-	@Test
-	public void Tc017_startAndSubmitReviewandChallengeActivity() {
 		test.startSubmitLogOutActionsPg.startSubmitActions();
 	}
 
 	/**
-	 * Tc018_verify statusdisplay as completed for reviewand challenge activity.
+	 * TC014_verify statusdisplay as completed for reviewand challenge activity.
 	 */
 	@Test
-	public void Tc018_verifyStatusdisplayAsCompletedForReviewandChallengeActivity() {
+	public void TC014_verifyStatusdisplayAsCompletedForReviewandChallengeActivity() {
 		test.weekWidgetActionsPg.verifyActivityStatusDisplayAsCompleted();
 	}
 
 	/**
-	 * Tc019_ attempting study guide.
+	 * TC015_verify student open study guide.
 	 */
 	@Test
-	public void Tc019_AttemptingStudyGuide() {
+	public void TC015_verifyStudentOpenStudyGuide() {
 		// Study Guide
 		test.diffActivitiesActionsPg.clickOnStudyGuide();
-	}
-
-	/**
-	 * Tc020_start and submit study guide.
-	 */
-	@Test
-	public void Tc020_startAndSubmitStudyGuide() {
 		test.diffActivitiesActionsPg.getTitleOfActivity();
 		test.startSubmitLogOutActionsPg.clickOnClose();
 	}
 
 	/**
-	 * Tc021_log out from application.
+	 * TC016_log out from application.
 	 */
 	@Test
-	public void Tc021_logOutFromApplication() {
+	public void TC016_logOutFromApplication() {
 		test.startSubmitLogOutActionsPg.logOutFromApp();
 	}
 
 	/**
 	 * Capture screen shot on failure.
-	 * 
-	 * @param result
-	 *            the result
+	 *
+	 * @param result the result
 	 */
 	@AfterMethod
 	public void captureScreenShotOnFailure(ITestResult result) {
@@ -229,9 +191,8 @@ public class Basic_Chemistry_SmokeTest {
 
 	/**
 	 * Tear down class.
-	 * 
-	 * @throws Exception
-	 *             the exception
+	 *
+	 * @throws Exception the exception
 	 */
 	@AfterClass
 	public void tearDownClass() throws Exception {
