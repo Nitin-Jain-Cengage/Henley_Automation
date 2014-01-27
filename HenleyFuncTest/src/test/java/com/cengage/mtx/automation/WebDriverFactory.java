@@ -97,7 +97,7 @@ public class WebDriverFactory {
 	private static WebDriver setChromeDriver(String driverpath) {
 		System.setProperty("webdriver.chrome.driver", driverpath+"chromedriver.exe");
 		capabilities.setJavascriptEnabled(true);
-		capabilities.setCapability("applicationCacheEnabled", "false");
+//		capabilities.setCapability("applicationCacheEnabled", "false");
 		return new ChromeDriver();
 	}
 

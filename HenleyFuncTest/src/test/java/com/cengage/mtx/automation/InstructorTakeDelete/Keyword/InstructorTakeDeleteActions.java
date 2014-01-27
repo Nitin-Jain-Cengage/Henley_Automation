@@ -138,20 +138,17 @@ public class InstructorTakeDeleteActions extends WeekWidgetActions {
 		int count = ele2.size();
 		int lasteleNum = instructorTakeDeletePg.getList_ActiveCourse().size();
 		instructorTakeDeletePg.getTxt_Lastelement(lasteleNum).isDisplayed();
-//		System.out.println("lasteleNum : " + lasteleNum);
 		int newListElementToClick = 0;
 		System.out.println("ele Size : " + ele2.size());
 		for (int i = 0; i < count; i++) {
 			instructorTakeDeletePg.waitForSyncPage();
 			instructorTakeDeletePg.getTxt_Lastelement(lasteleNum).isDisplayed();
-//			System.out.println(i);
 			List<WebElement> ele3 = instructorTakeDeletePg.lnk_activityScore;
-//			System.out.println("ele3 size" + ele3.size());
 			ele3.get(newListElementToClick).click();
 			try {
 				instructorTakeDeletePg.getTxt_getDeleteTakeHeading().isDisplayed();
 				System.out.println(instructorTakeDeletePg.getTxt_getDeleteTakeHeading().getText());
-				Reporter.log("Course : '"+instructorTakeDeletePg.getTxt_getDeleteTakeHeading().getText()+"' : Take Delete Success");
+				Reporter.log("Course : '" + instructorTakeDeletePg.getTxt_getDeleteTakeHeading().getText() + "' : Take Delete Success");
 				instructorTakeDeletePg.getlnk_Delete_Clickable().click();
 				instructorTakeDeletePg.getlnk_DeleteAttempt_Clickable().click();
 				instructorTakeDeletePg.getlnk_Close_Clickable().click();
@@ -159,8 +156,7 @@ public class InstructorTakeDeleteActions extends WeekWidgetActions {
 				newListElementToClick++;
 				instructorTakeDeletePg.getTxt_getDeleteTakeHeading().isDisplayed();
 				System.out.println(instructorTakeDeletePg.getTxt_getDeleteTakeHeading().getText());
-				Reporter.log("Course : '"+instructorTakeDeletePg.getTxt_getDeleteTakeHeading().getText()+"' : Delete take not avilable ");
-
+				Reporter.log("Course : '" + instructorTakeDeletePg.getTxt_getDeleteTakeHeading().getText() + "' : Delete take not avilable ******");
 				System.out.println("Delete take not avilable");
 				instructorTakeDeletePg.getlnk_Close_Clickable().isDisplayed();
 				instructorTakeDeletePg.getlnk_Close_Clickable().click();

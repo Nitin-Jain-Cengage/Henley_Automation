@@ -95,9 +95,16 @@ public class WeekWidgetActions extends StudentHomePageActions {
 		try {
 			weekWidgetPge.btn_conceptMap().isDisplayed();
 		} catch (Exception e) {
-			weekWidgetPge.acceptButtonOnStudentContent().isDisplayed();
-			weekWidgetPge.acceptButtonOnStudentContent().click();
+			driver.navigate().refresh();
+			weekWidgetPge.waitForSyncPage();
 			weekWidgetPge.btn_conceptMap().isDisplayed();
+			try{
+				weekWidgetPge.acceptButtonOnStudentContent().isDisplayed();
+				weekWidgetPge.acceptButtonOnStudentContent().click();
+				weekWidgetPge.btn_conceptMap().isDisplayed();
+			}catch(Exception ex){
+				ex.printStackTrace();
+			}
 		}
 	}
 

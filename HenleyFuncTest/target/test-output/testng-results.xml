@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="42" passed="42">
+  <reporter-output>
+    <line>
+      <![CDATA[Course : '5 Introduction and Quick Prep' : Take Delete Success]]>
+    </line>
+    <line>
+      <![CDATA[Course : '5.1a Kinetic and Potential Energy' : Take Delete Success]]>
+    </line>
+    <line>
+      <![CDATA[Course : '8.2a Lewis Symbols and Lewis Structures' : Take Delete Success]]>
+    </line>
+    <line>
+      <![CDATA[Course : '8.2a Lewis Symbols and Lewis Structures' : Delete take not avilable ******]]>
+    </line>
+    <line>
+      <![CDATA[Course : '8.3 Mastery' : Take Delete Success]]>
+    </line>
+    <line>
+      <![CDATA[Course : '8.3 Mastery' : Delete take not avilable ******]]>
+    </line>
+    <line>
+      <![CDATA[Course : '9.2b <em>sp</em><sup>2</sup> Hybrid Orbitals' : Take Delete Success]]>
+    </line>
+    <line>
+      <![CDATA[Course : '9.2b <em>sp</em><sup>2</sup> Hybrid Orbitals' : Delete take not avilable ******]]>
+    </line>
+    <line>
+      <![CDATA[Course : '9.2 Mastery' : Take Delete Success]]>
+    </line>
+    <line>
+      <![CDATA[Course : '9.2 Mastery' : Delete take not avilable ******]]>
+    </line>
+  </reporter-output>
+  <suite name="Henley Basic Smoke" duration-ms="1227793" started-at="2014-01-27T11:15:25Z" finished-at="2014-01-27T11:35:53Z">
+    <groups>
+    </groups>
+    <test name="Chemistry Delete Take" duration-ms="438521" started-at="2014-01-27T11:15:25Z" finished-at="2014-01-27T11:22:43Z">
+      <class name="com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@161f10f]" name="setUpClass" is-config="true" duration-ms="44579" started-at="2014-01-27T16:45:25Z" finished-at="2014-01-27T16:46:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="TC001_loginToTheSSOFrontDoor(java.lang.String)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@161f10f]" name="TC001_loginToTheSSOFrontDoor" duration-ms="14930" started-at="2014-01-27T16:46:10Z" finished-at="2014-01-27T16:46:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chemistry]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001_loginToTheSSOFrontDoor -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@161f10f]" name="takeresult" is-config="true" duration-ms="6" started-at="2014-01-27T16:46:24Z" finished-at="2014-01-27T16:46:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC001_loginToTheSSOFrontDoor status=SUCCESS method=MTXAutomationInstructorTakeDeleteTest.TC001_loginToTheSSOFrontDoor(java.lang.String)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@161f10f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="TC002_performOperationsOnHomePage()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@161f10f]" name="TC002_performOperationsOnHomePage" duration-ms="66095" started-at="2014-01-27T16:46:24Z" finished-at="2014-01-27T16:47:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002_performOperationsOnHomePage -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@161f10f]" name="takeresult" is-config="true" duration-ms="0" started-at="2014-01-27T16:47:31Z" finished-at="2014-01-27T16:47:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC002_performOperationsOnHomePage status=SUCCESS method=MTXAutomationInstructorTakeDeleteTest.TC002_performOperationsOnHomePage()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@161f10f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="TC003_actionsOnWeekWidgetView()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@161f10f]" name="TC003_actionsOnWeekWidgetView" duration-ms="2944" started-at="2014-01-27T16:47:31Z" finished-at="2014-01-27T16:47:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC003_actionsOnWeekWidgetView -->
+        <test-method status="PASS" signature="TC004_actionsOnStudentTab()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@161f10f]" name="TC004_actionsOnStudentTab" duration-ms="6320" started-at="2014-01-27T16:47:34Z" finished-at="2014-01-27T16:47:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC004_actionsOnStudentTab -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@161f10f]" name="takeresult" is-config="true" duration-ms="0" started-at="2014-01-27T16:47:34Z" finished-at="2014-01-27T16:47:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC003_actionsOnWeekWidgetView status=SUCCESS method=MTXAutomationInstructorTakeDeleteTest.TC003_actionsOnWeekWidgetView()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@161f10f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="TC005_performDeleteOfStudentScore()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@161f10f]" name="TC005_performDeleteOfStudentScore" duration-ms="302829" started-at="2014-01-27T16:47:40Z" finished-at="2014-01-27T16:52:43Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Course : '5 Introduction and Quick Prep' : Take Delete Success]]>
+            </line>
+            <line>
+              <![CDATA[Course : '5.1a Kinetic and Potential Energy' : Take Delete Success]]>
+            </line>
+            <line>
+              <![CDATA[Course : '8.2a Lewis Symbols and Lewis Structures' : Take Delete Success]]>
+            </line>
+            <line>
+              <![CDATA[Course : '8.2a Lewis Symbols and Lewis Structures' : Delete take not avilable ******]]>
+            </line>
+            <line>
+              <![CDATA[Course : '8.3 Mastery' : Take Delete Success]]>
+            </line>
+            <line>
+              <![CDATA[Course : '8.3 Mastery' : Delete take not avilable ******]]>
+            </line>
+            <line>
+              <![CDATA[Course : '9.2b <em>sp</em><sup>2</sup> Hybrid Orbitals' : Take Delete Success]]>
+            </line>
+            <line>
+              <![CDATA[Course : '9.2b <em>sp</em><sup>2</sup> Hybrid Orbitals' : Delete take not avilable ******]]>
+            </line>
+            <line>
+              <![CDATA[Course : '9.2 Mastery' : Take Delete Success]]>
+            </line>
+            <line>
+              <![CDATA[Course : '9.2 Mastery' : Delete take not avilable ******]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC005_performDeleteOfStudentScore -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@161f10f]" name="takeresult" is-config="true" duration-ms="0" started-at="2014-01-27T16:47:40Z" finished-at="2014-01-27T16:47:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC004_actionsOnStudentTab status=SUCCESS method=MTXAutomationInstructorTakeDeleteTest.TC004_actionsOnStudentTab()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@161f10f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@161f10f]" name="takeresult" is-config="true" duration-ms="1" started-at="2014-01-27T16:52:43Z" finished-at="2014-01-27T16:52:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC005_performDeleteOfStudentScore status=SUCCESS method=MTXAutomationInstructorTakeDeleteTest.TC005_performDeleteOfStudentScore()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@161f10f] output=Course : '5 Introduction and Quick Prep' : Take Delete Success]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@161f10f]" name="tearDownClass" is-config="true" duration-ms="808" started-at="2014-01-27T16:52:43Z" finished-at="2014-01-27T16:52:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest -->
+    </test> <!-- Chemistry Delete Take -->
+    <test name="Chemistry SmokeTest Student WorkFlow" duration-ms="315053" started-at="2014-01-27T11:22:44Z" finished-at="2014-01-27T11:27:59Z">
+      <class name="com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="setUpClass" is-config="true" duration-ms="37388" started-at="2014-01-27T16:52:44Z" finished-at="2014-01-27T16:53:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="TC001_loginToTheSSOFrontDoor()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="TC001_loginToTheSSOFrontDoor" duration-ms="16194" started-at="2014-01-27T16:53:21Z" finished-at="2014-01-27T16:53:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001_loginToTheSSOFrontDoor -->
+        <test-method status="PASS" signature="captureScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="captureScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2014-01-27T16:53:37Z" finished-at="2014-01-27T16:53:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC001_loginToTheSSOFrontDoor status=SUCCESS method=MTXAutomationSmokeTestChemistryStudentWorkFlow.TC001_loginToTheSSOFrontDoor()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShotOnFailure -->
+        <test-method status="PASS" signature="TC002_verifyUserNavigateToDashboardPageAndClickOnOpenButton()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="TC002_verifyUserNavigateToDashboardPageAndClickOnOpenButton" duration-ms="32433" started-at="2014-01-27T16:53:37Z" finished-at="2014-01-27T16:54:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002_verifyUserNavigateToDashboardPageAndClickOnOpenButton -->
+        <test-method status="PASS" signature="captureScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="captureScreenShotOnFailure" is-config="true" duration-ms="1" started-at="2014-01-27T16:54:10Z" finished-at="2014-01-27T16:54:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC002_verifyUserNavigateToDashboardPageAndClickOnOpenButton status=SUCCESS method=MTXAutomationSmokeTestChemistryStudentWorkFlow.TC002_verifyUserNavigateToDashboardPageAndClickOnOpenButton()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShotOnFailure -->
+        <test-method status="PASS" signature="TC003_verifyUserRedirectToStudentDashboardAndConceptMapButtonDisplay()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="TC003_verifyUserRedirectToStudentDashboardAndConceptMapButtonDisplay" duration-ms="12930" started-at="2014-01-27T16:54:10Z" finished-at="2014-01-27T16:54:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC003_verifyUserRedirectToStudentDashboardAndConceptMapButtonDisplay -->
+        <test-method status="PASS" signature="captureScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="captureScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2014-01-27T16:54:22Z" finished-at="2014-01-27T16:54:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC003_verifyUserRedirectToStudentDashboardAndConceptMapButtonDisplay status=SUCCESS method=MTXAutomationSmokeTestChemistryStudentWorkFlow.TC003_verifyUserRedirectToStudentDashboardAndConceptMapButtonDisplay()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShotOnFailure -->
+        <test-method status="PASS" signature="TC004_verifyAllAppsButtonDisplaysOnStudentHomePage()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="TC004_verifyAllAppsButtonDisplaysOnStudentHomePage" duration-ms="7631" started-at="2014-01-27T16:54:22Z" finished-at="2014-01-27T16:54:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC004_verifyAllAppsButtonDisplaysOnStudentHomePage -->
+        <test-method status="PASS" signature="captureScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="captureScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2014-01-27T16:54:30Z" finished-at="2014-01-27T16:54:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC004_verifyAllAppsButtonDisplaysOnStudentHomePage status=SUCCESS method=MTXAutomationSmokeTestChemistryStudentWorkFlow.TC004_verifyAllAppsButtonDisplaysOnStudentHomePage()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShotOnFailure -->
+        <test-method status="PASS" signature="TC005_verifyStudentLaunchActivitiesDisplayOnStudentHomePage()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="TC005_verifyStudentLaunchActivitiesDisplayOnStudentHomePage" duration-ms="13919" started-at="2014-01-27T16:54:30Z" finished-at="2014-01-27T16:54:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC005_verifyStudentLaunchActivitiesDisplayOnStudentHomePage -->
+        <test-method status="PASS" signature="TC006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="TC006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider" duration-ms="200" started-at="2014-01-27T16:54:44Z" finished-at="2014-01-27T16:54:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider -->
+        <test-method status="PASS" signature="captureScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="captureScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2014-01-27T16:54:44Z" finished-at="2014-01-27T16:54:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC005_verifyStudentLaunchActivitiesDisplayOnStudentHomePage status=SUCCESS method=MTXAutomationSmokeTestChemistryStudentWorkFlow.TC005_verifyStudentLaunchActivitiesDisplayOnStudentHomePage()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShotOnFailure -->
+        <test-method status="PASS" signature="captureScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="captureScreenShotOnFailure" is-config="true" duration-ms="1" started-at="2014-01-27T16:54:44Z" finished-at="2014-01-27T16:54:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider status=SUCCESS method=MTXAutomationSmokeTestChemistryStudentWorkFlow.TC006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShotOnFailure -->
+        <test-method status="PASS" signature="TC007_verifyStudentAttemptAndSubmitConceptualTutoredActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="TC007_verifyStudentAttemptAndSubmitConceptualTutoredActivity" duration-ms="70667" started-at="2014-01-27T16:54:44Z" finished-at="2014-01-27T16:55:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC007_verifyStudentAttemptAndSubmitConceptualTutoredActivity -->
+        <test-method status="PASS" signature="TC008_verifyStatusdisplayAsCompletedForConceptualTutoredActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="TC008_verifyStatusdisplayAsCompletedForConceptualTutoredActivity" duration-ms="71" started-at="2014-01-27T16:55:55Z" finished-at="2014-01-27T16:55:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC008_verifyStatusdisplayAsCompletedForConceptualTutoredActivity -->
+        <test-method status="PASS" signature="captureScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="captureScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2014-01-27T16:55:55Z" finished-at="2014-01-27T16:55:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC007_verifyStudentAttemptAndSubmitConceptualTutoredActivity status=SUCCESS method=MTXAutomationSmokeTestChemistryStudentWorkFlow.TC007_verifyStudentAttemptAndSubmitConceptualTutoredActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShotOnFailure -->
+        <test-method status="PASS" signature="captureScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="captureScreenShotOnFailure" is-config="true" duration-ms="1" started-at="2014-01-27T16:55:55Z" finished-at="2014-01-27T16:55:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC008_verifyStatusdisplayAsCompletedForConceptualTutoredActivity status=SUCCESS method=MTXAutomationSmokeTestChemistryStudentWorkFlow.TC008_verifyStatusdisplayAsCompletedForConceptualTutoredActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShotOnFailure -->
+        <test-method status="PASS" signature="TC009_verifyStudentAttemptAndSubmitIntroductionandQuickPrepActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="TC009_verifyStudentAttemptAndSubmitIntroductionandQuickPrepActivity" duration-ms="11324" started-at="2014-01-27T16:55:55Z" finished-at="2014-01-27T16:56:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC009_verifyStudentAttemptAndSubmitIntroductionandQuickPrepActivity -->
+        <test-method status="PASS" signature="captureScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="captureScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2014-01-27T16:56:06Z" finished-at="2014-01-27T16:56:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC009_verifyStudentAttemptAndSubmitIntroductionandQuickPrepActivity status=SUCCESS method=MTXAutomationSmokeTestChemistryStudentWorkFlow.TC009_verifyStudentAttemptAndSubmitIntroductionandQuickPrepActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShotOnFailure -->
+        <test-method status="PASS" signature="TC010_verifyIntroductionandQuickPrepActivityStatusAsCompleted()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="TC010_verifyIntroductionandQuickPrepActivityStatusAsCompleted" duration-ms="7508" started-at="2014-01-27T16:56:06Z" finished-at="2014-01-27T16:56:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC010_verifyIntroductionandQuickPrepActivityStatusAsCompleted -->
+        <test-method status="PASS" signature="TC011_verifyStudentAttemptAndSubmitMasteryActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="TC011_verifyStudentAttemptAndSubmitMasteryActivity" duration-ms="73102" started-at="2014-01-27T16:56:14Z" finished-at="2014-01-27T16:57:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC011_verifyStudentAttemptAndSubmitMasteryActivity -->
+        <test-method status="PASS" signature="captureScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="captureScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2014-01-27T16:56:14Z" finished-at="2014-01-27T16:56:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC010_verifyIntroductionandQuickPrepActivityStatusAsCompleted status=SUCCESS method=MTXAutomationSmokeTestChemistryStudentWorkFlow.TC010_verifyIntroductionandQuickPrepActivityStatusAsCompleted()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShotOnFailure -->
+        <test-method status="PASS" signature="captureScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="captureScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2014-01-27T16:57:27Z" finished-at="2014-01-27T16:57:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC011_verifyStudentAttemptAndSubmitMasteryActivity status=SUCCESS method=MTXAutomationSmokeTestChemistryStudentWorkFlow.TC011_verifyStudentAttemptAndSubmitMasteryActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShotOnFailure -->
+        <test-method status="PASS" signature="TC012_verifyStatusdisplayAsCompletedForMasteryActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="TC012_verifyStatusdisplayAsCompletedForMasteryActivity" duration-ms="7018" started-at="2014-01-27T16:57:27Z" finished-at="2014-01-27T16:57:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC012_verifyStatusdisplayAsCompletedForMasteryActivity -->
+        <test-method status="PASS" signature="captureScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="captureScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2014-01-27T16:57:34Z" finished-at="2014-01-27T16:57:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC012_verifyStatusdisplayAsCompletedForMasteryActivity status=SUCCESS method=MTXAutomationSmokeTestChemistryStudentWorkFlow.TC012_verifyStatusdisplayAsCompletedForMasteryActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShotOnFailure -->
+        <test-method status="PASS" signature="TC013_verifyStudentAttemptAndSubmitReviewandChallengeActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="TC013_verifyStudentAttemptAndSubmitReviewandChallengeActivity" duration-ms="12430" started-at="2014-01-27T16:57:34Z" finished-at="2014-01-27T16:57:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC013_verifyStudentAttemptAndSubmitReviewandChallengeActivity -->
+        <test-method status="PASS" signature="captureScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="captureScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2014-01-27T16:57:46Z" finished-at="2014-01-27T16:57:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC013_verifyStudentAttemptAndSubmitReviewandChallengeActivity status=SUCCESS method=MTXAutomationSmokeTestChemistryStudentWorkFlow.TC013_verifyStudentAttemptAndSubmitReviewandChallengeActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShotOnFailure -->
+        <test-method status="PASS" signature="TC014_verifyStatusdisplayAsCompletedForReviewandChallengeActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="TC014_verifyStatusdisplayAsCompletedForReviewandChallengeActivity" duration-ms="7376" started-at="2014-01-27T16:57:46Z" finished-at="2014-01-27T16:57:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC014_verifyStatusdisplayAsCompletedForReviewandChallengeActivity -->
+        <test-method status="PASS" signature="captureScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="captureScreenShotOnFailure" is-config="true" duration-ms="1" started-at="2014-01-27T16:57:54Z" finished-at="2014-01-27T16:57:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC014_verifyStatusdisplayAsCompletedForReviewandChallengeActivity status=SUCCESS method=MTXAutomationSmokeTestChemistryStudentWorkFlow.TC014_verifyStatusdisplayAsCompletedForReviewandChallengeActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShotOnFailure -->
+        <test-method status="PASS" signature="TC015_verifyStudentOpenStudyGuide()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="TC015_verifyStudentOpenStudyGuide" duration-ms="1740" started-at="2014-01-27T16:57:54Z" finished-at="2014-01-27T16:57:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC015_verifyStudentOpenStudyGuide -->
+        <test-method status="PASS" signature="captureScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="captureScreenShotOnFailure" is-config="true" duration-ms="1" started-at="2014-01-27T16:57:55Z" finished-at="2014-01-27T16:57:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC015_verifyStudentOpenStudyGuide status=SUCCESS method=MTXAutomationSmokeTestChemistryStudentWorkFlow.TC015_verifyStudentOpenStudyGuide()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShotOnFailure -->
+        <test-method status="PASS" signature="TC016_logOutFromApplication()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="TC016_logOutFromApplication" duration-ms="2349" started-at="2014-01-27T16:57:55Z" finished-at="2014-01-27T16:57:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC016_logOutFromApplication -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="tearDownClass" is-config="true" duration-ms="764" started-at="2014-01-27T16:57:58Z" finished-at="2014-01-27T16:57:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="captureScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0]" name="captureScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2014-01-27T16:57:58Z" finished-at="2014-01-27T16:57:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC016_logOutFromApplication status=SUCCESS method=MTXAutomationSmokeTestChemistryStudentWorkFlow.TC016_logOutFromApplication()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow@134bed0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShotOnFailure -->
+      </class> <!-- com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow -->
+    </test> <!-- Chemistry SmokeTest Student WorkFlow -->
+    <test name="History Delete Take" duration-ms="236806" started-at="2014-01-27T11:27:59Z" finished-at="2014-01-27T11:31:55Z">
+      <class name="com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@11f2ee1]" name="setUpClass" is-config="true" duration-ms="40013" started-at="2014-01-27T16:57:59Z" finished-at="2014-01-27T16:58:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="TC001_loginToTheSSOFrontDoor(java.lang.String)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@11f2ee1]" name="TC001_loginToTheSSOFrontDoor" duration-ms="16386" started-at="2014-01-27T16:58:39Z" finished-at="2014-01-27T16:58:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[history]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001_loginToTheSSOFrontDoor -->
+        <test-method status="PASS" signature="TC002_performOperationsOnHomePage()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@11f2ee1]" name="TC002_performOperationsOnHomePage" duration-ms="37823" started-at="2014-01-27T16:58:55Z" finished-at="2014-01-27T16:59:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002_performOperationsOnHomePage -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@11f2ee1]" name="takeresult" is-config="true" duration-ms="0" started-at="2014-01-27T16:58:55Z" finished-at="2014-01-27T16:58:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC001_loginToTheSSOFrontDoor status=SUCCESS method=MTXAutomationInstructorTakeDeleteTest.TC001_loginToTheSSOFrontDoor(java.lang.String)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@11f2ee1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="TC003_actionsOnWeekWidgetView()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@11f2ee1]" name="TC003_actionsOnWeekWidgetView" duration-ms="13796" started-at="2014-01-27T16:59:33Z" finished-at="2014-01-27T16:59:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC003_actionsOnWeekWidgetView -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@11f2ee1]" name="takeresult" is-config="true" duration-ms="0" started-at="2014-01-27T16:59:33Z" finished-at="2014-01-27T16:59:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC002_performOperationsOnHomePage status=SUCCESS method=MTXAutomationInstructorTakeDeleteTest.TC002_performOperationsOnHomePage()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@11f2ee1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@11f2ee1]" name="takeresult" is-config="true" duration-ms="1" started-at="2014-01-27T16:59:47Z" finished-at="2014-01-27T16:59:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC003_actionsOnWeekWidgetView status=SUCCESS method=MTXAutomationInstructorTakeDeleteTest.TC003_actionsOnWeekWidgetView()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@11f2ee1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="TC004_actionsOnStudentTab()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@11f2ee1]" name="TC004_actionsOnStudentTab" duration-ms="7549" started-at="2014-01-27T16:59:47Z" finished-at="2014-01-27T16:59:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC004_actionsOnStudentTab -->
+        <test-method status="PASS" signature="TC005_performDeleteOfStudentScore()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@11f2ee1]" name="TC005_performDeleteOfStudentScore" duration-ms="120451" started-at="2014-01-27T16:59:54Z" finished-at="2014-01-27T17:01:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC005_performDeleteOfStudentScore -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@11f2ee1]" name="takeresult" is-config="true" duration-ms="0" started-at="2014-01-27T16:59:54Z" finished-at="2014-01-27T16:59:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC004_actionsOnStudentTab status=SUCCESS method=MTXAutomationInstructorTakeDeleteTest.TC004_actionsOnStudentTab()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@11f2ee1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@11f2ee1]" name="takeresult" is-config="true" duration-ms="0" started-at="2014-01-27T17:01:55Z" finished-at="2014-01-27T17:01:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC005_performDeleteOfStudentScore status=SUCCESS method=MTXAutomationInstructorTakeDeleteTest.TC005_performDeleteOfStudentScore()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@11f2ee1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest@11f2ee1]" name="tearDownClass" is-config="true" duration-ms="785" started-at="2014-01-27T17:01:55Z" finished-at="2014-01-27T17:01:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationInstructorTakeDeleteTest -->
+    </test> <!-- History Delete Take -->
+    <test name="History SmokeTest Student WorkFlow" duration-ms="237385" started-at="2014-01-27T11:31:55Z" finished-at="2014-01-27T11:35:53Z">
+      <class name="com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="setUpClass" is-config="true" duration-ms="34573" started-at="2014-01-27T17:01:55Z" finished-at="2014-01-27T17:02:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="TC001_loginToTheSSOFrontDoor()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="TC001_loginToTheSSOFrontDoor" duration-ms="12755" started-at="2014-01-27T17:02:30Z" finished-at="2014-01-27T17:02:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001_loginToTheSSOFrontDoor -->
+        <test-method status="PASS" signature="TC002_verifyUserNavigateToDashboardPageAndClickOnOpenButton()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="TC002_verifyUserNavigateToDashboardPageAndClickOnOpenButton" duration-ms="39727" started-at="2014-01-27T17:02:43Z" finished-at="2014-01-27T17:03:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002_verifyUserNavigateToDashboardPageAndClickOnOpenButton -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="takeresult" is-config="true" duration-ms="0" started-at="2014-01-27T17:02:43Z" finished-at="2014-01-27T17:02:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC001_loginToTheSSOFrontDoor status=SUCCESS method=MTXAutomationSmokeTestHistoryStudentWorkFlow.TC001_loginToTheSSOFrontDoor()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="takeresult" is-config="true" duration-ms="1" started-at="2014-01-27T17:03:22Z" finished-at="2014-01-27T17:03:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC002_verifyUserNavigateToDashboardPageAndClickOnOpenButton status=SUCCESS method=MTXAutomationSmokeTestHistoryStudentWorkFlow.TC002_verifyUserNavigateToDashboardPageAndClickOnOpenButton()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="TC003_verifyUserRedirectToStudentDashboardAndConceptMapButtonDisplay()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="TC003_verifyUserRedirectToStudentDashboardAndConceptMapButtonDisplay" duration-ms="8443" started-at="2014-01-27T17:03:22Z" finished-at="2014-01-27T17:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC003_verifyUserRedirectToStudentDashboardAndConceptMapButtonDisplay -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="takeresult" is-config="true" duration-ms="0" started-at="2014-01-27T17:03:31Z" finished-at="2014-01-27T17:03:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC003_verifyUserRedirectToStudentDashboardAndConceptMapButtonDisplay status=SUCCESS method=MTXAutomationSmokeTestHistoryStudentWorkFlow.TC003_verifyUserRedirectToStudentDashboardAndConceptMapButtonDisplay()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="TC004_verifyAllAppsButtonDisplaysOnStudentHomePage()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="TC004_verifyAllAppsButtonDisplaysOnStudentHomePage" duration-ms="1649" started-at="2014-01-27T17:03:31Z" finished-at="2014-01-27T17:03:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC004_verifyAllAppsButtonDisplaysOnStudentHomePage -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="takeresult" is-config="true" duration-ms="1" started-at="2014-01-27T17:03:33Z" finished-at="2014-01-27T17:03:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC004_verifyAllAppsButtonDisplaysOnStudentHomePage status=SUCCESS method=MTXAutomationSmokeTestHistoryStudentWorkFlow.TC004_verifyAllAppsButtonDisplaysOnStudentHomePage()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="TC005_verifyStudentLaunchActivitiesDisplayOnStudentHomePage()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="TC005_verifyStudentLaunchActivitiesDisplayOnStudentHomePage" duration-ms="9094" started-at="2014-01-27T17:03:33Z" finished-at="2014-01-27T17:03:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC005_verifyStudentLaunchActivitiesDisplayOnStudentHomePage -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="takeresult" is-config="true" duration-ms="1" started-at="2014-01-27T17:03:42Z" finished-at="2014-01-27T17:03:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC005_verifyStudentLaunchActivitiesDisplayOnStudentHomePage status=SUCCESS method=MTXAutomationSmokeTestHistoryStudentWorkFlow.TC005_verifyStudentLaunchActivitiesDisplayOnStudentHomePage()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="TC006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="TC006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider" duration-ms="357" started-at="2014-01-27T17:03:42Z" finished-at="2014-01-27T17:03:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="takeresult" is-config="true" duration-ms="0" started-at="2014-01-27T17:03:42Z" finished-at="2014-01-27T17:03:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider status=SUCCESS method=MTXAutomationSmokeTestHistoryStudentWorkFlow.TC006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="TC007_verifyStudentAttemptAndSubmitInfographicActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="TC007_verifyStudentAttemptAndSubmitInfographicActivity" duration-ms="51848" started-at="2014-01-27T17:03:42Z" finished-at="2014-01-27T17:04:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC007_verifyStudentAttemptAndSubmitInfographicActivity -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="takeresult" is-config="true" duration-ms="0" started-at="2014-01-27T17:04:34Z" finished-at="2014-01-27T17:04:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC007_verifyStudentAttemptAndSubmitInfographicActivity status=SUCCESS method=MTXAutomationSmokeTestHistoryStudentWorkFlow.TC007_verifyStudentAttemptAndSubmitInfographicActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="TC008_verifyStatusDisplayAsCompletedForInfographicActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="TC008_verifyStatusDisplayAsCompletedForInfographicActivity" duration-ms="1417" started-at="2014-01-27T17:04:34Z" finished-at="2014-01-27T17:04:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC008_verifyStatusDisplayAsCompletedForInfographicActivity -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="takeresult" is-config="true" duration-ms="1" started-at="2014-01-27T17:04:35Z" finished-at="2014-01-27T17:04:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC008_verifyStatusDisplayAsCompletedForInfographicActivity status=SUCCESS method=MTXAutomationSmokeTestHistoryStudentWorkFlow.TC008_verifyStatusDisplayAsCompletedForInfographicActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="TC009_verifyStudentAttemptopenSourceActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="TC009_verifyStudentAttemptopenSourceActivity" duration-ms="32304" started-at="2014-01-27T17:04:35Z" finished-at="2014-01-27T17:05:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC009_verifyStudentAttemptopenSourceActivity -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="takeresult" is-config="true" duration-ms="1" started-at="2014-01-27T17:05:08Z" finished-at="2014-01-27T17:05:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC009_verifyStudentAttemptopenSourceActivity status=SUCCESS method=MTXAutomationSmokeTestHistoryStudentWorkFlow.TC009_verifyStudentAttemptopenSourceActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="TC010_verifyStatusDisplayAsCompletedForSourceActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="TC010_verifyStatusDisplayAsCompletedForSourceActivity" duration-ms="1804" started-at="2014-01-27T17:05:08Z" finished-at="2014-01-27T17:05:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC010_verifyStatusDisplayAsCompletedForSourceActivity -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="takeresult" is-config="true" duration-ms="0" started-at="2014-01-27T17:05:09Z" finished-at="2014-01-27T17:05:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC010_verifyStatusDisplayAsCompletedForSourceActivity status=SUCCESS method=MTXAutomationSmokeTestHistoryStudentWorkFlow.TC010_verifyStatusDisplayAsCompletedForSourceActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="TC011_verifyStudentAttemptEssayActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="TC011_verifyStudentAttemptEssayActivity" duration-ms="11934" started-at="2014-01-27T17:05:09Z" finished-at="2014-01-27T17:05:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC011_verifyStudentAttemptEssayActivity -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="takeresult" is-config="true" duration-ms="1" started-at="2014-01-27T17:05:21Z" finished-at="2014-01-27T17:05:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC011_verifyStudentAttemptEssayActivity status=SUCCESS method=MTXAutomationSmokeTestHistoryStudentWorkFlow.TC011_verifyStudentAttemptEssayActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="TC012_verifyStatusDisplayAsCompletedForEssayActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="TC012_verifyStatusDisplayAsCompletedForEssayActivity" duration-ms="1971" started-at="2014-01-27T17:05:21Z" finished-at="2014-01-27T17:05:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC012_verifyStatusDisplayAsCompletedForEssayActivity -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="takeresult" is-config="true" duration-ms="0" started-at="2014-01-27T17:05:23Z" finished-at="2014-01-27T17:05:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC012_verifyStatusDisplayAsCompletedForEssayActivity status=SUCCESS method=MTXAutomationSmokeTestHistoryStudentWorkFlow.TC012_verifyStatusDisplayAsCompletedForEssayActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="TC013_verifyStudentAttemptSingleAndMultipleSourceActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="TC013_verifyStudentAttemptSingleAndMultipleSourceActivity" duration-ms="16053" started-at="2014-01-27T17:05:23Z" finished-at="2014-01-27T17:05:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC013_verifyStudentAttemptSingleAndMultipleSourceActivity -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="takeresult" is-config="true" duration-ms="1" started-at="2014-01-27T17:05:39Z" finished-at="2014-01-27T17:05:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC013_verifyStudentAttemptSingleAndMultipleSourceActivity status=SUCCESS method=MTXAutomationSmokeTestHistoryStudentWorkFlow.TC013_verifyStudentAttemptSingleAndMultipleSourceActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="TC014_verifyStatusDisplayAsCompletedForSingleAndMultipleSourceActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="TC014_verifyStatusDisplayAsCompletedForSingleAndMultipleSourceActivity" duration-ms="1989" started-at="2014-01-27T17:05:39Z" finished-at="2014-01-27T17:05:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC014_verifyStatusDisplayAsCompletedForSingleAndMultipleSourceActivity -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="takeresult" is-config="true" duration-ms="0" started-at="2014-01-27T17:05:41Z" finished-at="2014-01-27T17:05:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC014_verifyStatusDisplayAsCompletedForSingleAndMultipleSourceActivity status=SUCCESS method=MTXAutomationSmokeTestHistoryStudentWorkFlow.TC014_verifyStatusDisplayAsCompletedForSingleAndMultipleSourceActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="TC015_verifyStudentAttemptStudyActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="TC015_verifyStudentAttemptStudyActivity" duration-ms="6296" started-at="2014-01-27T17:05:41Z" finished-at="2014-01-27T17:05:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC015_verifyStudentAttemptStudyActivity -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="takeresult" is-config="true" duration-ms="0" started-at="2014-01-27T17:05:48Z" finished-at="2014-01-27T17:05:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC015_verifyStudentAttemptStudyActivity status=SUCCESS method=MTXAutomationSmokeTestHistoryStudentWorkFlow.TC015_verifyStudentAttemptStudyActivity()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="TC016_logOutFromApplication()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="TC016_logOutFromApplication" duration-ms="4246" started-at="2014-01-27T17:05:48Z" finished-at="2014-01-27T17:05:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC016_logOutFromApplication -->
+        <test-method status="PASS" signature="takeresult(org.testng.ITestResult)[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="takeresult" is-config="true" duration-ms="1" started-at="2014-01-27T17:05:52Z" finished-at="2014-01-27T17:05:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC016_logOutFromApplication status=SUCCESS method=MTXAutomationSmokeTestHistoryStudentWorkFlow.TC016_logOutFromApplication()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeresult -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow@18fd984]" name="tearDownClass" is-config="true" duration-ms="913" started-at="2014-01-27T17:05:52Z" finished-at="2014-01-27T17:05:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.cengage.mtx.automation.BasicSmoke.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow -->
+    </test> <!-- History SmokeTest Student WorkFlow -->
+  </suite> <!-- Henley Basic Smoke -->
+</testng-results>
