@@ -5,7 +5,6 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
 import org.testng.Reporter;
 
 import com.cengage.mtx.automation.InstructorTakeDelete.pageuiobjects.InstructorTakeDeleteUi;
@@ -68,16 +67,15 @@ public class InstructorTakeDeleteActions extends WeekWidgetActions {
 		}
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see com.cengage.mtx.automation.chemistry.keywords.WeekWidgetActions#
-	 * switchToNewWindow()
-	 */
-	public void switchToNewWindow() {
-		instructorTakeDeletePg.getWindowHandle();
-	}
-
+	// /*
+	// * (non-Javadoc)
+	// *
+	// * @see com.cengage.mtx.automation.chemistry.keywords.WeekWidgetActions#
+	// * switchToNewWindow()
+	// */
+	// public void switchToNewWindow() {
+	// instructorTakeDeletePg.getWindowHandle();
+	// }
 	/**
 	 * Click on view progress app.
 	 */
@@ -89,19 +87,19 @@ public class InstructorTakeDeleteActions extends WeekWidgetActions {
 		}
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.cengage.mtx.automation.chemistry.keywords.WeekWidgetActions#getVerify
-	 * (java.lang.String)
-	 */
-	public void getVerify(String appName) {
-		weekWidgetPge.getHeadingNameOfTheApp(appName);
-		Assert.assertTrue(weekWidgetPge.getHeadingNameOfTheApp(appName).isDisplayed());
-		weekWidgetPge.getHeadingNameOfTheApp(appName);
-	}
-
+	// /*
+	// * (non-Javadoc)
+	// *
+	// * @see
+	// *
+	// com.cengage.mtx.automation.chemistry.keywords.WeekWidgetActions#getVerify
+	// * (java.lang.String)
+	// */
+	// public void getVerify(String appName) {
+	// weekWidgetPge.getHeadingNameOfTheApp(appName);
+	// Assert.assertTrue(weekWidgetPge.getHeadingNameOfTheApp(appName).isDisplayed());
+	// weekWidgetPge.getHeadingNameOfTheApp(appName);
+	// }
 	/**
 	 * Click on student roaster tab.
 	 */
@@ -114,13 +112,13 @@ public class InstructorTakeDeleteActions extends WeekWidgetActions {
 	/**
 	 * Click on student.
 	 * 
-	 * @param studName
-	 *            the stud name
+	 * @param student Name
+	 *            the student Name
 	 */
-	public void clickOnStudent(String studName) {
+	public void clickOnStudent(String studentName) {
 		instructorTakeDeletePg.waitForSyncPage();
 		for (WebElement ele1 : instructorTakeDeletePg.lnk_studname) {
-			if (ele1.getText().equalsIgnoreCase(studName)) {
+			if (ele1.getText().equalsIgnoreCase(studentName)) {
 				System.out.println("student found");
 				ele1.click();
 				break;
@@ -147,21 +145,23 @@ public class InstructorTakeDeleteActions extends WeekWidgetActions {
 			ele3.get(newListElementToClick).click();
 			try {
 				instructorTakeDeletePg.getTxt_getDeleteTakeHeading().isDisplayed();
-				System.out.println(instructorTakeDeletePg.getTxt_getDeleteTakeHeading().getText());
-				Reporter.log("Course : '" + instructorTakeDeletePg.getTxt_getDeleteTakeHeading().getText() + "' : Take Delete Success");
+				String CourseName = instructorTakeDeletePg.getTxt_getDeleteTakeHeading().getText();
 				instructorTakeDeletePg.getlnk_Delete_Clickable().click();
 				instructorTakeDeletePg.getlnk_DeleteAttempt_Clickable().click();
 				instructorTakeDeletePg.getlnk_Close_Clickable().click();
+				System.out.println(CourseName + ": Take Delete Success -------------");
+				Reporter.log("Course : '" + CourseName + "' : Take Delete Success");
 			} catch (Exception ex) {
 				newListElementToClick++;
 				instructorTakeDeletePg.getTxt_getDeleteTakeHeading().isDisplayed();
-				System.out.println(instructorTakeDeletePg.getTxt_getDeleteTakeHeading().getText());
-				Reporter.log("Course : '" + instructorTakeDeletePg.getTxt_getDeleteTakeHeading().getText() + "' : Delete take not avilable ******");
-				System.out.println("Delete take not avilable");
+				String CourseName = instructorTakeDeletePg.getTxt_getDeleteTakeHeading().getText();
 				instructorTakeDeletePg.getlnk_Close_Clickable().isDisplayed();
 				instructorTakeDeletePg.getlnk_Close_Clickable().click();
+				System.out.println(CourseName + " : Delete take not avilable ******");
+				Reporter.log("Course : '" + CourseName + "' : Delete take not avilable ******");
 				continue;
 			}
+			ele3.clear();
 		}
 	}
 }

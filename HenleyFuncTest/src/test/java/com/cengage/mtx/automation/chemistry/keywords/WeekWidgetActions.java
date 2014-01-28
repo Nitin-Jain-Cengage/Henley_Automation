@@ -121,6 +121,7 @@ public class WeekWidgetActions extends StudentHomePageActions {
 	 * Click on merriam webster app.
 	 */
 	public void clickOnMerriamWebsterApp() {
+		System.out.println("Application Displays Under : ");
 		for (int i = 0; i < weekWidgetPge.lbl_appName.size(); i++) {
 			System.out.println(weekWidgetPge.lbl_appName.get(i).getAttribute("alt"));
 			if (weekWidgetPge.lbl_appName.get(i).getAttribute("alt").equals("Merriam-Webster's Dictionary")) {

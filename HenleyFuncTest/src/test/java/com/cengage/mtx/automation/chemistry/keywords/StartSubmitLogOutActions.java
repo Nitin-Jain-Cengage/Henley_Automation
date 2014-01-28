@@ -99,7 +99,14 @@ public class StartSubmitLogOutActions extends DifferentActivitiesActions {
 		startSubmitLogOutPg.getBtn_SubmitActivity().click();
 		startSubmitLogOutPg.switchToDefaultContent();
 		startSubmitLogOutPg.waitForSyncPage();
+		try{
 		startSubmitLogOutPg.getBtn_ConceptMap().isDisplayed();
+		}catch(Exception e){
+			System.out.println("Concept Map button not found on Page: Page Refresh and Search Button Again");
+			driver.navigate().refresh();
+			startSubmitLogOutPg.getBtn_ConceptMap().isDisplayed();
+
+		}
 	}
 
 	/**

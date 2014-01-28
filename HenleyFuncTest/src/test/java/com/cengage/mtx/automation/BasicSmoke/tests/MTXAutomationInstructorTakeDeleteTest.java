@@ -40,7 +40,7 @@ public class MTXAutomationInstructorTakeDeleteTest {
 	 */
 	@Test
 	@Parameters({"courseType"})
-	public void TC001_loginToTheSSOFrontDoor(@Optional("history") String myName) {
+	public void TC001_loginToTheSSOFrontDoor(@Optional("chemistry") String myName) {
 		test.loginActionsPg.loginToTheApplication(getYamlValue("users.instructor.username"), getYamlValue("users.instructor.password"));
 		bookType = myName.toLowerCase().trim();
 

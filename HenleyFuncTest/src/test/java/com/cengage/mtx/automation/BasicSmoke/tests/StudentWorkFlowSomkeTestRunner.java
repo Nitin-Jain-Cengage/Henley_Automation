@@ -7,7 +7,7 @@ import org.testng.TestNG;
 import org.testng.annotations.Test;
 
 /**
- * The Class Henley_Basic_Smoke_TestRunner.
+ * The Class StudentWorkFlowSomkeTestRunner.
  */
 public class StudentWorkFlowSomkeTestRunner {
         

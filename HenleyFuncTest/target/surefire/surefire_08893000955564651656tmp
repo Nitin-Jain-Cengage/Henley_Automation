@@ -1,0 +1,6 @@
+#surefire_0
+#Tue Jan 28 11:22:19 IST 2014
+user.dir=C\:\\Users\\shivamtiwari\\workspace\\HenleyFuncTest
+localRepository=C\:\\Users\\shivamtiwari\\.m2\\repository
+basedir=C\:\\Users\\shivamtiwari\\workspace\\HenleyFuncTest
+test=StudentWorkFlowSomkeTestRunner
