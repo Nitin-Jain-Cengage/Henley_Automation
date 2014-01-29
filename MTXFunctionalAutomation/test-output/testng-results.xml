@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[Course : '8.2a Lewis Symbols and Lewis Structures' : Delete take not avilable ******<br>]]>
+    </line>
+    <line>
+      <![CDATA[Course : '8.3 Mastery' : Delete take not avilable ******<br>]]>
+    </line>
+    <line>
+      <![CDATA[Course : '9.2b [em]sp[/em][sup]2[/sup] Hybrid Orbitals' : Delete take not avilable ******<br>]]>
+    </line>
+    <line>
+      <![CDATA[Course : '9.2 Mastery' : Delete take not avilable ******<br>]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4659" started-at="2014-01-14T13:30:21Z" finished-at="2014-01-14T13:30:26Z">
+  <suite name="Default suite" duration-ms="998195" started-at="2014-01-29T13:35:13Z" finished-at="2014-01-29T13:51:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4659" started-at="2014-01-14T13:30:21Z" finished-at="2014-01-14T13:30:26Z">
-      <class name="com.cengage.automation.reports.ResultsIT">
-        <test-method status="PASS" signature="setupMailConfig()[pri:0, instance:com.cengage.automation.reports.ResultsIT@a9ae05]" name="setupMailConfig" is-config="true" duration-ms="7" started-at="2014-01-14T19:00:21Z" finished-at="2014-01-14T19:00:21Z">
+    <test name="Default test" duration-ms="998195" started-at="2014-01-29T13:35:13Z" finished-at="2014-01-29T13:51:52Z">
+      <class name="com.cengage.mtx.test.smoketest.StudentWorkFlowSomkeTestRunner">
+        <test-method status="PASS" signature="Test()[pri:0, instance:com.cengage.mtx.test.smoketest.StudentWorkFlowSomkeTestRunner@fc9944]" name="Test" duration-ms="998195" started-at="2014-01-29T19:05:13Z" finished-at="2014-01-29T19:21:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupMailConfig -->
-        <test-method status="PASS" signature="sendResultsMail()[pri:0, instance:com.cengage.automation.reports.ResultsIT@a9ae05]" name="sendResultsMail" duration-ms="4640" started-at="2014-01-14T19:00:21Z" finished-at="2014-01-14T19:00:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sendResultsMail -->
-      </class> <!-- com.cengage.automation.reports.ResultsIT -->
+        </test-method> <!-- Test -->
+      </class> <!-- com.cengage.mtx.test.smoketest.StudentWorkFlowSomkeTestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
