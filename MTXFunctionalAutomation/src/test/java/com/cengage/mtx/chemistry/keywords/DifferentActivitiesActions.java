@@ -1,6 +1,5 @@
 package com.cengage.mtx.chemistry.keywords;
 
-
 import org.openqa.selenium.WebDriver;
 
 import com.cengage.mtx.chemistry.pageuiobjects.DifferentActivitiesUi;
@@ -9,7 +8,7 @@ import com.cengage.mtx.chemistry.pageuiobjects.DifferentActivitiesUi;
  * The Class DifferentActivitiesActions.
  */
 public class DifferentActivitiesActions extends WeekWidgetActions {
-	
+
 	/** The diff activities pg. */
 	DifferentActivitiesUi diffActivitiesPg;
 	
@@ -61,6 +60,7 @@ public class DifferentActivitiesActions extends WeekWidgetActions {
 	 * @param TutoredActivityName the tutored activity name
 	 */
 	public void clickOnTutoredActivity(String TutoredActivityName) {
-		diffActivitiesPg.getlbl_TutoredActivity_Clickable(TutoredActivityName).click();
+		diffActivitiesPg.getlbl_TutoredActivity_Clickable(TutoredActivityName)
+				.click();
 	}
 }

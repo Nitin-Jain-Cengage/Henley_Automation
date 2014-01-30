@@ -111,10 +111,12 @@ public class YamlReader {
 	 *            the token
 	 * @return the map
 	 */
-	private static Map<String, Object> parseMap(Map<String, Object> object, String token) {
+	private static Map<String, Object> parseMap(Map<String, Object> object,
+			String token) {
 		if (token.contains(".")) {
 			String[] st = token.split("\\.");
-			object = parseMap((Map<String, Object>) object.get(st[0]), token.replace(st[0] + ".", ""));
+			object = parseMap((Map<String, Object>) object.get(st[0]),
+					token.replace(st[0] + ".", ""));
 		}
 		return object;
 	}
@@ -130,7 +132,8 @@ public class YamlReader {
 		Reader reader = null;
 		int tokenCount = 0, i = 0;
 		Map<String, Object> map = null;
-		StringTokenizer st = new java.util.StringTokenizer(yamlToken + ".x", ".");
+		StringTokenizer st = new java.util.StringTokenizer(yamlToken + ".x",
+				".");
 		try {
 			reader = new FileReader(yamlFilePath);
 			Yaml yaml = new Yaml();
@@ -142,7 +145,9 @@ public class YamlReader {
 			}
 			return map;
 		} catch (Exception e) {
-			System.out.println("Either Yaml file not found or there is problem with token passed!!!\n" + e);
+			System.out
+					.println("Either Yaml file not found or there is problem with token passed!!!\n"
+							+ e);
 			return null;
 		}
 	}

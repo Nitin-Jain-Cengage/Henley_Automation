@@ -4,16 +4,12 @@ import org.openqa.selenium.WebDriver;
 
 import com.cengage.mtx.open_close_activity_from_master.pageuiobjects.MasterloginPageUi;
 
-
 /**
  * The Class Master_loginPage_Action.
  */
 public class Master_loginPage_Action {
-	
-	/**
-	 * The master login page.
-	 *
-	 */
+
+	/** The master login page. */
 	MasterloginPageUi masterLoginPage;
 
 	/**
@@ -24,7 +20,7 @@ public class Master_loginPage_Action {
 	public Master_loginPage_Action(WebDriver driver) {
 		masterLoginPage = new MasterloginPageUi(driver);
 	}
-	
+
 	/**
 	 * Login to the admin application.
 	 *
@@ -36,7 +32,4 @@ public class Master_loginPage_Action {
 		masterLoginPage.getinput_AdminPassword().sendKeys(password);
 		masterLoginPage.getBtn_AdminGO().click();
 	}
-	
-
-	
 }

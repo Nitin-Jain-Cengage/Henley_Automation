@@ -9,16 +9,17 @@ import com.cengage.mtx.chemistry.pageuiobjects.StartSubmitLogOutUi;
  * The Class StartSubmitLogOutActions.
  */
 public class StartSubmitLogOutActions extends DifferentActivitiesActions {
+
 	/** The start submit log out pg. */
 	StartSubmitLogOutUi startSubmitLogOutPg;
+	
 	/** The driver. */
 	WebDriver driver;
 
 	/**
 	 * Instantiates a new start submit log out actions.
-	 * 
-	 * @param driver
-	 *            the driver
+	 *
+	 * @param driver the driver
 	 */
 	public StartSubmitLogOutActions(WebDriver driver) {
 		super(driver);
@@ -31,8 +32,10 @@ public class StartSubmitLogOutActions extends DifferentActivitiesActions {
 	 */
 	public void clickOnStartActivity() {
 		startSubmitLogOutPg.switchToDefaultContent();
-		startSubmitLogOutPg.switchToFrame(startSubmitLogOutPg.getFrame_Content().getAttribute("id"));
-		startSubmitLogOutPg.switchToFrame("easyXDM_activityService_cxp_Target_provider");
+		startSubmitLogOutPg.switchToFrame(startSubmitLogOutPg
+				.getFrame_Content().getAttribute("id"));
+		startSubmitLogOutPg
+				.switchToFrame("easyXDM_activityService_cxp_Target_provider");
 		startSubmitLogOutPg.btn_startActivity.isDisplayed();
 		startSubmitLogOutPg.btn_startActivity.click();
 	}
@@ -42,8 +45,10 @@ public class StartSubmitLogOutActions extends DifferentActivitiesActions {
 	 */
 	public void clickOnStartActivityForTutored() {
 		startSubmitLogOutPg.switchToDefaultContent();
-		startSubmitLogOutPg.switchToFrame(startSubmitLogOutPg.getFrame_Content().getAttribute("id"));
-		startSubmitLogOutPg.switchToFrame("easyXDM_activityService_cxp_Target_provider");
+		startSubmitLogOutPg.switchToFrame(startSubmitLogOutPg
+				.getFrame_Content().getAttribute("id"));
+		startSubmitLogOutPg
+				.switchToFrame("easyXDM_activityService_cxp_Target_provider");
 		startSubmitLogOutPg.getbtn_startActivityForTutored().isDisplayed();
 		startSubmitLogOutPg.getbtn_startActivityForTutored().click();
 	}
@@ -99,13 +104,13 @@ public class StartSubmitLogOutActions extends DifferentActivitiesActions {
 		startSubmitLogOutPg.getBtn_SubmitActivity().click();
 		startSubmitLogOutPg.switchToDefaultContent();
 		startSubmitLogOutPg.waitForSyncPage();
-		try{
-		startSubmitLogOutPg.getBtn_ConceptMap().isDisplayed();
-		}catch(Exception e){
-			System.out.println("Concept Map button not found on Page: Page Refresh and Search Button Again");
+		try {
+			startSubmitLogOutPg.getBtn_ConceptMap().isDisplayed();
+		} catch (Exception e) {
+			System.out
+					.println("Concept Map button not found on Page: Page Refresh and Search Button Again");
 			driver.navigate().refresh();
 			startSubmitLogOutPg.getBtn_ConceptMap().isDisplayed();
-
 		}
 	}
 
@@ -148,8 +153,13 @@ public class StartSubmitLogOutActions extends DifferentActivitiesActions {
 	 * Verify log out message.
 	 */
 	public void verifyLogOutMessage() {
-		System.out.println(startSubmitLogOutPg.getTxt_LogoutMessage().getText());
-		Assert.assertTrue( startSubmitLogOutPg.getTxt_LogoutMessage().getText().contains("You have logged out or timed out of your course.") && 
-						   startSubmitLogOutPg.getTxt_LogoutMessage().getText().contains("Restart your session to continue your work."));
+		System.out
+				.println(startSubmitLogOutPg.getTxt_LogoutMessage().getText());
+		Assert.assertTrue(startSubmitLogOutPg.getTxt_LogoutMessage().getText()
+				.contains("You have logged out or timed out of your course.")
+				&& startSubmitLogOutPg
+						.getTxt_LogoutMessage()
+						.getText()
+						.contains("Restart your session to continue your work."));
 	}
 }

@@ -3,33 +3,33 @@
 <suite name="MTX Smoke Suite">
 
 
-	<test name="Chemistry Delete Take" preserve-order="true">
+	<test name="Chemistry Delete Take From Instructor" preserve-order="true">
 		<parameter name="courseType" value="chemistry" />
 		<classes>
 			<class
-				name="com.cengage.mtx.test.smoketest.MTXAutomationInstructorTakeDeleteTest" />
+				name="com.cengage.mtx.smoke_test.tests.MTXAutomationInstructorTakeDeleteTest" />
 		</classes>
 	</test>
 
 	<test name="Chemistry SmokeTest Student WorkFlow" preserve-order="true">
 		<classes>
 			<class
-				name="com.cengage.mtx.test.smoketest.MTXAutomationSmokeTestChemistryStudentWorkFlow" />
+				name="com.cengage.mtx.smoke_test.tests.MTXAutomationSmokeTestChemistryStudentWorkFlow" />
 		</classes>
 	</test>
 
-	<test name="History Delete Take" preserve-order="true">
+	<test name="History Delete Take From Instructor" preserve-order="true">
 		<parameter name="courseType" value="history" />
 		<classes>
 			<class
-				name="com.cengage.mtx.test.smoketest.MTXAutomationInstructorTakeDeleteTest" />
+				name="com.cengage.mtx.smoke_test.tests.MTXAutomationInstructorTakeDeleteTest" />
 		</classes>
 	</test>
 
 	<test name="History SmokeTest Student WorkFlow" preserve-order="true">
 		<classes>
 			<class
-				name="com.cengage.mtx.test.smoketest.MTXAutomationSmokeTestHistoryStudentWorkFlow" />
+				name="com.cengage.mtx.smoke_test.tests.MTXAutomationSmokeTestHistoryStudentWorkFlow" />
 		</classes>
 	</test>
 

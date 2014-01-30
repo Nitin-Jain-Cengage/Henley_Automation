@@ -7,12 +7,12 @@ import org.openqa.selenium.WebElement;
 import com.cengage.mtx.chemistry.pageuiobjects.BasePage;
 
 /**
- * The Class Master_loginPage_Ui.
+ * The Class MasterloginPageUi.
  */
-public class MasterloginPageUi extends BasePage{
+public class MasterloginPageUi extends BasePage {
 
 	/**
-	 * Instantiates a new master_login page_ ui.
+	 * Instantiates a new masterlogin page ui.
 	 *
 	 * @param driver the driver
 	 */
@@ -28,7 +28,7 @@ public class MasterloginPageUi extends BasePage{
 	public WebElement getinput_AdminUserName() {
 		return expWait.getWhenVisible(By.name("username"), 80);
 	}
-	
+
 	/**
 	 * Gets the input_ admin password.
 	 *
@@ -37,7 +37,7 @@ public class MasterloginPageUi extends BasePage{
 	public WebElement getinput_AdminPassword() {
 		return expWait.getWhenVisible(By.name("password"), 80);
 	}
-	
+
 	/**
 	 * Gets the btn_ admin go.
 	 *

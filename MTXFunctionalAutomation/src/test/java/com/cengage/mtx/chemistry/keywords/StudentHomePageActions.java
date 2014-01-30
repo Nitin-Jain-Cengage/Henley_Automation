@@ -8,12 +8,11 @@ import org.openqa.selenium.WebDriver;
 
 import com.cengage.mtx.chemistry.pageuiobjects.StudentHomePageUI;
 
-
 /**
  * The Class StudentHomePageActions.
  */
 public class StudentHomePageActions extends LoginPageActions {
-	
+
 	/** The std page. */
 	StudentHomePageUI stdPage;
 	
@@ -57,16 +56,16 @@ public class StudentHomePageActions extends LoginPageActions {
 		stdPage.getBtn_Open(bookName).isDisplayed();
 		String attValue = stdPage.getBtn_Open(bookName).getAttribute("onclick");
 		String[] url = attValue.split("http://.*.ng.cengage.com");
-		
 		url = url[1].split("','MTC',");
 		if (env.equals("qad")) {
 			driver.navigate().to("http://qad-ng.cengage.com" + url[0]);
-			System.out.println("Navigated To Environment :: "+"http://qad-ng.cengage.com" + url[0]);
+			System.out.println("Navigated To Environment :: "
+					+ "http://qad-ng.cengage.com" + url[0]);
 		}
 		if (env.equals("qaf")) {
 			driver.navigate().to("http://qaf.ng.cengage.com" + url[0]);
-			System.out.println("Navigated To Environment :-> "+"http://qaf.ng.cengage.com" + url[0]);
-
+			System.out.println("Navigated To Environment :-> "
+					+ "http://qaf.ng.cengage.com" + url[0]);
 		}
 	}
 }

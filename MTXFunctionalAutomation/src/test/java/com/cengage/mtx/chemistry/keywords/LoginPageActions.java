@@ -10,10 +10,9 @@ import com.cengage.mtx.chemistry.pageuiobjects.LoginPageUi;
 
 /**
  * The Class LoginPageActions.
- *
  */
 public class LoginPageActions {
-	
+
 	/** The loginpage. */
 	LoginPageUi loginpage;
 

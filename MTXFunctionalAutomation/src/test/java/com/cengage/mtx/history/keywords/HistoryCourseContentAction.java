@@ -6,22 +6,23 @@ import com.cengage.mtx.chemistry.keywords.StartSubmitLogOutActions;
 import com.cengage.mtx.history.pageuiobjects.HistoryCourseContentUi;
 
 /**
- * The Class History_CourseContent_Action.
+ * The Class HistoryCourseContentAction.
  */
 public class HistoryCourseContentAction extends StartSubmitLogOutActions {
 
 	/** The driver. */
 	WebDriver driver;
+	
 	/** The history course content. */
 	HistoryCourseContentUi historyCourseContent;
+	
 	/** The Heading name. */
 	static String HeadingName;
 
 	/**
-	 * Instantiates a new history_ course content_ action.
-	 * 
-	 * @param driver
-	 *            the driver
+	 * Instantiates a new history course content action.
+	 *
+	 * @param driver the driver
 	 */
 	public HistoryCourseContentAction(WebDriver driver) {
 		super(driver);
@@ -31,9 +32,8 @@ public class HistoryCourseContentAction extends StartSubmitLogOutActions {
 
 	/**
 	 * Verify and click on activity.
-	 * 
-	 * @param activityName
-	 *            the activity name
+	 *
+	 * @param activityName the activity name
 	 */
 	public void verifyAndClickOnActivity(String activityName) {
 		historyCourseContent.get_ActivityNameLink(activityName).isDisplayed();
@@ -55,8 +55,10 @@ public class HistoryCourseContentAction extends StartSubmitLogOutActions {
 	 */
 	public void switchToActivityContentFrame() {
 		historyCourseContent.switchToDefaultContent();
-		historyCourseContent.switchToFrame(historyCourseContent.getFrame_Content().getAttribute("id"));
-		historyCourseContent.switchToFrame("easyXDM_activityService_cxp_Target_provider");
+		historyCourseContent.switchToFrame(historyCourseContent
+				.getFrame_Content().getAttribute("id"));
+		historyCourseContent
+				.switchToFrame("easyXDM_activityService_cxp_Target_provider");
 	}
 
 	/**
@@ -80,9 +82,12 @@ public class HistoryCourseContentAction extends StartSubmitLogOutActions {
 	 */
 	public void clickOnNextButtonAndSubmitActivity() {
 		for (int i = 0; i < 80; i++) {
-			if (historyCourseContent.getbtn_showSubmitActivityButtonState().getAttribute("style").contains("display: none;")) {
+			if (historyCourseContent.getbtn_showSubmitActivityButtonState()
+					.getAttribute("style").contains("display: none;")) {
 				historyCourseContent.waitForSyncPage();
-				System.out.println(historyCourseContent.getbtn_showSubmitActivityButtonState().getAttribute("style"));
+				System.out.println(historyCourseContent
+						.getbtn_showSubmitActivityButtonState().getAttribute(
+								"style"));
 				historyCourseContent.getbtn_NextButton().click();
 				historyCourseContent.waitForSyncPage();
 			} else {

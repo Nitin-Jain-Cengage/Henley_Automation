@@ -1,6 +1,7 @@
 package com.cengage.mtx.utils;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -38,14 +39,16 @@ public class SeleniumWait {
 	public WebElement getWhenVisible(By locator, int timeout) {
 		WebElement element;
 		WebDriverWait wait = new WebDriverWait(driver, timeout);
-		element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		element = wait.until(ExpectedConditions
+				.visibilityOfElementLocated(locator));
 		return element;
 	}
-	
+
 	public List<WebElement> getWhenVisibleList(By locator, int timeout) {
 		List<WebElement> element;
 		WebDriverWait wait = new WebDriverWait(driver, timeout);
-		element = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+		element = wait.until(ExpectedConditions
+				.visibilityOfAllElementsLocatedBy(locator));
 		return element;
 	}
 
@@ -75,7 +78,8 @@ public class SeleniumWait {
 	 */
 	public void clickWhenReady(By locator, int timeout) {
 		WebDriverWait wait = new WebDriverWait(driver, timeout);
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+		WebElement element = wait.until(ExpectedConditions
+				.elementToBeClickable(locator));
 		element.click();
 	}
 
@@ -84,8 +88,19 @@ public class SeleniumWait {
 	 */
 	public void waitForDomToLoad() {
 		WebDriverWait wait = new WebDriverWait(driver, 80);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By
+				.xpath("//*")));
 	}
-	
 
+	public void waitForElementToDisappear(By locator, int timeOut) {
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		WebDriverWait wait = new WebDriverWait(driver, timeOut);
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+		driver.manage()
+				.timeouts()
+				.implicitlyWait(
+						Integer.parseInt(YamlReader
+								.getYamlValue("selenium.timeout")),
+						TimeUnit.SECONDS);
+	}
 }

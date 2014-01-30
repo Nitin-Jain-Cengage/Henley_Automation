@@ -18,20 +18,19 @@ import com.cengage.mtx.utils.SeleniumWait;
 
 /**
  * The Class BasePage.
- * 
  */
 public class BasePage extends SeleniumWait {
 
 	/** The driver. */
 	protected WebDriver driver;
+	
 	/** The exp wait. */
 	protected SeleniumWait expWait;
 
 	/**
 	 * Instantiates a new base page.
-	 * 
-	 * @param driver
-	 *            the driver
+	 *
+	 * @param driver the driver
 	 */
 	public BasePage(WebDriver driver) {
 		super(driver);
@@ -42,7 +41,7 @@ public class BasePage extends SeleniumWait {
 
 	/**
 	 * Gets the page title.
-	 * 
+	 *
 	 * @return the page title
 	 */
 	public String getPageTitle() {
@@ -51,11 +50,9 @@ public class BasePage extends SeleniumWait {
 
 	/**
 	 * Gets the element by index.
-	 * 
-	 * @param elementlist
-	 *            the elementlist
-	 * @param index
-	 *            the index
+	 *
+	 * @param elementlist the elementlist
+	 * @param index the index
 	 * @return the element by index
 	 */
 	protected WebElement getElementByIndex(List<WebElement> elementlist,
@@ -65,11 +62,9 @@ public class BasePage extends SeleniumWait {
 
 	/**
 	 * Gets the element by text.
-	 * 
-	 * @param elementlist
-	 *            the elementlist
-	 * @param elementtext
-	 *            the elementtext
+	 *
+	 * @param elementlist the elementlist
+	 * @param elementtext the elementtext
 	 * @return the element by text
 	 */
 	protected WebElement getElementByText(List<WebElement> elementlist,
@@ -87,7 +82,7 @@ public class BasePage extends SeleniumWait {
 
 	/**
 	 * Gets the window handle.
-	 * 
+	 *
 	 * @return the window handle
 	 */
 	public void getWindowHandle() {
@@ -97,10 +92,19 @@ public class BasePage extends SeleniumWait {
 	}
 
 	/**
+	 * Gets the _ token name.
+	 *
+	 * @param token the token
+	 * @return the _ token name
+	 */
+	public void get_TokenName(String token) {
+		waitLong(token.length());
+	}
+
+	/**
 	 * Switch to frame.
-	 * 
-	 * @param stf
-	 *            the stf
+	 *
+	 * @param stf the stf
 	 */
 	public void switchToFrame(String stf) {
 		WebDriverWait wait = new WebDriverWait(driver, 120);
@@ -133,9 +137,8 @@ public class BasePage extends SeleniumWait {
 
 	/**
 	 * Wait long.
-	 * 
-	 * @param i
-	 *            the i
+	 *
+	 * @param i the i
 	 */
 	public void waitLong(int i) {
 		try {
@@ -147,9 +150,8 @@ public class BasePage extends SeleniumWait {
 
 	/**
 	 * Execute js.
-	 * 
-	 * @param script
-	 *            the script
+	 *
+	 * @param script the script
 	 */
 	public void executeJs(String script) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;

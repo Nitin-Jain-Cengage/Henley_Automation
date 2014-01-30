@@ -10,17 +10,17 @@ import org.testng.Reporter;
 import com.cengage.mtx.open_close_activity_from_master.pageuiobjects.MasterAdminDashboardUi;
 
 /**
- * The Class Master_Admin_Dashboard_Action.
+ * The Class MasterAdminDashboardAction.
  */
 public class MasterAdminDashboardAction {
+
 	/** The admin dashboard. */
 	MasterAdminDashboardUi adminDashboard;
 
 	/**
-	 * Instantiates a new master_ admin_ dashboard_ action.
-	 * 
-	 * @param driver
-	 *            the driver
+	 * Instantiates a new master admin dashboard action.
+	 *
+	 * @param driver the driver
 	 */
 	public MasterAdminDashboardAction(WebDriver driver) {
 		adminDashboard = new MasterAdminDashboardUi(driver);
@@ -35,21 +35,20 @@ public class MasterAdminDashboardAction {
 
 	/**
 	 * Enter search term.
-	 * 
-	 * @param bookName
-	 *            the book name
+	 *
+	 * @param bookName the book name
 	 */
 	public void enterSearchTerm(String bookName) {
 		adminDashboard.getinput_SearchTextBoxAdminDashboard().click();
 		adminDashboard.getinput_SearchTextBoxAdminDashboard().clear();
-		adminDashboard.getinput_SearchTextBoxAdminDashboard().sendKeys(bookName);
+		adminDashboard.getinput_SearchTextBoxAdminDashboard()
+				.sendKeys(bookName);
 	}
 
 	/**
 	 * Click on isbn book after search.
-	 * 
-	 * @param isbnNumber
-	 *            the isbn number
+	 *
+	 * @param isbnNumber the isbn number
 	 */
 	public void clickOnISBNBookAfterSearch(String isbnNumber) {
 		adminDashboard.getlink_isbnBook(isbnNumber).isDisplayed();
@@ -72,32 +71,40 @@ public class MasterAdminDashboardAction {
 			List<WebElement> Unit = adminDashboard.getLink_AllUnitName();
 			System.out.println(Unit.get(i).getText());
 			Reporter.log("");
-			Reporter.log("******************** Unit Name: " + Unit.get(i).getText() + " ********************");
+			Reporter.log("******************** Unit Name: "
+					+ Unit.get(i).getText() + " ********************");
 			Unit.get(i).click();
 			adminDashboard.get_CourseViewTitleContainer().isDisplayed();
 			adminDashboard.waitForSyncPage();
 			adminDashboard.getImg_Assessment().isDisplayed();
 			adminDashboard.waitForSyncPage();
-			List<WebElement> AssessmentList = adminDashboard.getLink_AllAssessmentName();
+			List<WebElement> AssessmentList = adminDashboard
+					.getLink_AllAssessmentName();
 			System.out.println("Assessment: " + AssessmentList.size());
 			String activityNameFromList;
 			String activityHeading;
 			for (int m = 0; m < AssessmentList.size(); m++) {
 				adminDashboard.getImg_Assessment().isDisplayed();
-				List<WebElement> Assessment = adminDashboard.getLink_AllAssessmentName();
+				List<WebElement> Assessment = adminDashboard
+						.getLink_AllAssessmentName();
 				activityNameFromList = Assessment.get(m).getText();
 				Assessment.get(m).click();
 				adminDashboard.waitForSyncPage();
 				adminDashboard.getHeading_AssessmentContent().isDisplayed();
-				activityHeading = adminDashboard.getHeading_AssessmentContent().getText();
-				Reporter.log("----------------------- Assessment Name: " + activityHeading + " -----------------------");
+				activityHeading = adminDashboard.getHeading_AssessmentContent()
+						.getText();
+				Reporter.log("----------------------- Assessment Name: "
+						+ activityHeading + " -----------------------");
 				System.out.println(activityNameFromList);
 				System.out.println(activityHeading);
-				Assert.assertTrue(activityNameFromList.contains(activityHeading));
-				adminDashboard.getButton_CloseButtonAssessmentContent().isDisplayed();
+				Assert.assertTrue(activityNameFromList
+						.contains(activityHeading));
+				adminDashboard.getButton_CloseButtonAssessmentContent()
+						.isDisplayed();
 				adminDashboard.switchToDefaultContent();
 				adminDashboard.switchToFrame("54_NB_Main_IFrame");
-				adminDashboard.switchToFrame("easyXDM_activityService_cxp_Target_provider");
+				adminDashboard
+						.switchToFrame("easyXDM_activityService_cxp_Target_provider");
 				try {
 					adminDashboard.getButton_Next().isDisplayed();
 					Reporter.log(" Next Button display");

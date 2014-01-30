@@ -33,48 +33,65 @@ public class TestSessionInitiator {
 
 	/** The driver. */
 	WebDriver driver;
+	
 	/** The login actions pg. */
 	public LoginPageActions loginActionsPg;
+	
 	/** The stud home page actions pg. */
 	public StudentHomePageActions studHomePageActionsPg;
+	
 	/** The week widget actions pg. */
 	public WeekWidgetActions weekWidgetActionsPg;
+	
 	/** The diff activities actions pg. */
 	public DifferentActivitiesActions diffActivitiesActionsPg;
+	
 	/** The start submit log out actions pg. */
 	public StartSubmitLogOutActions startSubmitLogOutActionsPg;
+	
 	/** The history course content. */
 	public HistoryCourseContentAction historyCourseContent;
+	
 	/** The master login pg. */
 	public Master_loginPage_Action masterLoginPg;
+	
 	/** The admin dashboard pg. */
 	public MasterAdminDashboardAction adminDashboardPg;
+	
 	/** The inst take delete pg. */
 	public InstructorTakeDeleteActions instTakeDeletePg;
+	
 	/** The browser. */
 	String browser;
+	
 	/** The seleniumserver. */
 	String seleniumserver;
+	
 	/** The seleniumserverhost. */
 	String seleniumserverhost;
+	
 	/** The appbaseurl. */
 	String appbaseurl;
+	
 	/** The applicationpath. */
 	String applicationpath;
+	
 	/** The chromedriverpath. */
 	String chromedriverpath;
+	
 	/** The timeout. */
 	long timeout;
+	
 	/** The chrome options. */
 	Map<String, Object> chromeOptions = null;
+	
 	/** The capabilities. */
 	DesiredCapabilities capabilities;
 
 	/**
 	 * Instantiates a new test session initiator.
-	 * 
-	 * @param datafilelocator
-	 *            the datafilelocator
+	 *
+	 * @param datafilelocator the datafilelocator
 	 */
 	public TestSessionInitiator(String datafilelocator) {
 		System.out.println(setYamlFilePath(datafilelocator));
@@ -135,9 +152,8 @@ public class TestSessionInitiator {
 
 	/**
 	 * Launch url.
-	 * 
-	 * @param URL
-	 *            the url
+	 *
+	 * @param URL the url
 	 */
 	public void launchUrl(String URL) {
 		driver.get(URL);
@@ -145,9 +161,8 @@ public class TestSessionInitiator {
 
 	/**
 	 * Launch application url.
-	 * 
-	 * @param URL
-	 *            the url
+	 *
+	 * @param URL the url
 	 */
 	public void launchApplicationUrl(String URL) {
 		launchUrl(URL);
@@ -162,9 +177,8 @@ public class TestSessionInitiator {
 
 	/**
 	 * Take screenshot of failure.
-	 * 
-	 * @param result
-	 *            the result
+	 *
+	 * @param result the result
 	 */
 	public void takeScreenshotOfFailure(ITestResult result) {
 		Calendar calendar = Calendar.getInstance();

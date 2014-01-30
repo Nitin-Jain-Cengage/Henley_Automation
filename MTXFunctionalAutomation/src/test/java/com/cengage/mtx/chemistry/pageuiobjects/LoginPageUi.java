@@ -11,10 +11,9 @@ import org.openqa.selenium.support.FindBy;
 
 /**
  * The Class LoginPageUi.
- *
  */
 public class LoginPageUi extends BasePage {
-	
+
 	/**
 	 * Instantiates a new login page ui.
 	 *

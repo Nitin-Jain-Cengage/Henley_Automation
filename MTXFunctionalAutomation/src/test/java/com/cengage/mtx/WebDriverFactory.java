@@ -25,20 +25,21 @@ public class WebDriverFactory {
 
 	/** The browser. */
 	private static String browser;
+	
 	/** The capabilities. */
 	private static DesiredCapabilities capabilities = new DesiredCapabilities();
 
 	/**
 	 * Gets the driver.
-	 * 
-	 * @param seleniumconfig
-	 *            the seleniumconfig
+	 *
+	 * @param seleniumconfig the seleniumconfig
 	 * @return the driver
 	 */
 	public static WebDriver getDriver(Map<String, Object> seleniumconfig) {
 		seleniumconfig = (Map<String, Object>) seleniumconfig.get("selenium");
-		//browser = seleniumconfig.get("browser").toString();
-		browser = System.getProperty("browser", seleniumconfig.get("browser").toString());
+		// browser = seleniumconfig.get("browser").toString();
+		browser = System.getProperty("browser", seleniumconfig.get("browser")
+				.toString());
 		if (seleniumconfig.get("server").toString().equalsIgnoreCase("local")) {
 			if (browser.equalsIgnoreCase("firefox")) {
 				return createFirefoxDriver(getFirefoxProfile());
@@ -62,9 +63,8 @@ public class WebDriverFactory {
 
 	/**
 	 * Sets the remote driver.
-	 * 
-	 * @param selConfig
-	 *            the sel config
+	 *
+	 * @param selConfig the sel config
 	 * @return the web driver
 	 */
 	private static WebDriver setRemoteDriver(Map<String, Object> selConfig) {
@@ -94,9 +94,8 @@ public class WebDriverFactory {
 
 	/**
 	 * Sets the chrome driver.
-	 * 
-	 * @param driverpath
-	 *            the driverpath
+	 *
+	 * @param driverpath the driverpath
 	 * @return the web driver
 	 */
 	private static WebDriver setChromeDriver(String driverpath) {
@@ -109,9 +108,8 @@ public class WebDriverFactory {
 
 	/**
 	 * Sets the internet explorer driver.
-	 * 
-	 * @param driverpath
-	 *            the driverpath
+	 *
+	 * @param driverpath the driverpath
 	 * @return the web driver
 	 */
 	private static WebDriver setInternetExplorerDriver(String driverpath) {
@@ -121,7 +119,7 @@ public class WebDriverFactory {
 
 	/**
 	 * Sets the safari driver.
-	 * 
+	 *
 	 * @return the web driver
 	 */
 	private static WebDriver setSafariDriver() {
@@ -130,9 +128,8 @@ public class WebDriverFactory {
 
 	/**
 	 * Creates a new WebDriver object.
-	 * 
-	 * @param firefoxProfile
-	 *            the firefox profile
+	 *
+	 * @param firefoxProfile the firefox profile
 	 * @return the web driver
 	 */
 	private static WebDriver createFirefoxDriver(FirefoxProfile firefoxProfile) {
@@ -143,7 +140,7 @@ public class WebDriverFactory {
 
 	/**
 	 * Gets the firefox profile.
-	 * 
+	 *
 	 * @return the firefox profile
 	 */
 	private static FirefoxProfile getFirefoxProfile() {

@@ -11,10 +11,9 @@ import org.openqa.selenium.support.FindBy;
 
 /**
  * The Class StudentHomePageUI.
- *
  */
 public class StudentHomePageUI extends BasePage {
-	
+
 	/**
 	 * Instantiates a new student home page ui.
 	 *
@@ -35,7 +34,8 @@ public class StudentHomePageUI extends BasePage {
 	 * @return the btn_ open
 	 */
 	public WebElement getBtn_Open(String bookName) {
-		return expWait.getWhenVisible(By.xpath("//span[text()='" + bookName + "']/parent::a"), 80);
+		return expWait.getWhenVisible(
+				By.xpath("//span[text()='" + bookName + "']/parent::a"), 80);
 	}
 
 	/**
@@ -44,7 +44,10 @@ public class StudentHomePageUI extends BasePage {
 	 * @return the text_ courses and materials
 	 */
 	public WebElement getText_CoursesAndMaterials() {
-		return expWait.getWhenVisible(By.xpath("//*[contains(text(),'My Courses') and contains(text(),'Materials')]"), 80);
+		return expWait
+				.getWhenVisible(
+						By.xpath("//*[contains(text(),'My Courses') and contains(text(),'Materials')]"),
+						80);
 	}
 
 	/**
@@ -53,6 +56,7 @@ public class StudentHomePageUI extends BasePage {
 	 * @return the _ last access book section
 	 */
 	public WebElement get_LastAccessBookSection() {
-		return driver.findElement(By.xpath("//div[@id='lastAccessed' and @style='']"));
+		return driver.findElement(By
+				.xpath("//div[@id='lastAccessed' and @style='']"));
 	}
 }

@@ -12,22 +12,26 @@ public class WeekWidgetActions extends StudentHomePageActions {
 
 	/** The week widget pge. */
 	protected WeekWidgetUi weekWidgetPge;
+	
 	/** The driver. */
 	WebDriver driver;
+	
 	/** The numbr. */
 	int numbr;
+	
 	/** The current week. */
 	String currentWeek;
+	
 	/** The yweek. */
 	int yweek;
+	
 	/** The activity_heading. */
 	static String activity_heading;
 
 	/**
 	 * Instantiates a new week widget actions.
-	 * 
-	 * @param driver
-	 *            the driver
+	 *
+	 * @param driver the driver
 	 */
 	public WeekWidgetActions(WebDriver driver) {
 		super(driver);
@@ -37,13 +41,16 @@ public class WeekWidgetActions extends StudentHomePageActions {
 
 	/**
 	 * Verify total no of weeks.
-	 * 
+	 *
 	 * @return true, if successful
 	 */
 	public boolean verifyTotalNoOfWeeks() {
-		if (weekWidgetPge.totalNoOfWeeks.size() == weekWidgetPge.NoOfWeeksOnSlider.size()) {
-			System.out.println("Total no. of weeks:->" + weekWidgetPge.totalNoOfWeeks.size());
-			System.out.println("Total no of weeks on divider:->" + weekWidgetPge.NoOfWeeksOnSlider.size());
+		if (weekWidgetPge.totalNoOfWeeks.size() == weekWidgetPge.NoOfWeeksOnSlider
+				.size()) {
+			System.out.println("Total no. of weeks:->"
+					+ weekWidgetPge.totalNoOfWeeks.size());
+			System.out.println("Total no of weeks on divider:->"
+					+ weekWidgetPge.NoOfWeeksOnSlider.size());
 			return true;
 		} else
 			return false;
@@ -58,7 +65,7 @@ public class WeekWidgetActions extends StudentHomePageActions {
 
 	/**
 	 * Gets the title of activity.
-	 * 
+	 *
 	 * @return the title of activity
 	 */
 	public void getTitleOfActivity() {
@@ -75,12 +82,12 @@ public class WeekWidgetActions extends StudentHomePageActions {
 
 	/**
 	 * Verify staus display as completed.
-	 * 
-	 * @param activityName
-	 *            the activity name
+	 *
+	 * @param activityName the activity name
 	 */
 	public void verifyStausDisplayAsCompleted(String activityName) {
-		Assert.assertTrue(weekWidgetPge.getPreocessingIndicator(activityName).isDisplayed());
+		Assert.assertTrue(weekWidgetPge.getPreocessingIndicator(activityName)
+				.isDisplayed());
 		weekWidgetPge.waitForSync();
 	}
 
@@ -110,25 +117,32 @@ public class WeekWidgetActions extends StudentHomePageActions {
 	 */
 	public void clickOnAllApps() {
 		weekWidgetPge.waitForSyncPage();
+		weekWidgetPge.checkWeekSliderSpinnerToDisappear();
+		weekWidgetPge.getLink_AllScore().isDisplayed();
 		weekWidgetPge.btn_allApps().isDisplayed();
 		weekWidgetPge.btn_allApps().click();
 		weekWidgetPge.waitForSyncPage();
-		weekWidgetPge.getLink_AllScore().isDisplayed();
 	}
 
 	/**
 	 * Click on merriam webster app.
 	 */
 	public void clickOnMerriamWebsterApp() {
-		weekWidgetPge.waitLong(4);
+		weekWidgetPge.checkWeekSliderSpinnerToDisappear();
 		for (int i = 0; i < weekWidgetPge.lbl_appName.size(); i++) {
-			System.out.println(weekWidgetPge.lbl_appName.get(i).getAttribute("alt"));
-			if (weekWidgetPge.lbl_appName.get(i).getAttribute("alt").equals("Merriam-Webster's Dictionary")) {
-				weekWidgetPge.executeJs("document.getElementById('dockGroup1').childNodes[" + ((2 * i) + 1) + "].childNodes[0].click();");
+			System.out.println(weekWidgetPge.lbl_appName.get(i).getAttribute(
+					"alt"));
+			if (weekWidgetPge.lbl_appName.get(i).getAttribute("alt")
+					.equals("Merriam-Webster's Dictionary")) {
+				weekWidgetPge
+						.executeJs("document.getElementById('dockGroup1').childNodes["
+								+ ((2 * i) + 1) + "].childNodes[0].click();");
 				getverifyMerriamWebsterApp();
 			} else {
 				weekWidgetPge.appNameLink.get(i).isDisplayed();
-				weekWidgetPge.executeJs("document.getElementById('dockGroup1').childNodes[" + ((2 * i) + 1) + "].childNodes[0].click();");
+				weekWidgetPge
+						.executeJs("document.getElementById('dockGroup1').childNodes["
+								+ ((2 * i) + 1) + "].childNodes[0].click();");
 				getVerify(weekWidgetPge.lbl_appName.get(i).getAttribute("alt"));
 			}
 			weekWidgetPge.btn_allApps().click();
@@ -138,42 +152,41 @@ public class WeekWidgetActions extends StudentHomePageActions {
 
 	/**
 	 * Gets the verify.
-	 * 
-	 * @param appName
-	 *            the app name
+	 *
+	 * @param appName the app name
 	 * @return the verify
 	 */
 	public void getVerify(String appName) {
-		
-		try{
-		weekWidgetPge.getHeadingNameOfTheApp(appName);
-		Assert.assertTrue(weekWidgetPge.getHeadingNameOfTheApp(appName).isDisplayed());
-		weekWidgetPge.getHeadingNameOfTheApp(appName);
-		Assert.assertTrue(weekWidgetPge.getCollapse(appName).isDisplayed());
-		weekWidgetPge.getCollapse(appName).click();
-		}catch(Exception e){
+		try {
+			weekWidgetPge.getHeadingNameOfTheApp(appName);
+			Assert.assertTrue(weekWidgetPge.getHeadingNameOfTheApp(appName)
+					.isDisplayed());
+			weekWidgetPge.getHeadingNameOfTheApp(appName);
+			Assert.assertTrue(weekWidgetPge.getCollapse(appName).isDisplayed());
+			weekWidgetPge.getCollapse(appName).click();
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
 	/**
 	 * Gets the verify merriam webster app.
-	 * 
+	 *
 	 * @return the verify merriam webster app
 	 */
 	public void getverifyMerriamWebsterApp() {
 		weekWidgetPge.getHeadingNameOfMerriamWebsterApp();
 		weekWidgetPge.getHeadingNameOfMerriamWebsterApp().isDisplayed();
 		weekWidgetPge.getHeadingNameOfMerriamWebsterApp();
-		Assert.assertTrue(weekWidgetPge.getCollapseForMerriamWebsterApp().isDisplayed());
+		Assert.assertTrue(weekWidgetPge.getCollapseForMerriamWebsterApp()
+				.isDisplayed());
 		weekWidgetPge.getCollapseForMerriamWebsterApp().click();
 	}
 
 	/**
 	 * Navigate to week.
-	 * 
-	 * @param week
-	 *            the week
+	 *
+	 * @param week the week
 	 */
 	public void navigateToWeek(String week) {
 		String temp = driver.getCurrentUrl();

@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
  * The Class DifferentActivitiesUi.
  */
 public class DifferentActivitiesUi extends BasePage {
-	
+
 	/**
 	 * Instantiates a new different activities ui.
 	 *
@@ -50,8 +50,9 @@ public class DifferentActivitiesUi extends BasePage {
 	 * @return the lbl_ into quick prep_ clickable
 	 */
 	public WebElement getLbl_IntoQuickPrep_Clickable() {
-
-		return getWhenClickable(By.xpath("//div[@class='week dash-middle']//label[contains(.,'Introduction and Quick Prep')]"), 90);
+		return getWhenClickable(
+				By.xpath("//div[@class='week dash-middle']//label[contains(.,'Introduction and Quick Prep')]"),
+				90);
 	}
 
 	/**
@@ -69,7 +70,9 @@ public class DifferentActivitiesUi extends BasePage {
 	 * @return the lbl_ matery activity_ clickable
 	 */
 	public WebElement getlbl_MateryActivity_Clickable() {
-		return getWhenClickable(By.xpath("(.//div[contains(@class,'dash-middle')]//div[contains(@title,'Mastery')])[1]"), 90);
+		return getWhenClickable(
+				By.xpath("(.//div[contains(@class,'dash-middle')]//div[contains(@title,'Mastery')])[1]"),
+				90);
 	}
 
 	/**
@@ -87,7 +90,9 @@ public class DifferentActivitiesUi extends BasePage {
 	 * @return the lbl_ review and challenge_ clickable
 	 */
 	public WebElement getlbl_ReviewAndChallenge_Clickable() {
-		return getWhenClickable(By.xpath(".//div[contains(@class,'dash-middle')]//div[contains(@title,'Review and Challenge')]"), 120);
+		return getWhenClickable(
+				By.xpath(".//div[contains(@class,'dash-middle')]//div[contains(@title,'Review and Challenge')]"),
+				120);
 	}
 
 	/**
@@ -105,19 +110,23 @@ public class DifferentActivitiesUi extends BasePage {
 	 * @return the lbl_ study guide_ clickable
 	 */
 	public WebElement getlbl_StudyGuide_Clickable() {
-		return getWhenClickable(By.xpath(".//div[contains(@class,'dash-middle')]//div[contains(@title,'Study Guide')]"), 120);
+		return getWhenClickable(
+				By.xpath(".//div[contains(@class,'dash-middle')]//div[contains(@title,'Study Guide')]"),
+				120);
 	}
 
-//	String TutoredActivityName = getYamlValue("activity.tutored");
-//	String path = "".replaceAll("index", TutoredActivityName);
-
+	// String TutoredActivityName = getYamlValue("activity.tutored");
+	// String path = "".replaceAll("index", TutoredActivityName);
 	/**
- * Gets the lbl_ tutored activity_ clickable.
- *
- * @param TutoredActivityName the tutored activity name
- * @return the lbl_ tutored activity_ clickable
- */
-public WebElement getlbl_TutoredActivity_Clickable(String TutoredActivityName) {
-		return getWhenClickable(By.xpath(".//div[contains(@class,'dash-middle')]//div[contains(@title,'"+TutoredActivityName+"')]"), 90);
+	 * Gets the lbl_ tutored activity_ clickable.
+	 *
+	 * @param TutoredActivityName the tutored activity name
+	 * @return the lbl_ tutored activity_ clickable
+	 */
+	public WebElement getlbl_TutoredActivity_Clickable(
+			String TutoredActivityName) {
+		return getWhenClickable(
+				By.xpath(".//div[contains(@class,'dash-middle')]//div[contains(@title,'"
+						+ TutoredActivityName + "')]"), 90);
 	}
 }

@@ -9,12 +9,12 @@ import org.openqa.selenium.WebElement;
 import com.cengage.mtx.chemistry.pageuiobjects.BasePage;
 
 /**
- * The Class Master_Admin_Dashboard_Ui.
+ * The Class MasterAdminDashboardUi.
  */
 public class MasterAdminDashboardUi extends BasePage {
-	
+
 	/**
-	 * Instantiates a new master_ admin_ dashboard_ ui.
+	 * Instantiates a new master admin dashboard ui.
 	 *
 	 * @param driver the driver
 	 */
@@ -38,7 +38,9 @@ public class MasterAdminDashboardUi extends BasePage {
 	 * @return the link_isbn book
 	 */
 	public WebElement getlink_isbnBook(String isbnNumber) {
-		return expWait.getWhenVisible(By.xpath("//div[contains(text(),'" + isbnNumber + "')]/parent::div/a"), 80);
+		return expWait.getWhenVisible(
+				By.xpath("//div[contains(text(),'" + isbnNumber
+						+ "')]/parent::div/a"), 80);
 	}
 
 	/**
@@ -47,7 +49,8 @@ public class MasterAdminDashboardUi extends BasePage {
 	 * @return the txt_ conept map
 	 */
 	public WebElement gettxt_ConeptMap() {
-		return expWait.getWhenVisible(By.xpath("//*[contains(text(),'Concept Map')]"), 80);
+		return expWait.getWhenVisible(
+				By.xpath("//*[contains(text(),'Concept Map')]"), 80);
 	}
 
 	/**
@@ -56,7 +59,10 @@ public class MasterAdminDashboardUi extends BasePage {
 	 * @return the img_ assessment
 	 */
 	public WebElement getImg_Assessment() {
-		return expWait.getWhenVisible(By.xpath("(//div[@class='list_area']//div[@class='thumbIcon' and @title='Assessment'])[1]"), 80);
+		return expWait
+				.getWhenVisible(
+						By.xpath("(//div[@class='list_area']//div[@class='thumbIcon' and @title='Assessment'])[1]"),
+						80);
 	}
 
 	/**
@@ -65,7 +71,10 @@ public class MasterAdminDashboardUi extends BasePage {
 	 * @return the heading_ unit
 	 */
 	public WebElement getHeading_Unit() {
-		return expWait.getWhenVisible(By.xpath("//span[@class='lpn_title' and contains(text(),'Henley Chemistry Digital Course_Do_Not_Edit')]"), 80);
+		return expWait
+				.getWhenVisible(
+						By.xpath("//span[@class='lpn_title' and contains(text(),'Henley Chemistry Digital Course_Do_Not_Edit')]"),
+						80);
 	}
 
 	/**
@@ -83,7 +92,9 @@ public class MasterAdminDashboardUi extends BasePage {
 	 * @return the link_ all assessment name
 	 */
 	public List<WebElement> getLink_AllAssessmentName() {
-		return driver.findElements(By.xpath("//div[@class='list_area']//div[@class='thumbIcon' and @title='Assessment']/parent::div/following-sibling::div/h3/a"));
+		return driver
+				.findElements(By
+						.xpath("//div[@class='list_area']//div[@class='thumbIcon' and @title='Assessment']/parent::div/following-sibling::div/h3/a"));
 	}
 
 	/**
@@ -92,7 +103,10 @@ public class MasterAdminDashboardUi extends BasePage {
 	 * @return the _ course view title container
 	 */
 	public WebElement get_CourseViewTitleContainer() {
-		return expWait.getWhenVisible(By.xpath("//*[@class='lpn_back' and @style='display: block;']"), 80);
+		return expWait
+				.getWhenVisible(
+						By.xpath("//*[@class='lpn_back' and @style='display: block;']"),
+						80);
 	}
 
 	/**
@@ -119,7 +133,10 @@ public class MasterAdminDashboardUi extends BasePage {
 	 * @return the btn_ back
 	 */
 	public WebElement getbtn_Back() {
-		return expWait.getWhenVisible(By.xpath(".//*[@class='lpn_back' and @style='display: block;']/a"), 80);
+		return expWait
+				.getWhenVisible(
+						By.xpath(".//*[@class='lpn_back' and @style='display: block;']/a"),
+						80);
 	}
 
 	/**
@@ -128,7 +145,9 @@ public class MasterAdminDashboardUi extends BasePage {
 	 * @return the _ course view title container disabled
 	 */
 	public WebElement get_CourseViewTitleContainerDisabled() {
-		return expWait.getWhenVisible(By.xpath("//*[@class='lpn_back' and @style='display: none;']"), 80);
+		return expWait.getWhenVisible(
+				By.xpath("//*[@class='lpn_back' and @style='display: none;']"),
+				80);
 	}
 
 	//
@@ -138,7 +157,10 @@ public class MasterAdminDashboardUi extends BasePage {
 	 * @return the heading_ assessment content
 	 */
 	public WebElement getHeading_AssessmentContent() {
-		return expWait.getWhenVisible(By.xpath("//div[@id='54_NB_App']//div[@class='nb_actTitle nb_math']"), 80);
+		return expWait
+				.getWhenVisible(
+						By.xpath("//div[@id='54_NB_App']//div[@class='nb_actTitle nb_math']"),
+						80);
 	}
 
 	/**
@@ -147,7 +169,9 @@ public class MasterAdminDashboardUi extends BasePage {
 	 * @return the button_ close button assessment content
 	 */
 	public WebElement getButton_CloseButtonAssessmentContent() {
-		return expWait.getWhenVisible(By.xpath("//div[@id='54_NB_App']//a[@class='closeActivity']"), 80);
+		return expWait.getWhenVisible(
+				By.xpath("//div[@id='54_NB_App']//a[@class='closeActivity']"),
+				80);
 	}
 
 	/**
@@ -165,7 +189,8 @@ public class MasterAdminDashboardUi extends BasePage {
 	 * @return the btn_start activity
 	 */
 	public WebElement getbtn_startActivity() {
-		return expWait.getWhenVisible(By.xpath("//*[contains(text(),'Start Activity')]"), 5);
+		return expWait.getWhenVisible(
+				By.xpath("//*[contains(text(),'Start Activity')]"), 5);
 	}
 
 	/**

@@ -14,16 +14,17 @@ import com.cengage.mtx.instructor_take_delete.pageuiobjects.InstructorTakeDelete
  * The Class InstructorTakeDeleteActions.
  */
 public class InstructorTakeDeleteActions extends WeekWidgetActions {
+
 	/** The instructor take delete pg. */
 	InstructorTakeDeleteUi instructorTakeDeletePg;
+	
 	/** The driver. */
 	WebDriver driver;
 
 	/**
 	 * Instantiates a new instructor take delete actions.
-	 * 
-	 * @param driver
-	 *            the driver
+	 *
+	 * @param driver the driver
 	 */
 	public InstructorTakeDeleteActions(WebDriver driver) {
 		super(driver);
@@ -33,9 +34,8 @@ public class InstructorTakeDeleteActions extends WeekWidgetActions {
 
 	/**
 	 * Select prod isbn.
-	 * 
-	 * @param ProdIsbnName
-	 *            the prod isbn name
+	 *
+	 * @param ProdIsbnName the prod isbn name
 	 */
 	public void selectProdIsbn(String ProdIsbnName) {
 		Select product = new Select(instructorTakeDeletePg.Drpdwn_productIsbn);
@@ -44,11 +44,9 @@ public class InstructorTakeDeleteActions extends WeekWidgetActions {
 
 	/**
 	 * Click on course name.
-	 * 
-	 * @param CourseName
-	 *            the course name
-	 * @param env
-	 *            the env
+	 *
+	 * @param CourseName the course name
+	 * @param env the env
 	 */
 	public void clickOnCourseName(String CourseName, String env) {
 		for (WebElement ele : instructorTakeDeletePg.lnk_course) {
@@ -81,15 +79,17 @@ public class InstructorTakeDeleteActions extends WeekWidgetActions {
 	 */
 	public void clickOnViewProgressApp() {
 		weekWidgetPge.getLink_AllScore().isDisplayed();
-		weekWidgetPge.waitLong(4);
-		weekWidgetPge.executeJs("document.getElementById('dockGroup1').childNodes[3].childNodes[0].click();");
+		weekWidgetPge.checkWeekSliderSpinnerToDisappear();
+		weekWidgetPge
+				.executeJs("document.getElementById('dockGroup1').childNodes[3].childNodes[0].click();");
 		weekWidgetPge.waitForSyncPage();
-		
-//		for (int i = 0; i < weekWidgetPge.lbl_appName.size(); i++) {
-//			if (weekWidgetPge.lbl_appName.get(i).getAttribute("alt").equals("View Progress")) {
-//				weekWidgetPge.appNameLink.get(i).click();
-//			}
-//		}
+		// for (int i = 0; i < weekWidgetPge.lbl_appName.size(); i++) {
+		// if
+		// (weekWidgetPge.lbl_appName.get(i).getAttribute("alt").equals("View Progress"))
+		// {
+		// weekWidgetPge.appNameLink.get(i).click();
+		// }
+		// }
 	}
 
 	// /*
@@ -116,9 +116,8 @@ public class InstructorTakeDeleteActions extends WeekWidgetActions {
 
 	/**
 	 * Click on student.
-	 * 
-	 * @param student Name
-	 *            the student Name
+	 *
+	 * @param studentName the student name
 	 */
 	public void clickOnStudent(String studentName) {
 		instructorTakeDeletePg.waitForSyncPage();
@@ -133,37 +132,55 @@ public class InstructorTakeDeleteActions extends WeekWidgetActions {
 
 	/**
 	 * Gets the list of activity scores and delete.
-	 * 
+	 *
 	 * @return the list of activity scores and delete
 	 */
 	public void getListOfActivityScoresAndDelete() {
-		List<WebElement> ele2 = instructorTakeDeletePg.lnk_activityScore;
+		List<WebElement> ele2 = instructorTakeDeletePg.getList_ActiveScore();
 		int count = ele2.size();
 		int lasteleNum = instructorTakeDeletePg.getList_ActiveCourse().size();
 		instructorTakeDeletePg.getTxt_Lastelement(lasteleNum).isDisplayed();
 		int newListElementToClick = 0;
 		System.out.println("ele Size : " + ele2.size());
+		String deletedCourseName = null;
 		for (int i = 0; i < count; i++) {
 			instructorTakeDeletePg.waitForSyncPage();
 			instructorTakeDeletePg.getTxt_Lastelement(lasteleNum).isDisplayed();
-			List<WebElement> ele3 = instructorTakeDeletePg.lnk_activityScore;
+			weekWidgetPge.checkWeekSliderSpinnerToDisappear();
+			List<WebElement> ele3 = instructorTakeDeletePg
+					.getList_ActiveScore();
 			ele3.get(newListElementToClick).click();
 			try {
-				instructorTakeDeletePg.getTxt_getDeleteTakeHeading().isDisplayed();
-				String CourseName = instructorTakeDeletePg.getTxt_getDeleteTakeHeading().getText();
+				instructorTakeDeletePg.getTxt_getDeleteTakeHeading()
+						.isDisplayed();
+				String CourseName = instructorTakeDeletePg
+						.getTxt_getDeleteTakeHeading().getText();
 				instructorTakeDeletePg.getlnk_Delete_Clickable().click();
 				instructorTakeDeletePg.getlnk_DeleteAttempt_Clickable().click();
+				instructorTakeDeletePg.waitForSyncPage();
 				instructorTakeDeletePg.getlnk_Close_Clickable().click();
-				System.out.println(CourseName + ": Take Delete Success -------------");
-				Reporter.log("Course : '" + CourseName + "' : Take Delete Success");
+				System.out.println(CourseName
+						+ ": Take Delete Success -------------");
+				Reporter.log("Course : '" + CourseName
+						+ "' : Take Delete Success");
+				deletedCourseName = CourseName;
 			} catch (Exception ex) {
-				newListElementToClick++;
-				instructorTakeDeletePg.getTxt_getDeleteTakeHeading().isDisplayed();
-				String CourseName = instructorTakeDeletePg.getTxt_getDeleteTakeHeading().getText();
+				instructorTakeDeletePg.getTxt_getDeleteTakeHeading()
+						.isDisplayed();
+				String CourseNameNotDelete = instructorTakeDeletePg
+						.getTxt_getDeleteTakeHeading().getText();
+				if (!CourseNameNotDelete.equalsIgnoreCase(deletedCourseName)) {
+					newListElementToClick++;
+				}
+				System.out.println("After newListElementToClick: "
+						+ newListElementToClick);
 				instructorTakeDeletePg.getlnk_Close_Clickable().isDisplayed();
+				instructorTakeDeletePg.waitForSyncPage();
 				instructorTakeDeletePg.getlnk_Close_Clickable().click();
-				System.out.println(CourseName + " : Delete take not avilable ******");
-				Reporter.log("Course : '" + CourseName + "' : Delete take not avilable ******");
+				System.out.println(CourseNameNotDelete
+						+ " : Delete take not avilable ******");
+				Reporter.log("Course : '" + CourseNameNotDelete
+						+ "' : Delete take not avilable ******");
 				continue;
 			}
 			ele3.clear();

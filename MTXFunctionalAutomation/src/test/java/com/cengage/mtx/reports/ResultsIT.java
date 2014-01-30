@@ -27,20 +27,28 @@ import com.cengage.mtx.utils.YamlReader;
  * The Class ResultsIT.
  */
 public class ResultsIT {
+
 	/** The testdata. */
 	String testdata;
+	
 	/** The today. */
 	Date today = new Date();
+	
 	/** The host. */
 	String host = "smtp.gmail.com";
+	
 	/** The from. */
 	String from = "automation.results.qait@gmail.com";
+	
 	/** The password. */
 	String password = "QaitAutomation";
+	
 	/** The port. */
 	String port = "465";
+	
 	/** The message. */
 	Message message;
+	
 	/** The text file1. */
 	public String textFile1;
 
@@ -49,20 +57,20 @@ public class ResultsIT {
 	 */
 	@BeforeClass
 	void setupMailConfig() {
-		YamlReader.setYamlFilePath("src/test/resources/testdata/TestData.yml");
+		YamlReader.setYamlFilePath("src/test/resources/testdata/MTX_smoke_testData.yml");
 		System.out.println("%%%%%%%%%%%%%%%%%%%%%");
 	}
 
 	/**
 	 * Send results mail.
-	 * 
-	 * @throws Exception
-	 *             the exception
+	 *
+	 * @throws Exception the exception
 	 */
 	@Test
 	public void sendResultsMail() throws Exception {
 		try {
-			if (YamlReader.getYamlValue("results.sendEmail").equalsIgnoreCase("yes")) {
+			if (YamlReader.getYamlValue("results.sendEmail").equalsIgnoreCase(
+					"yes")) {
 				Properties props = new Properties();
 				props.put("mail.smtps.auth", "true");
 				Session session = Session.getInstance(props, null);
@@ -84,7 +92,7 @@ public class ResultsIT {
 
 	/**
 	 * Gets the session.
-	 * 
+	 *
 	 * @return the session
 	 */
 	public Session getSession() {
@@ -92,7 +100,8 @@ public class ResultsIT {
 		Properties properties = new Properties();
 		properties.setProperty("mail.transport.protocol", "smtps");
 		properties.put("mail.smtps.auth", "true");
-		properties.setProperty("mail.smtp.submitter", authenticator.getPasswordAuthentication().getUserName());
+		properties.setProperty("mail.smtp.submitter", authenticator
+				.getPasswordAuthentication().getUserName());
 		properties.setProperty("mail.smtp.auth", "true");
 		properties.setProperty("mail.smtp.host", host);
 		properties.setProperty("mail.smtp.port", port);
@@ -101,33 +110,49 @@ public class ResultsIT {
 
 	/**
 	 * Sets the body text.
-	 * 
+	 *
 	 * @return the string
-	 * @throws IOException
-	 *             Signals that an I/O exception has occurred.
+	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	public String setBodyText() throws IOException {
 		String mailtext = "";
 		mailtext = "Hi,<br>";
-		mailtext = mailtext + "</br><br>The automated functional test were performed</br><br>";
-		mailtext = mailtext + "<br><b><font style= Courier, color = green>Test Name: </font></b>" + getTestName();
-		mailtext = mailtext + "<br><b><font color = green>Test Date: </font></b>" + today;
-		mailtext = mailtext + "<br><b><font color = green>Test Browser: </font></b>" + YamlReader.getYamlValue("selenium.browser");
-		mailtext = mailtext + "<br><b><font color = green>Test Environment: </font></b>" + YamlReader.getYamlValue("testenv");
-		mailtext = mailtext + "<br><b><font color = green>Test Case Executed By: </font></b>" + "MTX Automation Team";
-		mailtext = mailtext + "<br><b><font color = green>Test Case Executed By: </font></b>" + System.getProperty("user.name");
+		mailtext = mailtext
+				+ "</br><br>The automated functional test were performed</br><br>";
+		mailtext = mailtext
+				+ "<br><b><font style= Courier, color = green>Test Name: </font></b>"
+				+ getTestName();
+		mailtext = mailtext
+				+ "<br><b><font color = green>Test Date: </font></b>" + today;
+		mailtext = mailtext
+				+ "<br><b><font color = green>Test Browser: </font></b>"
+				+ System.getProperty("browser",
+						YamlReader.getYamlValue("selenium.browser").toString());
+		mailtext = mailtext
+				+ "<br><b><font color = green>Test Environment: </font></b>"
+				+ YamlReader.getYamlValue("testenv");
+		mailtext = mailtext
+				+ "<br><b><font color = green>Test Case Executed By: </font></b>"
+				+ "MTX Automation Team";
+		mailtext = mailtext
+				+ "<br><b><font color = green>Test Case Executed By: </font></b>"
+				+ System.getProperty("user.name");
 		mailtext = mailtext + "<b>" + testSetResult() + "</b>";
-		mailtext = mailtext + "<br><br>The detailed test results are given in the attached <i>emailable-report.html</i> </br></br>";
+		mailtext = mailtext
+				+ "<br><br>The detailed test results are given in the attached <i>emailable-report.html</i> </br></br>";
 		mailtext = mailtext + "<br><br>Best Regards" + "</br></br>";
 		mailtext = mailtext + "<br>MTX Automation QA Team" + "</br>";
-		mailtext = mailtext + "<br><br>Note: This is a system generated mail. Please do not reply." + "</br></br>";
-		mailtext = mailtext + "<br>If you have any queries mail to <a href=mailto:nitin.jain@contractor.cengage.com?Subject=Reply of Automation Status>MTX AutomationQA</a></br>";
+		mailtext = mailtext
+				+ "<br><br>Note: This is a system generated mail. Please do not reply."
+				+ "</br></br>";
+		mailtext = mailtext
+				+ "<br>If you have any queries mail to <a href=mailto:nitin.jain@contractor.cengage.com?Subject=Reply of Automation Status>MTX AutomationQA</a></br>";
 		return mailtext;
 	}
 
 	/**
 	 * Sets the mail subject.
-	 * 
+	 *
 	 * @return the string
 	 */
 	private String setMailSubject() {
@@ -136,37 +161,39 @@ public class ResultsIT {
 
 	/**
 	 * Sets the mail recipient.
-	 * 
-	 * @param message
-	 *            the new mail recipient
+	 *
+	 * @param message the new mail recipient
 	 */
 	private void setMailRecipient(Message message) {
 		// System.out.println("EnteredsetMailRecipient");
 		try {
-			for (Object recipient : YamlReader.getYamlNodesArray("results.recipients").values()) {
-				message.addRecipient(Message.RecipientType.TO, new InternetAddress(recipient.toString()));
-				message.addRecipient(Message.RecipientType.BCC, new InternetAddress(recipient.toString()));
+			for (Object recipient : YamlReader.getYamlNodesArray(
+					"results.recipients").values()) {
+				message.addRecipient(Message.RecipientType.TO,
+						new InternetAddress(recipient.toString()));
+				message.addRecipient(Message.RecipientType.BCC,
+						new InternetAddress(recipient.toString()));
 			}
-			message.addRecipient(Message.RecipientType.TO, new InternetAddress("automation.results.qait@gmail.com"));
-			message.addRecipient(Message.RecipientType.BCC, new InternetAddress("shivamtiwari@qainfotech.net"));
+			message.addRecipient(Message.RecipientType.TO, new InternetAddress(
+					"automation.results.qait@gmail.com"));
+			message.addRecipient(Message.RecipientType.BCC,
+					new InternetAddress("shivamtiwari@qainfotech.net"));
 		} catch (MessagingException me) {
-			System.out.println("Exception in Results mail sending:-" + me.getStackTrace());
+			System.out.println("Exception in Results mail sending:-"
+					+ me.getStackTrace());
 		}
 	}
 
 	/**
 	 * Sets the attachement.
-	 * 
+	 *
 	 * @return the multipart
-	 * @throws Exception
-	 *             the exception
+	 * @throws Exception the exception
 	 */
 	private Multipart setAttachement() throws Exception {
 		// Create the message part
 		MimeBodyPart messageBodyPart = new MimeBodyPart();
-		// BodyPart messageBodyPart = new MimeBodyPart();
-		// Fill the message
-		// messageBodyPart.setText(setBodyText());
+
 		messageBodyPart.setContent(setBodyText(), "text/html");
 		Multipart multipart = new MimeMultipart();
 		multipart.addBodyPart(messageBodyPart);
@@ -174,10 +201,12 @@ public class ResultsIT {
 		messageBodyPart = new MimeBodyPart();
 		System.out.println("getTestName() :::::::::::: " + getTestName());
 		if (getTestName().contains("TestRunner")) {
-			messageBodyPart.attachFile(".\\target\\test-output\\emailable-report.html");
+			messageBodyPart
+					.attachFile(".\\target\\test-output\\emailable-report.html");
 			multipart.addBodyPart(messageBodyPart);
 		} else {
-			messageBodyPart.attachFile(".\\target\\surefire-reports\\emailable-report.html");
+			messageBodyPart
+					.attachFile(".\\target\\surefire-reports\\emailable-report.html");
 			multipart.addBodyPart(messageBodyPart);
 		}
 		return multipart;
@@ -185,7 +214,7 @@ public class ResultsIT {
 
 	/**
 	 * Gets the test name.
-	 * 
+	 *
 	 * @return the test name
 	 */
 	private String getTestName() {
@@ -206,7 +235,7 @@ public class ResultsIT {
 
 	/**
 	 * Gets the file path.
-	 * 
+	 *
 	 * @return the file path
 	 */
 	public void getFilePath() {
@@ -226,10 +255,9 @@ public class ResultsIT {
 
 	/**
 	 * Test set result.
-	 * 
+	 *
 	 * @return the string
-	 * @throws IOException
-	 *             Signals that an I/O exception has occurred.
+	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	public String testSetResult() throws IOException {
 		String messageToBeSent = ("");

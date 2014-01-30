@@ -16,11 +16,10 @@ import static com.cengage.mtx.utils.YamlReader.getYamlValue;
 import com.cengage.mtx.TestSessionInitiator;
 
 /**
- * The Class Master_Couser_SmokeTest.
- *
+ * The Class MasterOpenCloseActivitySmokeTest.
  */
 public class MasterOpenCloseActivitySmokeTest {
-	
+
 	/** The test. */
 	TestSessionInitiator test;
 
@@ -29,9 +28,9 @@ public class MasterOpenCloseActivitySmokeTest {
 	 */
 	@BeforeClass
 	public void setUpClass() {
-		test = new TestSessionInitiator("src\\test\\resources\\testdata\\MasterSmokeTestData.yml");
+		test = new TestSessionInitiator(
+				"src/test/resources/testdata/Master_Smoke_TestData.yml");
 		test.launchApplication();
-		
 	}
 
 	/**
@@ -39,7 +38,9 @@ public class MasterOpenCloseActivitySmokeTest {
 	 */
 	@Test
 	public void loginToTheAdmin() {
-		test.masterLoginPg.loginToTheAdminApplication(getYamlValue("users.Admin.masterusername"), getYamlValue("users.Admin.masterpassword"));
+		test.masterLoginPg.loginToTheAdminApplication(
+				getYamlValue("users.Admin.masterusername"),
+				getYamlValue("users.Admin.masterpassword"));
 	}
 
 	/**
@@ -56,20 +57,21 @@ public class MasterOpenCloseActivitySmokeTest {
 	 */
 	@Test(dependsOnMethods = "performSearch")
 	public void navigateToISBNbook() {
-		test.adminDashboardPg.clickOnISBNBookAfterSearch(getYamlValue("users.Admin.ISBN"));
+		test.adminDashboardPg
+				.clickOnISBNBookAfterSearch(getYamlValue("users.Admin.ISBN"));
 		test.adminDashboardPg.verifyBookContentLoaded();
-		 test.adminDashboardPg.verifyLaunchAllActivity();
+		test.adminDashboardPg.verifyLaunchAllActivity();
 	}
-	 
- 	/**
- 	 * Takeresult.
- 	 *
- 	 * @param result the result
- 	 */
- 	@AfterMethod
-	 public void takeresult(ITestResult  result){
-	  test.takeScreenshotOfFailure(result);	  
-	 }
+
+	/**
+	 * Takeresult.
+	 *
+	 * @param result the result
+	 */
+	@AfterMethod
+	public void takeresult(ITestResult result) {
+		test.takeScreenshotOfFailure(result);
+	}
 
 	/**
 	 * Tear down class.

@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
  * The Class StartSubmitLogOutUi.
  */
 public class StartSubmitLogOutUi extends BasePage {
-	
+
 	/**
 	 * Instantiates a new start submit log out ui.
 	 *
@@ -49,7 +49,8 @@ public class StartSubmitLogOutUi extends BasePage {
 	 * @return the btn_start activity
 	 */
 	public WebElement getbtn_startActivity() {
-		return expWait.getWhenVisible(By.xpath("//*[@id='rhs-actuallystart']"), 80);
+		return expWait.getWhenVisible(By.xpath("//*[@id='rhs-actuallystart']"),
+				80);
 	}
 
 	/**
@@ -78,14 +79,15 @@ public class StartSubmitLogOutUi extends BasePage {
 	public WebElement getbtn_startActivityForTutored() {
 		return expWait.getWhenVisible(By.id("rhs-start"), 80);
 	}
-	
+
 	/**
 	 * Gets the frame_ content.
 	 *
 	 * @return the frame_ content
 	 */
-	public WebElement getFrame_Content(){
-		return expWait.getWhenVisible(By.xpath("//*[contains(@id,'_NB_Main_IFrame')]"), 80);		
+	public WebElement getFrame_Content() {
+		return expWait.getWhenVisible(
+				By.xpath("//*[contains(@id,'_NB_Main_IFrame')]"), 80);
 	}
 
 	/**
@@ -112,7 +114,10 @@ public class StartSubmitLogOutUi extends BasePage {
 	 * @return the _ state for submit master
 	 */
 	public WebElement get_StateForSubmitMaster() {
-		return expWait.getWhenVisible(By.xpath("//div[@class='nav-groups']//div[contains(@class,'selected')]"), 80);
+		return expWait
+				.getWhenVisible(
+						By.xpath("//div[@class='nav-groups']//div[contains(@class,'selected')]"),
+						80);
 	}
 
 	/**
@@ -130,7 +135,8 @@ public class StartSubmitLogOutUi extends BasePage {
 	 * @return the btn_ submit activity
 	 */
 	public WebElement getBtn_SubmitActivity() {
-		return expWait.getWhenVisible(By.xpath("//div[text()='Submit Activity for Grading']"), 80);
+		return expWait.getWhenVisible(
+				By.xpath("//div[text()='Submit Activity for Grading']"), 80);
 	}
 
 	/**
@@ -148,7 +154,8 @@ public class StartSubmitLogOutUi extends BasePage {
 	 * @return the overview graded out
 	 */
 	public WebElement getOverviewGradedOut() {
-		return expWait.getWhenVisible(By.xpath("//*[@class='group' and text()='Overview']"), 80);
+		return expWait.getWhenVisible(
+				By.xpath("//*[@class='group' and text()='Overview']"), 80);
 	}
 
 	/**
@@ -156,9 +163,10 @@ public class StartSubmitLogOutUi extends BasePage {
 	 */
 	public void checkOverviewStatus() {
 		try {
-			expWait.getWhenVisible(By.xpath("//*[text()='Overview']/parent::div[@class='sel-item']"), 20);
+			expWait.getWhenVisible(
+					By.xpath("//*[text()='Overview']/parent::div[@class='sel-item']"),
+					20);
 		} catch (Exception e) {
 		}
 	}
-
 }
