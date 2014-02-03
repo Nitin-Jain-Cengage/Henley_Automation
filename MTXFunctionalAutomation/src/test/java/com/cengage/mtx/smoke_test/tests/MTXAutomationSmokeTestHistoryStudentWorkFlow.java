@@ -23,8 +23,7 @@ public class MTXAutomationSmokeTestHistoryStudentWorkFlow {
 	 */
 	@BeforeClass
 	public void setUpClass() {
-		test = new TestSessionInitiator(
-				"src/test/resources/testdata/MTX_smoke_testData.yml");
+		test = new TestSessionInitiator(System.getProperty("datafile", "MTX_smoke_qaf_testData.yml"));
 		test.launchApplication();
 	}
 
@@ -33,9 +32,7 @@ public class MTXAutomationSmokeTestHistoryStudentWorkFlow {
 	 */
 	@Test
 	public void TC001_loginToTheSSOFrontDoor() {
-		test.loginActionsPg.loginToTheApplication(
-				getYamlValue("users.student.chemistryusername"),
-				getYamlValue("users.student.chemistrypassword"));
+		test.loginActionsPg.loginToTheApplication(getYamlValue("users.student.chemistryusername"), getYamlValue("users.student.chemistrypassword"));
 	}
 
 	/**
@@ -44,9 +41,7 @@ public class MTXAutomationSmokeTestHistoryStudentWorkFlow {
 	@Test
 	public void TC002_verifyUserNavigateToDashboardPageAndClickOnOpenButton() {
 		test.studHomePageActionsPg.verifyStudentHomePageContent();
-		test.studHomePageActionsPg.clickOnOpenButton(
-				getYamlValue("History.BookName").trim(),
-				getYamlValue("testenv"));
+		test.studHomePageActionsPg.clickOnOpenButton(getYamlValue("History.BookName").trim(), getYamlValue("testenv"));
 	}
 
 	/**
@@ -80,8 +75,7 @@ public class MTXAutomationSmokeTestHistoryStudentWorkFlow {
 	@Test
 	public void TC006_verifyNumberOfWeekEqualswithWeekavailableinWeekSlider() {
 		test.weekWidgetActionsPg.verifyTotalNoOfWeeks();
-		test.weekWidgetActionsPg
-				.navigateToWeek(getYamlValue("historyweek.weeknumber"));
+		test.weekWidgetActionsPg.navigateToWeek(getYamlValue("historyweek.weeknumber"));
 	}
 
 	// Infographic
@@ -90,15 +84,19 @@ public class MTXAutomationSmokeTestHistoryStudentWorkFlow {
 	 */
 	@Test
 	public void TC007_verifyStudentAttemptAndSubmitInfographicActivity() {
-		test.historyCourseContent
-				.verifyAndClickOnActivity(getYamlValue("historyactivity.InfographicActivity"));
-		test.historyCourseContent.verifyActivityHeading();
-		test.historyCourseContent.switchToActivityContentFrame();
-		test.historyCourseContent.verifyStartActivityButtonAndClick();
-		test.historyCourseContent.verifyNextButtonDisplays();
-		test.historyCourseContent.clickOnNextButtonAndSubmitActivity();
-		test.historyCourseContent.verifySubmitActivityButtonDisplayAndClick();
-		test.historyCourseContent.verifyUserNavigateToWeekWidget();
+		try {
+			test.historyCourseContent.verifyAndClickOnActivity(getYamlValue("historyactivity.InfographicActivity"));
+			test.historyCourseContent.verifyActivityHeading();
+			test.historyCourseContent.switchToActivityContentFrame();
+			test.historyCourseContent.verifyStartActivityButtonAndClick();
+			test.historyCourseContent.verifyNextButtonDisplays();
+			test.historyCourseContent.clickOnNextButtonAndSubmitActivity();
+			test.historyCourseContent.verifySubmitActivityButtonDisplayAndClick();
+			test.historyCourseContent.verifyUserNavigateToWeekWidget();
+		} catch (Exception e) {
+			System.out.println("Fail to perform Infographic Activity");
+			e.printStackTrace();
+		}
 	}
 
 	/**
@@ -115,15 +113,19 @@ public class MTXAutomationSmokeTestHistoryStudentWorkFlow {
 	 */
 	@Test
 	public void TC009_verifyStudentAttemptopenSourceActivity() {
-		test.historyCourseContent
-				.verifyAndClickOnActivity(getYamlValue("historyactivity.SourceActivity"));
-		test.historyCourseContent.verifyActivityHeading();
-		test.historyCourseContent.switchToActivityContentFrame();
-		test.historyCourseContent.verifyStartActivityButtonAndClick();
-		test.historyCourseContent.verifyNextButtonDisplays();
-		test.historyCourseContent.clickOnNextButtonAndSubmitActivity();
-		test.historyCourseContent.verifySubmitActivityButtonDisplayAndClick();
-		test.historyCourseContent.verifyUserNavigateToWeekWidget();
+		try {
+			test.historyCourseContent.verifyAndClickOnActivity(getYamlValue("historyactivity.SourceActivity"));
+			test.historyCourseContent.verifyActivityHeading();
+			test.historyCourseContent.switchToActivityContentFrame();
+			test.historyCourseContent.verifyStartActivityButtonAndClick();
+			test.historyCourseContent.verifyNextButtonDisplays();
+			test.historyCourseContent.clickOnNextButtonAndSubmitActivity();
+			test.historyCourseContent.verifySubmitActivityButtonDisplayAndClick();
+			test.historyCourseContent.verifyUserNavigateToWeekWidget();
+		} catch (Exception e) {
+			System.out.println("Fail to perform Source Activity ");
+			e.printStackTrace();
+		}
 	}
 
 	/**
@@ -140,15 +142,19 @@ public class MTXAutomationSmokeTestHistoryStudentWorkFlow {
 	 */
 	@Test
 	public void TC011_verifyStudentAttemptEssayActivity() {
-		test.historyCourseContent
-				.verifyAndClickOnActivity(getYamlValue("historyactivity.EssayActivity"));
-		test.historyCourseContent.verifyActivityHeading();
-		test.historyCourseContent.switchToActivityContentFrame();
-		test.historyCourseContent.verifyStartActivityButtonAndClick();
-		test.historyCourseContent.verifyNextButtonDisplays();
-		test.historyCourseContent.clickOnNextButtonAndSubmitActivity();
-		test.historyCourseContent.verifySubmitActivityButtonDisplayAndClick();
-		test.historyCourseContent.verifyUserNavigateToWeekWidget();
+		try {
+			test.historyCourseContent.verifyAndClickOnActivity(getYamlValue("historyactivity.EssayActivity"));
+			test.historyCourseContent.verifyActivityHeading();
+			test.historyCourseContent.switchToActivityContentFrame();
+			test.historyCourseContent.verifyStartActivityButtonAndClick();
+			test.historyCourseContent.verifyNextButtonDisplays();
+			test.historyCourseContent.clickOnNextButtonAndSubmitActivity();
+			test.historyCourseContent.verifySubmitActivityButtonDisplayAndClick();
+			test.historyCourseContent.verifyUserNavigateToWeekWidget();
+		} catch (Exception e) {
+			System.out.println("Fail to perform Essay Activity ");
+			e.printStackTrace();
+		}
 	}
 
 	/**
@@ -165,15 +171,19 @@ public class MTXAutomationSmokeTestHistoryStudentWorkFlow {
 	 */
 	@Test
 	public void TC013_verifyStudentAttemptSingleAndMultipleSourceActivity() {
-		test.historyCourseContent
-				.verifyAndClickOnActivity(getYamlValue("historyactivity.SingleAndMultipleSourceActivity"));
-		test.historyCourseContent.verifyActivityHeading();
-		test.historyCourseContent.switchToActivityContentFrame();
-		test.historyCourseContent.verifyStartActivityButtonAndClick();
-		test.historyCourseContent.verifyNextButtonDisplays();
-		test.historyCourseContent.clickOnNextButtonAndSubmitActivity();
-		test.historyCourseContent.verifySubmitActivityButtonDisplayAndClick();
-		test.historyCourseContent.verifyUserNavigateToWeekWidget();
+		try {
+			test.historyCourseContent.verifyAndClickOnActivity(getYamlValue("historyactivity.SingleAndMultipleSourceActivity"));
+			test.historyCourseContent.verifyActivityHeading();
+			test.historyCourseContent.switchToActivityContentFrame();
+			test.historyCourseContent.verifyStartActivityButtonAndClick();
+			test.historyCourseContent.verifyNextButtonDisplays();
+			test.historyCourseContent.clickOnNextButtonAndSubmitActivity();
+			test.historyCourseContent.verifySubmitActivityButtonDisplayAndClick();
+			test.historyCourseContent.verifyUserNavigateToWeekWidget();
+		} catch (Exception e) {
+			System.out.println("Fail to perform Multiple Source Activity ");
+			e.printStackTrace();
+		}
 	}
 
 	/**
@@ -191,12 +201,16 @@ public class MTXAutomationSmokeTestHistoryStudentWorkFlow {
 	 */
 	@Test
 	public void TC015_verifyStudentAttemptStudyActivity() {
-		test.historyCourseContent
-				.verifyAndClickOnActivity(getYamlValue("historyactivity.StudyActivity"));
-		test.historyCourseContent.verifyActivityHeading();
-		test.historyCourseContent.switchToActivityContentFrame();
-		test.historyCourseContent.verifyPrintButtonDisplayInStudy();
-		test.historyCourseContent.closeStudyActivity();
+		try {
+			test.historyCourseContent.verifyAndClickOnActivity(getYamlValue("historyactivity.StudyActivity"));
+			test.historyCourseContent.verifyActivityHeading();
+			test.historyCourseContent.switchToActivityContentFrame();
+			test.historyCourseContent.verifyPrintButtonDisplayInStudy();
+			test.historyCourseContent.closeStudyActivity();
+		} catch (Exception e) {
+			System.out.println("Fail to perform Multiple Study Activity ");
+			e.printStackTrace();
+		}
 	}
 
 	/**
@@ -217,6 +231,13 @@ public class MTXAutomationSmokeTestHistoryStudentWorkFlow {
 	@AfterMethod
 	public void takeresult(ITestResult result) {
 		test.takeScreenshotOfFailure(result);
+		if (!result.isSuccess()) {
+			try {
+				test.historyCourseContent.closeStudyActivity();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
 	}
 
 	/**

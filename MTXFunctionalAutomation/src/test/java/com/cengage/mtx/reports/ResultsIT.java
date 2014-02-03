@@ -57,7 +57,7 @@ public class ResultsIT {
 	 */
 	@BeforeClass
 	void setupMailConfig() {
-		YamlReader.setYamlFilePath("src/test/resources/testdata/MTX_smoke_testData.yml");
+		YamlReader.setYamlFilePath(System.getProperty("datafile", "MTX_smoke_qaf_testData.yml"));
 		System.out.println("%%%%%%%%%%%%%%%%%%%%%");
 	}
 

@@ -6,7 +6,7 @@
 	<artifactId>MTXFunctionalAutomation</artifactId>
 	<version>0.0.1</version>
 
-	<name>Mindtap Henley Functional Test Automation</name>
+	<name>MTX Functional Test Automation</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>

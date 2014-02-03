@@ -19,7 +19,8 @@ import org.yaml.snakeyaml.Yaml;
 public class YamlReader {
 
 	/** The yaml file path. */
-	public static String yamlFilePath = "src\\test\\resources\\testdata\\TestData.yml";
+//	public static String yamlFilePath = "src\\test\\resources\\testdata\\TestData.yml";
+	public static String yamlFilePath;
 
 	/**
 	 * Sets the yaml file path.
@@ -29,8 +30,8 @@ public class YamlReader {
 	 * @return the string
 	 */
 	public static String setYamlFilePath(String filePath) {
-		yamlFilePath = filePath;
-		System.out.println(yamlFilePath);
+		yamlFilePath = "src/test/resources/testdata/"+filePath;
+		System.out.println("Yaml Class: "+yamlFilePath);
 		return yamlFilePath;
 	}
 

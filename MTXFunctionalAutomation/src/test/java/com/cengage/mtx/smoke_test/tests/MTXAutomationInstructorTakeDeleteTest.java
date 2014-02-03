@@ -27,8 +27,7 @@ public class MTXAutomationInstructorTakeDeleteTest {
 	 */
 	@BeforeClass
 	public void setUpClass() {
-		test = new TestSessionInitiator(
-				"src/test/resources/testdata/MTX_smoke_testData.yml");
+		test = new TestSessionInitiator(System.getProperty("datafile", "MTX_smoke_qaf_testData.yml"));
 		test.launchApplication();
 	}
 

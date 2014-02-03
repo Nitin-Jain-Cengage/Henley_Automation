@@ -17,7 +17,7 @@ public class StudentWorkFlowSomkeTestRunner {
         @Test
         public void Test() {
                 List<String> file = new ArrayList<String>();
-                file.add("MTX_Smoke_TestRunner.xml");
+                file.add("MTX_Smoke_Suite.xml");
                 TestNG testNG = new TestNG();
                 testNG.setTestSuites(file);
                 testNG.setOutputDirectory("./target/test-output");

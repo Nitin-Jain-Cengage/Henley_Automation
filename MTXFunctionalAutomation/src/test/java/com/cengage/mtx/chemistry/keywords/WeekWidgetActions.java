@@ -119,7 +119,9 @@ public class WeekWidgetActions extends StudentHomePageActions {
 		weekWidgetPge.waitForSyncPage();
 		weekWidgetPge.checkWeekSliderSpinnerToDisappear();
 		weekWidgetPge.getLink_AllScore().isDisplayed();
+		weekWidgetPge.checkWeekSliderSpinnerToDisappear();
 		weekWidgetPge.btn_allApps().isDisplayed();
+		weekWidgetPge.checkWeekSliderSpinnerToDisappear();
 		weekWidgetPge.btn_allApps().click();
 		weekWidgetPge.waitForSyncPage();
 	}

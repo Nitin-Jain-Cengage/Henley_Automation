@@ -25,34 +25,29 @@ public class WebDriverFactory {
 
 	/** The browser. */
 	private static String browser;
-	
 	/** The capabilities. */
 	private static DesiredCapabilities capabilities = new DesiredCapabilities();
 
 	/**
 	 * Gets the driver.
-	 *
-	 * @param seleniumconfig the seleniumconfig
+	 * 
+	 * @param seleniumconfig
+	 *            the seleniumconfig
 	 * @return the driver
 	 */
 	public static WebDriver getDriver(Map<String, Object> seleniumconfig) {
 		seleniumconfig = (Map<String, Object>) seleniumconfig.get("selenium");
 		// browser = seleniumconfig.get("browser").toString();
-		browser = System.getProperty("browser", seleniumconfig.get("browser")
-				.toString());
+		browser = System.getProperty("browser", seleniumconfig.get("browser").toString());
 		if (seleniumconfig.get("server").toString().equalsIgnoreCase("local")) {
 			if (browser.equalsIgnoreCase("firefox")) {
 				return createFirefoxDriver(getFirefoxProfile());
 			} else if (browser.equalsIgnoreCase("chrome")) {
-				return setChromeDriver(seleniumconfig.get("driverpath")
-						.toString());
+				return setChromeDriver(seleniumconfig.get("driverpath").toString());
 			} else if (browser.equalsIgnoreCase("Safari")) {
 				return setSafariDriver();
-			} else if ((browser.equalsIgnoreCase("ie"))
-					|| (browser.equalsIgnoreCase("internetexplorer"))
-					|| (browser.equalsIgnoreCase("internet explorer"))) {
-				return setInternetExplorerDriver(seleniumconfig.get(
-						"driverpath").toString());
+			} else if ((browser.equalsIgnoreCase("ie")) || (browser.equalsIgnoreCase("internetexplorer")) || (browser.equalsIgnoreCase("internet explorer"))) {
+				return setInternetExplorerDriver(seleniumconfig.get("driverpath").toString());
 			}
 		}
 		if (seleniumconfig.get("server").toString().equalsIgnoreCase("remote")) {
@@ -63,8 +58,9 @@ public class WebDriverFactory {
 
 	/**
 	 * Sets the remote driver.
-	 *
-	 * @param selConfig the sel config
+	 * 
+	 * @param selConfig
+	 *            the sel config
 	 * @return the web driver
 	 */
 	private static WebDriver setRemoteDriver(Map<String, Object> selConfig) {
@@ -76,9 +72,7 @@ public class WebDriverFactory {
 			cap = DesiredCapabilities.chrome();
 		} else if (browser.equalsIgnoreCase("Safari")) {
 			cap = DesiredCapabilities.safari();
-		} else if ((browser.equalsIgnoreCase("ie"))
-				|| (browser.equalsIgnoreCase("internetexplorer"))
-				|| (browser.equalsIgnoreCase("internet explorer"))) {
+		} else if ((browser.equalsIgnoreCase("ie")) || (browser.equalsIgnoreCase("internetexplorer")) || (browser.equalsIgnoreCase("internet explorer"))) {
 			cap = DesiredCapabilities.internetExplorer();
 		}
 		String seleniumserveraddress = selConfig.get("remote.host").toString();
@@ -94,22 +88,24 @@ public class WebDriverFactory {
 
 	/**
 	 * Sets the chrome driver.
-	 *
-	 * @param driverpath the driverpath
+	 * 
+	 * @param driverpath
+	 *            the driverpath
 	 * @return the web driver
 	 */
 	private static WebDriver setChromeDriver(String driverpath) {
-		System.setProperty("webdriver.chrome.driver", driverpath
-				+ "chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", driverpath + "chromedriver.exe");
 		capabilities.setJavascriptEnabled(true);
-		// capabilities.setCapability("applicationCacheEnabled", "false");
+//		capabilities.setCapability("applicationCacheEnabled", "false");
+		
 		return new ChromeDriver();
 	}
 
 	/**
 	 * Sets the internet explorer driver.
-	 *
-	 * @param driverpath the driverpath
+	 * 
+	 * @param driverpath
+	 *            the driverpath
 	 * @return the web driver
 	 */
 	private static WebDriver setInternetExplorerDriver(String driverpath) {
@@ -119,7 +115,7 @@ public class WebDriverFactory {
 
 	/**
 	 * Sets the safari driver.
-	 *
+	 * 
 	 * @return the web driver
 	 */
 	private static WebDriver setSafariDriver() {
@@ -128,8 +124,9 @@ public class WebDriverFactory {
 
 	/**
 	 * Creates a new WebDriver object.
-	 *
-	 * @param firefoxProfile the firefox profile
+	 * 
+	 * @param firefoxProfile
+	 *            the firefox profile
 	 * @return the web driver
 	 */
 	private static WebDriver createFirefoxDriver(FirefoxProfile firefoxProfile) {
@@ -140,31 +137,28 @@ public class WebDriverFactory {
 
 	/**
 	 * Gets the firefox profile.
-	 *
+	 * 
 	 * @return the firefox profile
 	 */
 	private static FirefoxProfile getFirefoxProfile() {
 		FirefoxProfile firefoxProfile = new FirefoxProfile();
 		try {
-			firefoxProfile
-					.addExtension(new File(
-							"./src/test/resources/firebug.extension/firebug-1.12.5-fx.xpi"));
-			firefoxProfile.setPreference("extensions.firebug.currentVersion",
-					"1.12.5");
-			firefoxProfile.setPreference(
-					"extensions.firebug.script.enableSites", true);
-			firefoxProfile.setPreference(
-					"extensions.firebug.console.enableSites", true);
-			firefoxProfile.setPreference(
-					"extensions.firebug.allPagesActivation", true);
+			firefoxProfile.addExtension(new File("./src/test/resources/firebug.extension/firebug-1.12.5-fx.xpi"));
+			firefoxProfile.setPreference("extensions.firebug.currentVersion", "1.12.5");
+			firefoxProfile.setPreference("extensions.firebug.script.enableSites", true);
+			firefoxProfile.setPreference("extensions.firebug.console.enableSites", true);
+			firefoxProfile.setPreference("extensions.firebug.allPagesActivation", true);
 			firefoxProfile.setPreference("extensions.firebug.delayLoad", false);
-			firefoxProfile
-					.addExtension(new File(
-							"./src/test/resources/firebug.extension/firepath-0.9.7-fx.xpi"));
+			firefoxProfile.addExtension(new File("./src/test/resources/firebug.extension/firepath-0.9.7-fx.xpi"));
+			
+			firefoxProfile.setPreference("network.http.pipelining", true);
+			firefoxProfile.setPreference("network.http.proxy.pipelining", true);
+
+			
+			
 		} catch (IOException e) {
 			e.printStackTrace();
-			Logger.getLogger(WebDriverFactory.class.getName()).log(
-					Level.SEVERE, null, e);
+			Logger.getLogger(WebDriverFactory.class.getName()).log(Level.SEVERE, null, e);
 		}
 		return firefoxProfile;
 	}

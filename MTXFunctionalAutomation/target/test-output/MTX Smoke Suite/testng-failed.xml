@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MTX Smoke Suite]">
+  <parameter name="datafile" value="MTX_smoke_qad_testData.yml#@!#@$#@$@!#$"/>
+  <parameter name="courseType" value="chemistry"/>
+  <test name="Chemistry Delete Take From Instructor(failed)">
+    <parameter name="courseType" value="chemistry"/>
+    <classes>
+      <class name="com.cengage.mtx.smoke_test.tests.MTXAutomationInstructorTakeDeleteTest">
+        <methods>
+          <include name="TC002_performOperationsOnHomePage"/>
+          <include name="TC001_loginToTheSSOFrontDoor"/>
+          <include name="setUpClass"/>
+          <include name="TC005_performDeleteOfStudentScore"/>
+          <include name="TC003_actionsOnWeekWidgetView"/>
+          <include name="TC004_actionsOnStudentTab"/>
+        </methods>
+      </class> <!-- com.cengage.mtx.smoke_test.tests.MTXAutomationInstructorTakeDeleteTest -->
+    </classes>
+  </test> <!-- Chemistry Delete Take From Instructor(failed) -->
+</suite> <!-- Failed suite [MTX Smoke Suite] -->

@@ -29,7 +29,7 @@ public class MasterOpenCloseActivitySmokeTest {
 	@BeforeClass
 	public void setUpClass() {
 		test = new TestSessionInitiator(
-				"src/test/resources/testdata/Master_Smoke_TestData.yml");
+				"Master_Smoke_TestData.yml");
 		test.launchApplication();
 	}
 

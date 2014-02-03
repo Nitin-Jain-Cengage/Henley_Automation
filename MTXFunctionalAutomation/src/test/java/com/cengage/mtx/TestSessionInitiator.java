@@ -94,7 +94,7 @@ public class TestSessionInitiator {
 	 * @param datafilelocator the datafilelocator
 	 */
 	public TestSessionInitiator(String datafilelocator) {
-		System.out.println(setYamlFilePath(datafilelocator));
+		setYamlFilePath(datafilelocator);
 		_getSessionConfig();
 		_configureBrowser();
 		_initPage();

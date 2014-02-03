@@ -51,6 +51,7 @@ public class StudentHomePageActions extends LoginPageActions {
 	public void clickOnOpenButton(String bookName, String env) {
 		stdPage.waitForSyncPage();
 		stdPage.getText_CoursesAndMaterials().isDisplayed();
+		
 		stdPage.get_LastAccessBookSection().isDisplayed();
 		stdPage.getBtn_Open(bookName).isDisplayed();
 		stdPage.getBtn_Open(bookName).isDisplayed();
