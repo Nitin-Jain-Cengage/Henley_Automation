@@ -72,15 +72,52 @@ public class StartSubmitLogOutActions extends DifferentActivitiesActions {
 	public void clickOnSubmitMasterLink() {
 		startSubmitLogOutPg.checkOverviewStatus();
 		startSubmitLogOutPg.waitForSyncPage();
-		startSubmitLogOutPg.waitLong(4);
+		startSubmitLogOutPg.checkWeekSliderSpinnerToDisappear();
 		startSubmitLogOutPg.get_StateForSubmitMaster().isDisplayed();
 		startSubmitLogOutPg.getbtn_Next().isDisplayed();
 		startSubmitLogOutPg.getbtn_Next().click();
+		startSubmitLogOutPg.checkWeekSliderSpinnerToDisappear();
 		startSubmitLogOutPg.getlink_submit().isDisplayed();
 		startSubmitLogOutPg.getlink_submit().click();
 		startSubmitLogOutPg.waitForSyncPage();
 		startSubmitLogOutPg.getlink_submit().click();
 		startSubmitLogOutPg.waitForSyncPage();
+	}
+	
+	/** 
+	 * Verify submit link is present for tutored. 
+	 */
+	public void verifySubmitLinkIsPresentForTutored(){
+		startSubmitLogOutPg.switchToDefaultContent();
+		startSubmitLogOutPg.switchToFrame(startSubmitLogOutPg.getFrame_Content().getAttribute("id"));
+		startSubmitLogOutPg.switchToFrame("easyXDM_activityService_cxp_Target_provider");
+		startSubmitLogOutPg.link_submitForTutored.isDisplayed();
+		startSubmitLogOutPg.waitForSyncPage();
+	}
+	
+	/**
+	 * Verify submit link is present.
+	 */
+	public void verifySubmitLinkPresent() {
+		startSubmitLogOutPg.switchToDefaultContent();
+		startSubmitLogOutPg.switchToFrame(startSubmitLogOutPg.getFrame_Content().getAttribute("id"));
+		startSubmitLogOutPg.switchToFrame("easyXDM_activityService_cxp_Target_provider");
+		startSubmitLogOutPg.checkOverviewStatus();
+		startSubmitLogOutPg.waitForSyncPage();
+		startSubmitLogOutPg.getlink_submit().isDisplayed();
+		startSubmitLogOutPg.waitForSyncPage();
+	}
+	
+	/**
+	 * Verify key concepts text is present.
+	 */
+	public void verifyKeyConceptsTextPresent()
+	{
+		startSubmitLogOutPg.switchToDefaultContent();
+		startSubmitLogOutPg.switchToFrame(startSubmitLogOutPg.getFrame_Content().getAttribute("id"));
+		startSubmitLogOutPg.switchToFrame("easyXDM_activityService_cxp_Target_provider");
+		startSubmitLogOutPg.gettxt_KeyConcepts().isDisplayed();
+		System.out.println("key concepts text is present");
 	}
 
 	/**

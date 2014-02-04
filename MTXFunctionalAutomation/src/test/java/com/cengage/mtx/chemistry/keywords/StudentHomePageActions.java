@@ -53,6 +53,7 @@ public class StudentHomePageActions extends LoginPageActions {
 		stdPage.getText_CoursesAndMaterials().isDisplayed();
 		
 		stdPage.get_LastAccessBookSection().isDisplayed();
+		stdPage.checkWeekSliderSpinnerToDisappear();
 		stdPage.getBtn_Open(bookName).isDisplayed();
 		stdPage.getBtn_Open(bookName).isDisplayed();
 		String attValue = stdPage.getBtn_Open(bookName).getAttribute("onclick");

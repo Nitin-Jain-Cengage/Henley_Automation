@@ -78,9 +78,7 @@ public class WeekWidgetUi extends BasePage {
 	/**
 	 * Check week slider spinner to disappear.
 	 */
-	public void checkWeekSliderSpinnerToDisappear() {
-		expWait.waitForElementToDisappear(By.id("weekslider"), 5);
-	}
+
 
 	/**
 	 * Wait for sync.

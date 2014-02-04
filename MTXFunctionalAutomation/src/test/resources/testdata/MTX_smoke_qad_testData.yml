@@ -29,9 +29,9 @@ users:
 Chemistry:
   BookName: General_Chemistry
 week:
-    weeknumber: week 9
+    weeknumber: week 11
 activity:
-    tutored: "7.1b Types of Magnetic Materials"
+    tutored: "8.1b Fundamentals of Covalent Bonding"
 
 ##########################################################################################
 #

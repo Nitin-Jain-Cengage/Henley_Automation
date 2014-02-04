@@ -83,6 +83,6 @@ DeleteTake:
 results:
    sendEmail: "yes"
    recipients: 
-     #  recipient1: nitin.jain@contractor.cengage.com
+   #    recipient1: nitin.jain@contractor.cengage.com
        recipient2: shivamtiwari@qainfotech.net
        

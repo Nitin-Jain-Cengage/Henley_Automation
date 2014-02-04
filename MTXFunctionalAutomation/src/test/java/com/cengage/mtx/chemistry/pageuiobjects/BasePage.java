@@ -147,6 +147,10 @@ public class BasePage extends SeleniumWait {
 			e.printStackTrace();
 		}
 	}
+	
+	public void checkWeekSliderSpinnerToDisappear() {
+		expWait.waitForElementToDisappear(By.id("weekslider"), 5);
+	}
 
 	/**
 	 * Execute js.

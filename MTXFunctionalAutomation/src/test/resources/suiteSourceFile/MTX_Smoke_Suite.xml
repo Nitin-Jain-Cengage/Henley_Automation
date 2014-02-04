@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MTX Smoke Suite">
+
+
+	<test name="Chemistry Delete Take From Instructor" preserve-order="true">
+		<parameter name="courseType" value="chemistry" />
+		<classes>
+			<class
+				name="com.cengage.mtx.smoke_test.tests.MTXInstructorTakeDeleteTest" />
+		</classes>
+	</test>
+
+	<test name="Chemistry SmokeTest Student WorkFlow" preserve-order="true">
+		<classes>
+			<class
+				name="com.cengage.mtx.smoke_test.tests.MTXStudentWorkFlowChemistrySmokeTest" />
+		</classes>
+	</test>
+
+	<test name="History Delete Take From Instructor" preserve-order="true">
+		<parameter name="courseType" value="history" />
+		<classes>
+			<class
+				name="com.cengage.mtx.smoke_test.tests.MTXInstructorTakeDeleteTest" />
+		</classes>
+	</test>
+
+	<test name="History SmokeTest Student WorkFlow" preserve-order="true">
+		<classes>
+			<class
+				name="com.cengage.mtx.smoke_test.tests.MTXStudentWorkFlowHistorySmokeTest" />
+		</classes>
+	</test>
+
+
+</suite> 

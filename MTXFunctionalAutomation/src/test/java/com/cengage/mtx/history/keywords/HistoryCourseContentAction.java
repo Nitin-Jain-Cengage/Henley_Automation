@@ -40,6 +40,23 @@ public class HistoryCourseContentAction extends StartSubmitLogOutActions {
 		historyCourseContent.get_ActivityNameLink(activityName).click();
 		historyCourseContent.waitForSyncPage();
 	}
+	
+	/**
+	 * Verify start activity or next button is present.
+	 */
+	public void verifyStartActivityOrNextIsPresent()
+	{
+		historyCourseContent.waitForSyncPage();
+		switchToActivityContentFrame();
+		try{
+			historyCourseContent.getbtn_startActivity().isDisplayed();
+			System.out.println("start activity button is present");
+		}catch(Exception e)
+		{	verifyNextButtonDisplays();
+			System.out.println("next button is present");
+		}
+		historyCourseContent.waitForSyncPage();
+	}
 
 	/**
 	 * Verify activity heading.

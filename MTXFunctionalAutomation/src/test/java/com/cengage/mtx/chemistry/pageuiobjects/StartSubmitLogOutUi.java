@@ -117,7 +117,7 @@ public class StartSubmitLogOutUi extends BasePage {
 		return expWait
 				.getWhenVisible(
 						By.xpath("//div[@class='nav-groups']//div[contains(@class,'selected')]"),
-						80);
+						10);
 	}
 
 	/**
@@ -156,6 +156,15 @@ public class StartSubmitLogOutUi extends BasePage {
 	public WebElement getOverviewGradedOut() {
 		return expWait.getWhenVisible(
 				By.xpath("//*[@class='group' and text()='Overview']"), 80);
+	}
+	
+	/**
+	 * Gets the key concept text
+	 * 
+	 * @return the key concept text
+	 */
+	public WebElement gettxt_KeyConcepts() {
+		return getWhenVisible(By.xpath(".//*[@class='title' and contains(text(), 'Key Concepts')]"), 90);
 	}
 
 	/**
